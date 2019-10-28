@@ -11,6 +11,7 @@
     <title>@yield('title', '灵魂深触-经历网') </title>
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>

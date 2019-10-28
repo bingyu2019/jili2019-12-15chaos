@@ -43,7 +43,7 @@
             {{-- 排序--}}
             <div class="order container navbar navbar-expand-lg col-sm-11"
                  style="background-image:url('/images/experience_rank_top.png')">
-                <h5 class="mt-3 ml-3"><b>查看顺序 ▶▶</b></h5>
+                <h5 class="mt-3 ml-3"><b>查看顺序 ➤➤</b></h5>
                 <ul class="navbar navbar-expand-lg mt-4">
                     <li>▆&nbsp;&nbsp;<a href=""> 最早&nbsp; &nbsp;</a>▆&nbsp;&nbsp;</li>
                     <li><a href=""> &nbsp;最新&nbsp;&nbsp; </a>▆&nbsp;&nbsp;</li>
