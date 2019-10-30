@@ -53,9 +53,9 @@
                 </div>
             </li>
             {{-- 手机注册登录 --}}
-            <li class=""><a href=""><img src="/images/md/register-phone.png" alt=""></a></li>
+            <li class=""><a href="{{ route('login') }}"><img src="/images/md/register-phone.png" alt="">登录</a></li>
             {{-- 微信登录 --}}
-            <li class=""><a href=""><img src="/images/md/register-weixin.png" alt=""></a></li>
+            <li class=""><a href="{{ route('register') }}"><img src="/images/md/register-weixin.png" alt="">注册</a></li>
             {{-- 个人中心 --}}
             <li class=""><a href=""><img src="/images/md/register-my.png" alt=""></a></li>
             {{-- 购物车 --}}
