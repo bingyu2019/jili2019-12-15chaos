@@ -3,7 +3,12 @@
 
 @section('content')
     {{-- 在手机上隐藏 --}}
-    <div class="d-none d-sm-block">
+    <div class="mx-auto d-none d-sm-block">
+        <div class="mx-auto" style="height: 100%; width: 1263px;">
+
+        {{-- 电脑版 logo 注册登录 --}}
+        @include('layouts._lg_header')
+
         {{-- 分类页面主体导航--}}
         <div class="root-nav row col-md-12">
             @include('layouts._lg_category_nav')
@@ -134,6 +139,7 @@
         </div>
 
     </div>
+    </div>
 
-
+    @include('layouts._lg_footer')
 @stop

@@ -16,6 +16,7 @@ body {
     font-size: 14px;
     margin: 0;
     padding: 0;
+    background-color: black;
 
 
     ul li {
@@ -592,11 +593,28 @@ hr {
 
 
 // 发布帖子入口 【笔图片】
-.pen:hover{
+.pen:hover {
     color: white;
 }
 
+//====================== topic ===============================//
+// topic show 左则广告文章推荐栏文字
+.topic-show-left {
+    line-height: 26px;
+    padding-left: 10px;
+    white-space:nowrap;
+    width:17em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    a {
+        font-size: 16px;
+    }
 
+    a:hover {
+        text-decoration: underline;
+        text-shadow:2px 2px 4px #000000;
+    }
+}
 
 
 

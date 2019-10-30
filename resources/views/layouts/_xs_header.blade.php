@@ -1,11 +1,13 @@
-<nav class="navbar fixed-top navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-dark bg-dark d-block d-sm-none">
     <div class="container">
         <!-- Branding Image -->
-        <a class="navbar-brand " href="{{ url('/') }}"><img src="/images/header1.png" alt=""></a>
+        <a class="navbar-brand " href="{{ url('/') }}"><img src="/images/xs/header.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
@@ -14,13 +16,13 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav navbar-right">
                 <!-- Authentication Links -->
-                <li class="nav-item"><a class="nav-link" href="#"><img src="images/header3.png" alt="">登录</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><img src="/images/header2.png" alt="">注册</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="/images/xs/header1.png" alt="">登录</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="/images/xs/header2.png" alt="">注册</a></li>
                 {{-- 头像 --}}
                 <li class="nav-item dropdown ml-2">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
-                        <img src="images/face.jpg" class="img-responsive img-circle" width="30px" height="30px " style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc; " ; >
+                        <img src="/images/md/face.jpg" class="img-responsive img-circle" width="30px" height="30px " style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc; " ; >
                     </a>
                     <div class="open-menu dropdown-menu rounded" aria-labelledby="navbarDropdown">
                             <a href="" class="dropdown-item">

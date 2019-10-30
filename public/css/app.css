@@ -10649,6 +10649,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 body ul li {
@@ -11182,5 +11183,23 @@ hr {
 
 .pen:hover {
   color: white;
+}
+
+.topic-show-left {
+  line-height: 26px;
+  padding-left: 10px;
+  white-space: nowrap;
+  width: 17em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topic-show-left a {
+  font-size: 16px;
+}
+
+.topic-show-left a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px #000000;
 }
 

@@ -3,9 +3,9 @@
 //    return view('welcome');
 //});
 
+// ========================== 静态页面【主页-分类】 ==============================//
 // 主页
 Route::get('/', 'HomeController@root')->name('root');
-
 // 人物经历
 Route::get('/category/experience','CategoriesController@experience')->name('experience');
 // 个人宣传
@@ -25,4 +25,9 @@ Route::get('/category/heaven','CategoriesController@heaven')->name('heaven');
 // 灵魂服务
 Route::get('/category/serve','CategoriesController@serve')->name('serve');
 
+//============================ 用户路由 ==============================//
+//Route::resource('users', 'UsersController');
+Route::get('/users/show','UsersController@show')->name('users.show');
 
+//============================ 帖子路由 ==============================//
+Route::get('/topics/show','TopicsController@show')->name('topics.show');
