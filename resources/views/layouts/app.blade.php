@@ -12,6 +12,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+{{--    <script type="text/javascript" src="{{asset('js/vue.js')}}"></script>--}}
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 
 
 
-        @yield('content')
+         @yield('content')
 
 
     </div>
@@ -28,6 +29,6 @@
 <!-- Scripts -->
 <script src="{{ mix('js/app.js') }}"></script>
 @yield('script')
-</body>
 
+</body>
 </html>

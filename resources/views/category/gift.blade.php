@@ -3,142 +3,293 @@
 
 @section('content')
 
-    {{-- 在手机上隐藏 --}}
-    <div class="mx-auto d-none d-sm-block">
-        <div class="mx-auto" style="height: 100%; width: 1263px;">
+    {{-- ================= 灵魂礼赞-电脑版 ====================== --}}
+    <div>
+        <div class="big-box mx-auto d-none d-sm-block">
 
-            {{-- 电脑版 logo 注册登录 --}}
-            @include('layouts._lg_header')
+            <header>
+                {{-- 电脑版 logo 注册登录 --}}
+                @include('layouts._lg_header')
+
+                {{-- 清除浮动 --}}
+                <div class="clear"></div>
+                <br>
+            </header>
 
             {{-- 分类页面主体导航--}}
-            <div class="root-nav row col-md-12">
+            <nav class="root-nav row col-md-12">
                 @include('layouts._lg_category_nav')
                 <div class="float-right">
-                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<img
-                        class=" img-fluid" src="/images/md/category-gift.png">
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;<img
+                        class=" img-fluid" src="/images/category/md-gift.png">
                 </div>
-            </div>
+            </nav>
 
-            {{-- 搜索框 --}}
-            <div>
-                @include('layouts._search_box')
-            </div>
-
-            {{-- 分类主体内容区域 --}}
-            <div>
-                {{-- 分类标题 --}}
-                <div class="experience-title container mt-4 col-sm-11">
-                    <h3 class="text-white text-center pt-2">灵 &nbsp;&nbsp;魂&nbsp;&nbsp; 礼&nbsp; &nbsp;赞</h3>
-                </div>
-                {{-- 分类二级类别 --}}
-                <div class="subclass gift-subclass container col-sm-11">
-                    <div class="gift-subclass-title text-light float-left"><h4>云<br>礼 <br> 品</h4></div>
-                    <ul class="pt-5">
-                        <li class="float-left text-white">│ <a href=""> &nbsp;&nbsp;生活礼品 &nbsp; </a>│</li>
-                        <li class="float-left text-white"><a href="">&nbsp; &nbsp;书画礼品&nbsp; </a>│</li>
-                        <li class="float-left text-white"><a href="">&nbsp; &nbsp;诗词礼品&nbsp; </a>│</li>
-                        <li class="float-left text-white"><a href="">&nbsp; &nbsp;摄影礼品 &nbsp;</a>│</li>
-                        <li class="float-left text-white"><a href="">&nbsp; &nbsp;朗诵礼品 &nbsp;</a>│</li>
-                    </ul>
-                </div>
-
-
-                {{-- 排序--}}
-                <div class="order container navbar navbar-expand-lg col-sm-11"
-                     style="background-image:url('/images/experience_rank_top.png')">
-                    <h5 class="mt-3 ml-3"><b>查看顺序 ➤➤</b></h5>
-                    <ul class="navbar navbar-expand-lg mt-4">
-                        <li>▆&nbsp;&nbsp;<a href=""> 最早&nbsp; &nbsp;</a>▆&nbsp;&nbsp;</li>
-                        <li><a href=""> &nbsp;最新&nbsp;&nbsp; </a>▆&nbsp;&nbsp;</li>
-                        <li><a href="">&nbsp; 购买量&nbsp;&nbsp; </a>▆&nbsp;&nbsp;</li>
-                        <li><a href=""> &nbsp;收藏量&nbsp; &nbsp;</a>▆&nbsp;&nbsp;</li>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@include('layouts._pen')
-                    </ul>
-                </div>
-
-                {{-- 商品区域 --}}
+            <section>
+                {{-- 搜索框 --}}
                 <div>
-                    {{-- 表头 --}}
-                    <div class="order-title container col-sm-11">
-                        <ul class="navbar navbar-expand-lg text-center">
-                            <li class="text-center pr-4" style="width: 100px"><p>头像</p></li>
-                            <li class="text-center pr-3" style="width: 100px"><p>礼品号</p></li>
-                            <li style="width: 350px"><p>标题</p></li>
-                            <li class="pl-3" style="width: 150px"><p>&nbsp;创建者</p></li>
-                            <li class="pl-2" style="width: 150px"><p>&nbsp;日期</p></li>
-                            <li class="pl-2" style="width: 120px"><p>&nbsp;&nbsp;&nbsp;&nbsp;浏览</p></li>
-                            <li class="pl-2" style="width: 120px"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购买</p></li>
+                    @include('layouts._lg_search')
+                </div>
+
+                {{-- 分类主体内容区域 --}}
+                <div>
+                    {{-- 分类标题 --}}
+                    <div class="experience-title container mt-4 col-sm-11">
+                        <h3 class="text-white text-center pt-2">灵 &nbsp;&nbsp;魂&nbsp;&nbsp; 礼&nbsp; &nbsp;赞</h3>
+                    </div>
+                    {{-- 分类二级类别 --}}
+                    <div class="subclass gift-subclass container col-sm-11">
+                        <div class="gift-subclass-title text-light float-left"><h4>云<br>礼 <br> 品</h4></div>
+                        <ul class="pt-5">
+                            <li class="float-left text-white">│ <a href=""> &nbsp;&nbsp;生活礼品 &nbsp; </a>│</li>
+                            <li class="float-left text-white"><a href="">&nbsp; &nbsp;书画礼品&nbsp; </a>│</li>
+                            <li class="float-left text-white"><a href="">&nbsp; &nbsp;诗词礼品&nbsp; </a>│</li>
+                            <li class="float-left text-white"><a href="">&nbsp; &nbsp;摄影礼品 &nbsp;</a>│</li>
+                            <li class="float-left text-white"><a href="">&nbsp; &nbsp;朗诵礼品 &nbsp;</a>│</li>
                         </ul>
                     </div>
-                    {{-- 表格 --}}
-                    <div class="order-table container col-sm-11">
-                        <table class="table ">
-                            <tbody>
-                            <tr class="text-center">
-                                <td style="width: 100px"><p><img src="/images/md/face.jpg" class="img-thumbnail "
-                                                                 alt="Cinque Terre"
-                                                                 style="height: 60px; width: 60px;"></p></td>
-                                <td class="pl-1" style="width: 100px"><p>9999999999</p></td>
-                                <td style="width: 350px"><p>了不起比尔盖茨了不起比尔盖茨了</p></td>
-                                <td style="width: 150px"><p>小鱼儿</p></td>
-                                <td style="width: 150px"><p>2019-10-24</p></td>
-                                <td style="width: 120px"><p>999999</p></td>
-                                <td class="pl-1" style="width: 120px"><p>1</p></td>
+
+                    {{-- 排序--}}
+                    <div class="order container navbar navbar-expand-lg col-sm-11"
+                         style="background-image:url('/images/background/order.png');">
+                        <table>
+                            <tr>
+                                <td class="pt-3"><h5><b>查看顺序 ➤➤</b></h5></td>
+                                <td class="pl-4" style="width: 100px;">▆<a href="">&nbsp; 最新</a> ▆</td>
+                                <td style="width: 60px;"><a href="">活跃</a> &nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">评论 </a>&nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">点赞</a> &nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">购买</a> &nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">浏览 </a>&nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">收藏</a> &nbsp;▆</td>
+
+                                <td style="width: 510px;" class="pt-2"><a href=""> @include('layouts._pen')</a>
+                                </td>
                             </tr>
-                            <tr class="text-center">
-                                <td style="width: 100px"><p><img src="/images/md/face.jpg" class="img-thumbnail "
-                                                                 alt="Cinque Terre"
-                                                                 style="height: 60px; width: 60px;"></p></td>
-                                <td class="pl-1" style="width: 100px"><p>9999999999</p></td>
-                                <td style="width: 350px"><p>了不起比尔盖茨了不起比尔盖茨了</p></td>
-                                <td style="width: 150px"><p>小鱼儿</p></td>
-                                <td style="width: 150px"><p>2019-10-24</p></td>
-                                <td style="width: 120px"><p>999999</p></td>
-                                <td class="pl-1" style="width: 120px"><p>999999</p></td>
-                            </tr>
-                            <tr class="text-center">
-                                <td style="width: 100px"><p><img src="/images/md/face.jpg" class="img-thumbnail "
-                                                                 alt="Cinque Terre"
-                                                                 style="height: 60px; width: 60px;"></p></td>
-                                <td class="pl-1" style="width: 100px"><p>9999999999</p></td>
-                                <td style="width: 350px"><p>了不起比尔盖茨了不起比尔盖茨了</p></td>
-                                <td style="width: 150px"><p>小鱼儿</p></td>
-                                <td style="width: 150px"><p>2019-10-24</p></td>
-                                <td style="width: 120px"><p>999999</p></td>
-                                <td class="pl-1" style="width: 120px"><p>999999</p></td>
-                            </tr>
-                            </tbody>
                         </table>
                     </div>
-                    <div class="order container navbar navbar-expand-lg col-sm-11"
-                         style="background-image:url('/images/experience_rank_top.png')">
+
+                    {{-- 清除浮动 --}}
+                    <div class="clear"></div>
+
+                    {{-- 内容区域-表格 --}}
+                    <div>
+                        <div class="order-title container col-sm-11" style="border-top: solid 5px black;">
+                            <table class="table category-table-center">
+                                <thead>
+                                <tr class="text-center">
+                                    <th scope="col">头像</th>
+                                    <th scope="col">礼品</th>
+                                    <th scope="col">发布者</th>
+                                    <th scope="col">日期</th>
+                                    <th scope="col">点赞</th>
+                                    <th scope="col">购买</th>
+                                    <th scope="col">浏览</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr class="text-center">
+                                    <td scope="row"><a href=""><img src="/images/avatar/face100px.jpg"
+                                                                    class="img-thumbnail "
+                                                                    alt="Cinque Terre"
+                                                                    style="width: 60px;"></a></td>
+                                    <td style="width: 360px;"><a href="">了不起的比尔盖茨了不起的比尔盖茨了不起的比尔盖茨</a></td>
+                                    <td style="width: 150px">Bing</td>
+                                    <td style="width: 150px">2019-11-12</td>
+                                    <td style="width: 130px">333</td>
+                                    <td style="width: 130px">222222</td>
+                                    <td style="width: 120px">333333</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="order container navbar navbar-expand-lg col-sm-11"
+                             style="background-image:url('/images/background/order.png');">
+                        </div>
                     </div>
+
+                    {{-- 清除浮动 --}}
+                    <div class="clear"></div>
                 </div>
-            </div>
+                <br><br>
+            </section>
 
-            <br><br>
-
-            {{-- 电脑底部总导航 --}}
-            <div class="root-footer-nav">
-                <ul>
-                    <li><a href="{{ route('root') }}">首页</a></li>
-                    <li><a href="{{ route('experience') }}">人物经历</a></li>
-                    <li><a href="{{ route('myself') }}">个人宣传</a></li>
-                    <li><a href="{{ route('art') }}">灵魂艺术</a></li>
-                    <li><a href="{{ route('college') }}">灵魂学院</a></li>
-                    <li><a href="{{ route('share') }}">灵魂共享</a></li>
-                    <li>
-                        <div class="dot-gift"></div>
-                        <a href="{{ route('gift') }}">灵魂礼赞</a></li>
-                    <li><a href="{{ route('show') }}">灵魂展览馆</a></li>
-                    <li><a href="{{ route('heaven') }}">灵魂极乐</a></li>
-                    <li><a href="{{ route('serve') }}">灵魂服务</a></li>
-                </ul>
-            </div>
+            <footer>
+                {{-- 电脑底部总导航 --}}
+                <div class="root-footer-nav">
+                    <ul>
+                        <li><a href="{{ route('root') }}">首页</a></li>
+                        <li><a href="{{ route('experience') }}">人物经历</a></li>
+                        <li><a href="{{ route('myself') }}">个人宣传</a></li>
+                        <li><a href="{{ route('art') }}">灵魂艺术</a></li>
+                        <li><a href="{{ route('college') }}">灵魂学院</a></li>
+                        <li><a href="{{ route('share') }}">灵魂共享</a></li>
+                        <li>
+                            <div class="dot-gift"></div>
+                            <a href="{{ route('gift') }}">灵魂礼赞</a></li>
+                        <li><a href="{{ route('show') }}">灵魂展览馆</a></li>
+                        <li><a href="{{ route('heaven') }}">灵魂极乐</a></li>
+                        <li><a href="{{ route('serve') }}">灵魂服务</a></li>
+                    </ul>
+                </div>
+            </footer>
 
         </div>
+
+        @include('layouts._lg_footer')
+
     </div>
 
-    @include('layouts._lg_footer')
+
+    {{-- ================= 灵魂礼赞-手机版 ====================== --}}
+    <div class="d-block d-sm-none">
+
+        <header>
+            {{-- 手机顶部导航 --}}
+            <div class="xs-root">
+                @include('layouts._xs_header')
+            </div>
+
+            <br><br><br><br>
+            {{-- 分类名称 --}}
+            <div>
+                <h3 class="text-center text-white">〖 灵魂礼赞 〗</h3>
+                <br>
+                <p class=" mx-auto text-center text-white" style="width: 90%;">艺术给我们插上翅膀，把我们带到很远很远的地方。——契诃夫</p>
+            </div>
+
+            {{-- 轮播图片 --}}
+            <div>
+                @include('layouts._xs_carousel')
+            </div>
+
+
+            {{-- 搜索框 --}}
+            @include('layouts._xs_search')
+
+            <br><br>
+        </header>
+
+        <section>
+            {{-- 帖子 --}}
+            <div class="xs-category" style="background:#000;">
+                {{-- 排序--}}
+                <div class="category-content-xs mb-1">
+                    <a type="button" class="btn btn-light" href="#" style="width: 19%;">最新</a>
+                    <a type="button" class="btn btn-light" href="#" style="width: 19%;">活跃</a>
+                    <a type="button" class="btn btn-light" href="#" style="width: 19%;">购买</a>
+                    <a type="button" class="btn btn-light" href="#" style="width: 19%;">留言</a>
+                    <a type="button" class="btn btn-light" href="#" style="width: 19%;">浏览</a>
+                </div>
+
+                {{-- 帖子内容 --}}
+                <div>
+                    <div class="category-background mx-auto p-3 mb-1 rounded">
+                        <div class="float-left mt-0" style="width: 20%;">
+                            <a href="#"><img class="float-left"
+                                             src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1507100205,3674590583&fm=26&gp=0.jpg"
+                                             style="width: 92%;border-radius: 50%;border: solid 3px whitesmoke;"></a>
+                        </div>
+                        <div class="float-right mt-0" style="width: 80%;">
+                            <h5 style="white-space: pre-wrap">我的心灵和我的一切</h5>
+                            <small>作者：卡蒙斯【葡萄牙】888888888888 / &nbsp;回复：8 / 浏览：9999999999999999</small><br>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="category-background mx-auto p-3 mb-1 rounded">
+                        <div class=" float-left mt-0" style="width: 20%;">
+                            <a href="#"><img
+                                    src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1507100205,3674590583&fm=26&gp=0.jpg"
+                                    style="width: 90%;border-radius: 50%;border: solid 3px whitesmoke;"></a>
+                        </div>
+                        <div class="float-right mt-0" style="width: 80%;">
+                            <h5 style="white-space: pre-wrap">我的心灵和我的一切我都愿你拿去</h5>
+                            <small>作者：卡蒙斯【葡萄牙】 / &nbsp;回复：8 / 浏览：99999</small><br>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="category-background mx-auto p-3 mb-1 rounded">
+                        <div class=" float-left mt-0" style="width: 20%;">
+                            <a href="#"><img
+                                    src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572807338374&di=579295e5bc688b64c5aada32c693b072&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F78f62b856593947731c7216b75c94484eca4ef5131d75-PmkTi3_fw658"
+                                    style="width: 90%;border-radius: 50%;border: solid 3px whitesmoke;"></a>
+                        </div>
+                        <div class="float-right mt-0" style="width: 80%;">
+                            <h5 style="white-space: pre-wrap">我的心灵和我的一切我都愿你拿去只求你给我留一双眼睛</h5>
+                            <small>作者：卡蒙斯【葡萄牙】 / &nbsp;回复：8 / 浏览：99999</small><br>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="category-background mx-auto p-3 mb-1 rounded">
+                        <div class=" float-left mt-0" style="width: 20%;">
+                            <a href="#"><img
+                                    src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=146502947,4265986118&fm=26&gp=0.jpg"
+                                    style="width: 90%;border-radius: 50%;border: solid 3px whitesmoke;"></a>
+                        </div>
+                        <div class="float-right mt-0" style="width: 80%;">
+                            <h5 style="white-space: pre-wrap">
+                                我的心灵和我的一切我都愿你拿去只求你给我留一双眼睛让我的心灵和我的一切我都愿你拿去只求你给我留一双眼睛让</h5>
+                            <small>作者：卡蒙斯【葡萄牙】 / &nbsp;回复：8 / 浏览：99999</small><br>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="category-background mx-auto p-3 mb-1 rounded">
+                        <div class=" float-left mt-0" style="width: 20%;">
+                            <a href="#"><img
+                                    src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573402131&di=6284e8725b9850302af78cbdffa3a945&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F25%2F20180525175518_dbyte.jpg"
+                                    style="width: 90%;border-radius: 50%;border: solid 3px whitesmoke;"></a>
+                        </div>
+                        <div class="float-right mt-0" style="width: 80%;">
+                            <h5 style="white-space: pre-wrap">
+                                我的心灵和我的一切我都愿你拿去只求你给我留一双眼睛让我的心灵和我的一切我都愿你拿去只求你给我留一双眼睛让</h5>
+                            <small>作者：卡蒙斯【葡萄牙】 / &nbsp;回复：8 / 浏览：99999</small><br>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="category-background mx-auto p-3 mb-1 rounded">
+                        <div class=" float-left mt-0" style="width: 20%;">
+                            <a href="#"><img
+                                    src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573402131&di=6284e8725b9850302af78cbdffa3a945&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F25%2F20180525175518_dbyte.jpg"
+                                    style="width: 90%;border-radius: 50%;border: solid 3px whitesmoke;"></a>
+                        </div>
+                        <div class="float-right mt-0" style="width: 80%;">
+                            <h5 style="white-space: pre-wrap">
+                                我的心灵和我的一切我都愿你拿去只求你给我留一双眼睛让我的心灵和我的一切我都愿你拿去只求你给我留一双眼睛让</h5>
+                            <small>作者：卡蒙斯【葡萄牙】 / &nbsp;回复：8 / 浏览：99999</small><br>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <br><br>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="clear"></div>
+            {{-- 手机底部内容 --}}
+            <div>
+                @include('layouts._xs_footer')
+            </div>
+        </footer>
+
+    </div>
+
+
 
 @stop

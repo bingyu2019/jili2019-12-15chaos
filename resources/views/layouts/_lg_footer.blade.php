@@ -1,23 +1,23 @@
 <div class="d-none d-sm-block">
-    <div class="mx-auto" style="height: 100%; width: 1263px;">
+    <div class="mx-auto" style="height: 100%; width: 1263px;background: black;">
         {{-- 清除浮动 --}}
         <div class="clear"></div>
 
         {{-- 主页底部【灵魂服务】 --}}
         <div class="serve col-md-12">
-            <div class="serve_in col-md-11 ml-5" style="background: url(/images/md/serve_in.png);">
+            <div class="serve_in col-md-11 ml-5" style="background: url(/images/background/md-footer-sever.png);background-attachment: fixed;background-repeat: no-repeat;background-size: cover;">
                 <div class="serve_in_l"><a href=""><br>灵<br>魂<br>服<br>务</a></div>
                 <div class="serve_in_m">
                     <ul>
                         <li>
-                            <img src="/images/md/Founder.png">
+                            <img src="/images/avatar/Founder.png">
                             <span>
                         <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>王 汝 冰</b><br> &nbsp;灵魂深触【经历网】创办人
                         </a>
                     </span>
                         </li>
                         <li>
-                            <img src="/images/md/Founder2.png">
+                            <img src="/images/root/Founder2.png">
                             <span>
                         <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b><br> &nbsp;【经历网】后台技术总监
                         </a>
@@ -40,15 +40,12 @@
             </div>
         </div>
 
+
+        {{-- 【底部备案号区域】 --}}
+        <div class="mx-auto" style="height: 200px;border: solid 2px white;width: 1260px;"></div>
+        <hr class="mx-auto" style="border: solid 1px white;width: 1263px;">
+        <hr class="mx-auto" style="border: solid 1px white;width: 1263px;">
+        <hr class="mx-auto" style="border: solid 1px white;width: 1263px;">
+        <hr class="mx-auto" style="border: solid 1px white;width: 1263px;">
     </div>
-
-
-    {{-- 【底部备案号区域】 --}}
-    <div class="mx-auto" style="height: 200px;border: solid 2px white;width: 1260px;"></div>
-    <hr class="mx-auto" style="border: solid 1px white;width: 1263px;">
-    <hr class="mx-auto" style="border: solid 1px white;width: 1263px;">
-    <hr class="mx-auto" style="border: solid 1px white;width: 1263px;">
-    <hr class="mx-auto" style="border: solid 1px white;width: 1263px;">
-    <hr class="mx-auto" style="border: solid 1px white;width: 1263px;">
-
 </div>

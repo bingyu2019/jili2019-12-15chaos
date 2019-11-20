@@ -1,6 +1,5 @@
 {{-- 电脑轮播图--}}
-<div class="root-carousel d-none d-sm-block"
-     style="background-image:url('/images/root-carousel.jpg')">
+<div class="root-carousel" style="background: url(/images/background/md-carousel.jpg);">
     <div id="demo2" class="carousel slide p-4" data-ride="carousel">
         {{--指示符--}}
         <ul class="carousel-indicators">
@@ -10,10 +9,10 @@
         {{--轮播图片--}}
         <div class="carousel-inner mb-3">
             <div class="carousel-item active">
-                <a href=""><img src="/images/md/carousel-1.jpg" alt=" " class="mx-auto d-block"></a>
+                <a href=""><img src="/images/carousel/md2.jpg" alt=" " class="mx-auto d-block"></a>
             </div>
             <div class="carousel-item">
-                <a href=""><img src="/images/md/carousel-2.jpg" alt=" " class="mx-auto d-block"></a>
+                <a href=""><img src="/images/carousel/md1.jpg" alt=" " class="mx-auto d-block"></a>
             </div>
 
         </div>

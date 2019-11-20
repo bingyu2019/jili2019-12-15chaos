@@ -3,212 +3,343 @@
 
 @section('content')
 
-    {{-- 在手机上隐藏 --}}
-    <div class="mx-auto d-none d-sm-block">
+    {{--===========================  电脑版 ==================================--}}
+    {{-- 电脑-顶部总导航 --}}
+    @include('layouts._other_header')
 
-        <div class="mx-auto" style="height: 100%; width: 1263px;">
+    {{-- 电脑-左则-内容区域 --}}
+    <div class="col-md-3 col-xs-12 float-left d-none d-sm-block">
+        {{-- 左则：头像-简介-社交信息 --}}
+        <div class="user-info text-center"
+             style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
 
-            {{-- 顶部导航 --}}
-            <div class="d-none d-sm-block">
-                @include('layouts._other_header')
-            </div>
-
+            <a href="{{ route('users.show') }}"><h5 class="pt-3 pb-2">作者：Bing </h5></a>
 
             <div>
-                {{-- 左则头像区域 --}}
-                <div class=" float-left" style="width:350px;">
-
-                    <div class="mx-auto text-light"
-                         style="width: 250px;border-radius:5px;border: solid 2px #6A4D2E;background: linear-gradient(to right, #000, #E5A55D);">
-                        <br>
-                        <h5 class="ml-3 text-center">作者: Bingsdfasdfasd</h5>
-                        <hr style="border: solid 1px #0C0C0C;">
-                        <hr style="border: solid 1px #0C0C0C;">
-
-                        <div class="mx-auto">
-                            <a href=""><img class="img-thumbnail" src="/images/md/face.jpg"
-                                            style="border-radius:5px;width: 250px;height: 250px;"></a>
-                        </div>
-                        <hr style="border: solid 1px #0C0C0C;">
-                        <hr style="border: solid 1px #0C0C0C;">
-                        <br>
-                        <h5 class="ml-3">推荐区域</h5>
-                        <p class="ml-3"></p>
-                        <hr style="border: solid 1px #0C0C0C;">
-                        <hr style="border: solid 1px #0C0C0C;">
-                        <h5 class="ml-3 text-white">帖子推荐</h5>
-                        <div class="topic-show-left"><a href="">◉ 我对马化腾不记仇；5G套餐出炉，月租最低128元</a></div>
-                        <div class="topic-show-left"><a href="">◉ 功夫不负有心人！英国下议院批准约翰逊提出12月12日提前大选</a></div>
-                        <div class="topic-show-left"><a href="">◉ 功夫不负有心人！英国下议院批准约翰逊提出12月12日提前大选</a></div>
-                        <div class="topic-show-left"><a href="">◉ 功夫不负有心人！英国下议院批准约翰逊提出12月12日提前大选</a></div>
-                        <div class="topic-show-left"><a href="">◉ 功夫不负有心人！英国下议院批准约翰逊提出12月12日提前大选</a></div>
-                        <div class="topic-show-left"><a href="">◉ 功夫不负有心人！英国下议院批准约翰逊提出12月12日提前大选</a></div>
-                        <div class="topic-show-left"><a href="">◉ 功夫不负有心人！英国下议院批准约翰逊提出12月12日提前大选</a></div>
-                        <div class="topic-show-left"><a href="">◉ 功夫不负有心人！英国下议院批准约翰逊提出12月12日提前大选</a></div>
-                        <div class="topic-show-left"><a href="">◉ 功夫不负有心人！英国下议院批准约翰逊提出12月12日提前大选</a></div>
-                        <hr style="border: solid 1px #0C0C0C;">
-                        <hr style="border: solid 1px #0C0C0C;">
-                        <hr style="border: solid 1px #0C0C0C;">
-                        <br>
-
-
-                    </div>
-                </div>
-
-                {{-- 右则内容切换区域 --}}
-                <div class="float-left" style="width:913px;">
-                    <div
-                        style="width: 860px;height: 80px;border-radius:5px;background: linear-gradient(to top, #000, #E5A55D); ">
-                        {{-- 帖子标题 --}}
-                        <h4 class="text-center text-white pt-2 mt-3 float-left" style="width: 700px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;功夫不负有心人！英国下议院批准约翰逊提出12月12
-                        </h4>
-                        {{-- 头像 --}}
-                        <div class="dropdown float-right pr-5 pt-3" style="width: 100px;">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                               data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">
-                                <img src="/images/md/face.jpg"
-                                     class="float-right register-avatar img-responsive img-circle"
-                                     width="30px" height="30px "
-                                     style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc; "
-                                     ;></a>
-                            <div class="dropdown-menu register-dropdown-menu float-right"
-                                 aria-labelledby="navbarDropdown"
-                                 style=" background: linear-gradient(red, blue);">
-                                <a href="{{ route('topics.show') }}" class="dropdown-item">
-                                    <i class="fas fa-tachometer-alt mr-2"></i>
-                                    管理后台帖子入口
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{ route('users.show') }}">
-                                    <i class="far fa-user mr-2"></i>
-                                    个人中心
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item btn-favor" href="">
-                                    <i class="far fa-user mr-2"></i>
-                                    我的收益
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="">
-                                    <i class="far fa-edit mr-2"></i>
-                                    编辑资料
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" id="logout" href="#">
-                                    <form action="" method="POST" onsubmit="return confirm('您确定要退出吗？');">
-                                        <button class="btn btn-block btn-danger" type="submit" name="button">退出</button>
-                                    </form>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <br>
-
-                    {{-- 帖子内容区域 --}}
-                    <div class="float-left"
-                         style="width:860px;background:linear-gradient(to bottom, #BC8348, #E5A55D);border-radius: 5px;">
-
-                        <br><br>
-
-
-                        {{-- 量统计：发表时间-回复-浏览-点赞-礼赞-收藏量 --}}
-                        <div class="container text-cente float-left">
-                            <div class="float-left" style="width: 25%;height: 25px;"></div>
-                            {{-- 发表时间 --}}
-                            <div class="float-left" style="width:10%;"><a href=""><img
-                                        src="/images/md/icon-clo.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="发布于：2019-10-30 14:24:20">一年前</a>
-                            </div>
-                            {{-- 浏览次数 --}}
-                            <div class="float-left" style="width:8%;"><a href=""><img
-                                        src="/images/md/icon-eye.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="浏览次数">222 </a>
-                            </div>
-                            {{-- 回复次数 --}}
-                            <div class="float-left" style="width:8%;"><a href=""><img
-                                        src="/images/md/icon-rp.png" alt="" style="width: 28px;" data-toggle="tooltip"
-                                        data-placement="top" title="回复次数">222 </a>
-                            </div>
-                            {{-- 收藏量 --}}
-                            <div class="float-left" style="width:8%;"><a href=""><img
-                                        src="/images/md/icon-like.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="收藏量">222 </a>
-                            </div>
-                            <div class="float-left" style="width:8%;"><a href=""><img
-                                        src="/images/md/icon-up.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="一毛赞">222 </a>
-                            </div>
-                            <div class="float-left" style="width:8%;"><a href=""><img
-                                        src="/images/md/icon-gift.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="礼赞量">222 </a>
-                            </div>
-
-                        </div>
-                        <br>
-
-                        {{-- 清除浮动 --}}
-                        <div class="clear"></div>
-
-
-                        <div class="container p-5">
-                            <h4>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容外汇天眼APP讯 :
-                                今日10月30日（周三），欧元微震于1.1110，英镑回落整理于1.2860，澳大利亚第三季度CPI年率符合预期，澳元走高至0.6860，美元/日元整理于108.85，。亚盘金价微震于1490附近，国际原油走软至55.30。市场等待美联储利率决议
-
-                                【股市收报】
-
-                                台股：中国台湾加权指数10月30日（周三）收盘上涨46.41点，涨幅0.41%，报11380.28点。
-
-                                澳股：澳大利亚ASX200指数10月30日（周三）收盘下跌55.90点，跌幅0.83%，报6689.50点。
-
-                                港股：中国香港恒生指数10月30日（周三）发文前下跌108.840点，跌幅0.40%，报26782.420点。
-
-                                【财经要闻】
-
-                                澳大利亚第三季度CPI年率符合预期 澳元小幅走高
-
-                                澳大利亚统计局(ABS)周三(10月30日)公布数据显示，澳大利亚2019年第三个季度CPI年率为1.7%，高于今年二季度的1.6%，符合市场预期的1.7%。
-
-                                约翰逊赢得关键投票英国议会批准12月12日提前大选
-
-                                英国将迎来近一个世纪以来的首次12月大选。首相约翰逊周二赢得了议会的批准，将举行提前大选以打破英退僵局。约翰逊此前在议会屡败屡战，但本周终于有所斩获，他提出的12月12日举行大选的简短议案在下议院以438票对20票获得通过。该法案现在已提交上议院。
-
-                                美联储10月利率决议前瞻：委员偏向结束QE 市场预期基本一致
-
-                                北京时间周四（10月30日）02:00，美联储（FED）就将在为期两天的议息会议结束后公布利率决议。北京时间周四02:30，美联储主席鲍威尔（Jerome
-                                Powell）还将召开新闻发布会。
-
-                                【外汇市场】
-
-                                美元方面，今日亚盘美元指数微震于97.70水平。今日美国将公布10月ADP就业人数、第三季度实际GDP年化季率初值以及第三季度核心PCE物价指数等重磅美国经济数据，重点关注凌晨2:00美联储将公布利率决议及政策声明，随后2:30美联储主席鲍威尔召开新闻发布会。市场预期美联储几乎确定将在周四凌晨降息25个基点。
-
-
-                                【大宗商品市场】
-
-                                黄金方面，今日亚盘时段国际现货黄金承压1490下方微幅震荡，尽管美联储今晚降息似乎已板上钉钉，但一些业内人士仍担心，美联储今晚的降息可能是最后一降，而这可能令黄金承压。此前，英国议会通过了约翰逊有关提前大选的动议，令有序脱欧的乐观情绪进一步升温，黄金失守1490美元关口。同时还需关注美国GDP和ADP数据。
-
-
-                                原油方面，今日亚盘国际原油小幅走软，因行业报告显示上周该指标原油在库欣的库存增加，投资者无视整体库存呈现下降，对于供应更加充足之际需求却迟滞的担忧又迅速升温。此外俄罗斯方面称，现在谈论OPEC及其他产油国加大减产力度为时太早，加剧市场承受的压力。</h4>
-                        </div>
-
-                        <br><br><br>
-                        <div class=" container text-dark mx-auto
-                    " style="border-radius: 5px;">
-                        </div>
-                        <br>
-
-                    </div>
-
-                </div>
-
+                <a href="{{ route('users.show') }}"><img class="img-fluid" src="/images/avatar/face250px.jpg"
+                                                         style="border-radius:5px;"></a>
             </div>
+
+            <div class="mt-3">
+                <h5>❂ 个人简介</h5>
+                <p>思想有多远，我就走多远！</p>
+            </div>
+            {{--关注按钮--}}
+            @include('users._follow_form')
+
+            {{-- 私信 --}}
+            @include('users._private_letter')
+
+            <br><br>
+            {{-- 帖子推荐 --}}
+            @include('topics._lg_topics_recommendation')
 
         </div>
     </div>
 
+    {{-- 电脑-右则-内容区域 --}}
+    <div class="col-md-9 col-xs-12 float-left d-none d-sm-block">
+        {{-- 右则-用户名-头像-通知 --}}
+        <div class="container">
+            <div class=" text-white text-center">
+
+                <div style="height: 90px;border-radius:5px;background: linear-gradient(to top, #000, #7C3A08,#EB9A02);">
+                    {{-- 帖子标题--}}
+                    <div class="float-left" style="width: 80%;">
+                        <h3 class="text-center pt-4 offset-2">印巴关系突破，2500万印度锡克教徒完成朝圣心愿</h3>
+                    </div>
+                    {{-- 消息通知--}}
+                    <div class="float-right pr-3 pt-0 d-none d-sm-block">
+                        <h1>✉</h1><h5>1</h5>
+                    </div>
+                    {{-- 头像--}}
+                    <div class="float-right">
+                        @include('layouts._lg_avatar')
+                    </div>
+                </div>
+                {{-- 帖子内容区域--}}
+                <div class="text-dark" style="width:100%;background: #E5A55D;">
+                    <br>
+                    <div class=" container text-dark mx-auto
+                " style="border-radius: 5px;">
+                        <br>
+                        {{-- 量统计：发表时间-回复-浏览-点赞-礼赞-收藏量 --}}
+                        <div class="topic-show-total container text-cente float-left">
+                            <div class="float-left" style="width: 22%;height: 25px;"></div>
+                            {{-- 发表时间 --}}
+                            <div class="float-left" style="width:10%;"><a href=""><img
+                                        src="/images/icon/md-clo.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                        data-placement="top" title="发布于：2019-10-30 14:24:20">一年前</a>
+                            </div>
+                            {{-- 浏览次数 --}}
+                            <div class="float-left" style="width:8%;"><a href=""><img
+                                        src="/images/icon/md-eye.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                        data-placement="top" title="阅读">222 </a>
+                            </div>
+                            {{-- 回复次数 --}}
+                            <div class="float-left" style="width:8%;"><a href=""><img
+                                        src="/images/icon/md-rp.png" alt="" style="width: 28px;" data-toggle="tooltip"
+                                        data-placement="top" title="回复">222 </a>
+                            </div>
+                            {{-- 收藏量 --}}
+                            <div class="float-left" style="width:8%;"><a href=""><img
+                                        src="/images/icon/md-like.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                        data-placement="top" title="收藏">222 </a>
+                            </div>
+                            <div class="float-left" style="width:8%;"><a href=""><img
+                                        src="/images/icon/md-up.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                        data-placement="top" title="赞一毛">222 </a>
+                            </div>
+                            {{-- 打赏 --}}
+                            <div class="float-left" style="width:8%;"><a href=""><img
+                                        src="/images/icon/md-reward.png" alt="" style="width: 28px;"
+                                        data-toggle="tooltip"
+                                        data-placement="top" title="打赏">222 </a>
+                            </div>
+                            <div class="float-left" style="width:8%;"><a href=""><img
+                                        src="/images/icon/md-gift.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                        data-placement="top" title="礼赞">222 </a>
+                            </div>
+
+                        </div>
+
+                        <br><br><br>
+                        {{-- 帖子正文 --}}
+                        <div>
+                            <h5>
+                                央视新闻客户端11月10日消息，当地时间9日，印度与巴基斯坦首次开通边境免签通道，来自印度一侧的锡克教徒可以很方便地来到位于巴基斯坦一侧的“格尔达布尔”锡克教神庙，进行朝圣活动。
+
+
+                                “格尔达布尔”锡克教神庙是为了纪念锡克教创始人古鲁·那纳克而建，那里也是全世界3000万锡克教徒心中的圣地。1947年印巴分治后，这座锡克教神庙被划在了巴基斯坦境内，距离印巴边境只有4公里。目前，印度境内有近2500万锡克教徒，其中大约80%都生活在与巴基斯坦接壤的旁遮普邦。对于印度锡克教徒们来说，前往“格尔达布尔”锡克教神庙朝圣一直是他们的心愿，但由于印巴历史上的三次战争和无数小规模冲突，要实现这样的心愿却非常困难。
+
+
+                                经过多年的协商之后，印巴两国终于达成协议，决定开通一条免签通道，以方便印度锡克教徒前来巴基斯坦一侧朝圣。免签通道开通后，每天可以允许5000人通行。
+
+
+                                9日当天，印度总理莫迪前往印巴边界的边防站参加免签通道开通仪式，他在讲话中感谢巴基斯坦总理伊姆兰·汗尊重印度锡克教徒的宗教情感，以及为通道开通所做的努力。
+
+                                仪式之后，印度前总理辛格率领由数百人组成的朝圣队伍，进入巴基斯坦一侧。
+
+                                巴基斯坦总理伊姆兰·汗在巴基斯坦边境一侧参加了开通仪式，并欢迎印度朝圣者的到来。
+
+                                最近一段时间来，印巴两国再次因克什米尔问题而关系紧绷，在这种情况下，免签通道依然得以开通，堪称印巴关系的一次突破。
+
+
+                                印度锡克教徒 辛格：巴方把一切安排得都很好。在这条免签走廊开通之前，我们来这里一趟不知有多麻烦，现在好太多了，我们确实感到很方便。
+
+
+                                本月12日正逢那纳克诞辰550周年，预计将有大约8000~10000名朝圣者从全球各地抵达“格尔达布尔”神庙，参加盛大的纪念活动。
+
+                                央视新闻客户端11月10日消息，当地时间9日，印度与巴基斯坦首次开通边境免签通道，来自印度一侧的锡克教徒可以很方便地来到位于巴基斯坦一侧的“格尔达布尔”锡克教神庙，进行朝圣活动。
+
+
+                                “格尔达布尔”锡克教神庙是为了纪念锡克教创始人古鲁·那纳克而建，那里也是全世界3000万锡克教徒心中的圣地。1947年印巴分治后，这座锡克教神庙被划在了巴基斯坦境内，距离印巴边境只有4公里。目前，印度境内有近2500万锡克教徒，其中大约80%都生活在与巴基斯坦接壤的旁遮普邦。对于印度锡克教徒们来说，前往“格尔达布尔”锡克教神庙朝圣一直是他们的心愿，但由于印巴历史上的三次战争和无数小规模冲突，要实现这样的心愿却非常困难。
+
+
+                                经过多年的协商之后，印巴两国终于达成协议，决定开通一条免签通道，以方便印度锡克教徒前来巴基斯坦一侧朝圣。免签通道开通后，每天可以允许5000人通行。
+
+
+                                9日当天，印度总理莫迪前往印巴边界的边防站参加免签通道开通仪式，他在讲话中感谢巴基斯坦总理伊姆兰·汗尊重印度锡克教徒的宗教情感，以及为通道开通所做的努力。
+
+                                仪式之后，印度前总理辛格率领由数百人组成的朝圣队伍，进入巴基斯坦一侧。
+
+                                巴基斯坦总理伊姆兰·汗在巴基斯坦边境一侧参加了开通仪式，并欢迎印度朝圣者的到来。
+
+                                最近一段时间来，印巴两国再次因克什米尔问题而关系紧绷，在这种情况下，免签通道依然得以开通，堪称印巴关系的一次突破。
+
+
+                                印度锡克教徒 辛格：巴方把一切安排得都很好。在这条免签走廊开通之前，我们来这里一趟不知有多麻烦，现在好太多了，我们确实感到很方便。
+
+
+                                本月12日正逢那纳克诞辰550周年，预计将有大约8000~10000名朝圣者从全球各地抵达“格尔达布尔”神庙，参加盛大的纪念活动。
+                            </h5>
+                        </div>
+
+                        <br>
+                        <br>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    {{--===========================  手机版 ==================================--}}
+    {{-- 手机顶部总导航 --}}
+    <div class="d-block d-sm-none">
+        <br><br><br><br>
+        @include('layouts._xs_header')
+    </div>
+
+    {{-- 手机-头像-简单-社交统计 --}}
+    <div class="col-xs-12 float-left d-block d-sm-none user-info text-center"
+         style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
+        {{-- 作者 --}}
+        <a href="{{ route('users.show') }}"><h3 class="pt-3 pb-2 text-light">作者：Bing </h3></a>
+
+        {{-- 左则：头像-简介-社交信息 --}}
+        <div>
+            <a href="{{ route('users.show') }}"><img class="img-fluid" src="/images/avatar/face250px.jpg"
+                                                     style="border-radius:5px;"></a>
+        </div>
+
+        <div class="mt-3">
+            <h5>❂ 个人简介</h5>
+            <p>思想有多远，我就走多远！</p>
+        </div>
+
+        {{--关注按钮--}}
+        @include('users._follow_form')
+
+        {{-- 私信 --}}
+        @include('users._private_letter')
+        <br><br>
+    </div>
+
+    <div class="clear"></div>
+
+    {{-- 帖子推荐 --}}
+    @include('topics._xs_topics_recommendation')
+
+    {{-- 帖子 --}}
+    <div class="col-xs-12 float-left d-block d-sm-none text-white text-center">
+        <div class="text-dark" style="width:100%;background: #E5A55D;">
+
+            {{-- 帖子标题 --}}
+            <div style="background: linear-gradient(to bottom, #AA6A21,#E5A55D);">
+                <h4 class="text-center text-dark pt-5 pb-3" style="width: 98%;"><b>印巴关系突破，2500万印度锡克教徒完成朝圣心愿</b></h4>
+            </div>
+
+            {{-- 统计区域--}}
+            <div class="text-dark" style="width:100%;background: #E5A55D;">
+                <div class=" container text-dark
+                " style="border-radius: 5px;">
+                    {{-- 量统计：发表时间-回复-浏览-点赞-礼赞-收藏量 --}}
+                    <div class="topic-show-total container">
+                        <div class="" style="width: 22%;height: 25px;"></div>
+                        {{-- 发表时间 --}}
+                        <div class="float-left" style="width:30%;"><a href=""><img
+                                    src="/images/icon/md-clo.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                    data-placement="top" title="发布于：2019-10-30 14:24:20">一年前</a>
+                        </div>
+                        {{-- 浏览次数 --}}
+                        <div class="float-left" style="width:20%;"><a href=""><img
+                                    src="/images/icon/md-eye.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                    data-placement="top" title="阅读">222 </a>
+                        </div>
+                        {{-- 回复次数 --}}
+                        <div class="float-left" style="width:20%;"><a href=""><img
+                                    src="/images/icon/md-rp.png" alt="" style="width: 28px;" data-toggle="tooltip"
+                                    data-placement="top" title="回复">222 </a>
+                        </div>
+                        {{-- 收藏量 --}}
+                        <div class="float-left" style="width:20%;"><a href=""><img
+                                    src="/images/icon/md-like.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                    data-placement="top" title="收藏">222 </a>
+                        </div>
+
+                        <br>
+
+                        <div class="mx-auto">
+                            <div class="float-left" style="width:30%;"><a href=""><img
+                                        src="/images/icon/md-up.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                        data-placement="top" title="赞一毛">222 </a>
+                            </div>
+                            {{-- 打赏 --}}
+                            <div class="float-left" style="width:30%;"><a href=""><img
+                                        src="/images/icon/md-reward.png" alt="" style="width: 28px;"
+                                        data-toggle="tooltip"
+                                        data-placement="top" title="打赏">222 </a>
+                            </div>
+                            <div class="float-left" style="width:30%;"><a href=""><img
+                                        src="/images/icon/md-gift.png" alt="" style="width: 25px;" data-toggle="tooltip"
+                                        data-placement="top" title="礼赞">222 </a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <br><br><br><br>
+                    {{-- 帖子正文 --}}
+                    <div>
+                        <h5>
+                            央视新闻客户端11月10日消息，当地时间9日，印度与巴基斯坦首次开通边境免签通道，来自印度一侧的锡克教徒可以很方便地来到位于巴基斯坦一侧的“格尔达布尔”锡克教神庙，进行朝圣活动。
+
+
+                            “格尔达布尔”锡克教神庙是为了纪念锡克教创始人古鲁·那纳克而建，那里也是全世界3000万锡克教徒心中的圣地。1947年印巴分治后，这座锡克教神庙被划在了巴基斯坦境内，距离印巴边境只有4公里。目前，印度境内有近2500万锡克教徒，其中大约80%都生活在与巴基斯坦接壤的旁遮普邦。对于印度锡克教徒们来说，前往“格尔达布尔”锡克教神庙朝圣一直是他们的心愿，但由于印巴历史上的三次战争和无数小规模冲突，要实现这样的心愿却非常困难。
+
+
+                            经过多年的协商之后，印巴两国终于达成协议，决定开通一条免签通道，以方便印度锡克教徒前来巴基斯坦一侧朝圣。免签通道开通后，每天可以允许5000人通行。
+
+
+                            9日当天，印度总理莫迪前往印巴边界的边防站参加免签通道开通仪式，他在讲话中感谢巴基斯坦总理伊姆兰·汗尊重印度锡克教徒的宗教情感，以及为通道开通所做的努力。
+
+                            仪式之后，印度前总理辛格率领由数百人组成的朝圣队伍，进入巴基斯坦一侧。
+
+                            巴基斯坦总理伊姆兰·汗在巴基斯坦边境一侧参加了开通仪式，并欢迎印度朝圣者的到来。
+
+                            最近一段时间来，印巴两国再次因克什米尔问题而关系紧绷，在这种情况下，免签通道依然得以开通，堪称印巴关系的一次突破。
+
+
+                            印度锡克教徒 辛格：巴方把一切安排得都很好。在这条免签走廊开通之前，我们来这里一趟不知有多麻烦，现在好太多了，我们确实感到很方便。
+
+
+                            本月12日正逢那纳克诞辰550周年，预计将有大约8000~10000名朝圣者从全球各地抵达“格尔达布尔”神庙，参加盛大的纪念活动。
+
+                            央视新闻客户端11月10日消息，当地时间9日，印度与巴基斯坦首次开通边境免签通道，来自印度一侧的锡克教徒可以很方便地来到位于巴基斯坦一侧的“格尔达布尔”锡克教神庙，进行朝圣活动。
+
+
+                            “格尔达布尔”锡克教神庙是为了纪念锡克教创始人古鲁·那纳克而建，那里也是全世界3000万锡克教徒心中的圣地。1947年印巴分治后，这座锡克教神庙被划在了巴基斯坦境内，距离印巴边境只有4公里。目前，印度境内有近2500万锡克教徒，其中大约80%都生活在与巴基斯坦接壤的旁遮普邦。对于印度锡克教徒们来说，前往“格尔达布尔”锡克教神庙朝圣一直是他们的心愿，但由于印巴历史上的三次战争和无数小规模冲突，要实现这样的心愿却非常困难。
+
+
+                            经过多年的协商之后，印巴两国终于达成协议，决定开通一条免签通道，以方便印度锡克教徒前来巴基斯坦一侧朝圣。免签通道开通后，每天可以允许5000人通行。
+
+
+                            9日当天，印度总理莫迪前往印巴边界的边防站参加免签通道开通仪式，他在讲话中感谢巴基斯坦总理伊姆兰·汗尊重印度锡克教徒的宗教情感，以及为通道开通所做的努力。
+
+                            仪式之后，印度前总理辛格率领由数百人组成的朝圣队伍，进入巴基斯坦一侧。
+
+                            巴基斯坦总理伊姆兰·汗在巴基斯坦边境一侧参加了开通仪式，并欢迎印度朝圣者的到来。
+
+                            最近一段时间来，印巴两国再次因克什米尔问题而关系紧绷，在这种情况下，免签通道依然得以开通，堪称印巴关系的一次突破。
+
+
+                            印度锡克教徒 辛格：巴方把一切安排得都很好。在这条免签走廊开通之前，我们来这里一趟不知有多麻烦，现在好太多了，我们确实感到很方便。
+
+
+                            本月12日正逢那纳克诞辰550周年，预计将有大约8000~10000名朝圣者从全球各地抵达“格尔达布尔”神庙，参加盛大的纪念活动。
+                        </h5>
+                    </div>
+
+                    <br>
+                    <br>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+    {{-- 手机 底部 --}}
+    <div class="">
+        <br><br>
+        @include('layouts._xs_footer')
+    </div>
 
 @stop
+
+
 @section('script')
     <script>
         $(document).ready(function () {
@@ -216,30 +347,3 @@
         });
     </script>
 @stop
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
