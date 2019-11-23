@@ -78,7 +78,7 @@
                                 <div style="border: solid 1px #ffffff;"></div>
                                 <a class="dropdown-item text-center text-light" href="">🔳&nbsp;&nbsp; 我的钱包</a>
                                 <div style="border: solid 1px #ffffff;"></div>
-                                <a class="dropdown-item text-center text-light" href="">🔳&nbsp;&nbsp; 编辑资料</a>
+                                <a class="dropdown-item text-center text-light" href="{{ route('users.edit', Auth::id()) }}">🔳&nbsp;&nbsp; 编辑资料</a>
                                 <div style="border: solid 1px #ffffff;"></div>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" id="logout" href="#">

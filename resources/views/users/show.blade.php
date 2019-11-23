@@ -1,11 +1,16 @@
 @extends('layouts.app')
-@section('title', $user->name .'的个人中心')
+@section('title', $user->name .' 的个人中心')
 
 @section('content')
 
     {{--===========================  电脑版 ==================================--}}
     {{-- 电脑-顶部总导航 --}}
     @include('layouts._lg_other_header')
+
+    <h5>
+      @include('shared._messages')
+    </h5>
+
 
     {{-- 电脑-左则-内容区域 --}}
     <div class="col-md-3 col-xs-12 float-left d-none d-sm-block">
@@ -64,7 +69,7 @@
 
                 <div style="height: 90px;border-radius:5px;background: linear-gradient(to top, #000, #7C3A08,#EB9A02);">
                     {{-- 用户名--}}
-                    <h1 class="text-center pt-2">{{ $user->name }}</h1>
+                    <h2 class="text-center pt-4"> {{ $user->name }}</h2>
 
                 </div>
                 {{-- 选项卡区域--}}
