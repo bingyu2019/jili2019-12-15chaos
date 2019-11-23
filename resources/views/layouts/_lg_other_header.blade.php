@@ -1,5 +1,5 @@
 {{-- 电脑其它页面顶部导航 --}}
-<nav class="lg-other-header navbar navbar-expand-lg navbar-static-top mb-3 d-none d-sm-block" style="border-top:solid 6px #DE9008;">
+<nav class="lg-other-header navbar navbar-expand-lg navbar-static-top mb-3 d-none d-sm-block" style="border-top:solid 6px #A25900;">
     <div class="container">
         <!-- Branding Image -->
         <a class="navbar-brand " href="{{ url('/') }}">

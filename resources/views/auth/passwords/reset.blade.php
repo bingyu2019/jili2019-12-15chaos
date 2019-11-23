@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+
+  @include('layouts._lg_other_header')
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
+
+
                 <div class="card">
                     <div class="card-header">{{ __('Reset Password') }}</div>
 

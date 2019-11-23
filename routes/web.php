@@ -4,7 +4,7 @@
 //});
 
 // ========================== 静态页面【主页-分类】 ==============================//
-// 主页
+// 首页
 Route::get('/', 'HomeController@root')->name('root');
 // 人物经历
 Route::get('/category/experience','CategoriesController@experience')->name('experience');

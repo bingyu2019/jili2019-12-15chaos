@@ -11034,20 +11034,6 @@ hr {
   background-color: white;
 }
 
-.lg-other-header .lg-other-header-menu {
-  display: none;
-  background: linear-gradient(red, blue);
-  box-shadow: 10px 10px 5px #211F1C;
-}
-
-.lg-other-header img:hover {
-  transform: scale(1.3);
-}
-
-.lg-other-header .img-dropdown-menu:hover .lg-other-header-menu {
-  display: block;
-}
-
 .experience-title {
   height: 50px;
   line-height: 50px;
@@ -11152,6 +11138,25 @@ hr {
 .lg-other-header span {
   color: #FF6600;
   border-radius: 50%;
+}
+
+.lg-other-header .lg-other-header-menu {
+  display: none;
+  background: linear-gradient(red, blue);
+  box-shadow: 10px 10px 5px #211F1C;
+}
+
+.lg-other-header img:hover {
+  transform: scale(1.3);
+}
+
+.lg-other-header .img-dropdown-menu:hover .lg-other-header-menu {
+  display: block;
+}
+
+.login,
+.register {
+  background: linear-gradient(to bottom, #000000, #A25900, #000000);
 }
 
 .topic-show-left {
