@@ -17,7 +17,7 @@
   <a href="{{ route('root') }}"><img class="img-fluid mt-3" src="/images/logo/logo.jpg"></a>
 </div>
 
-<div style="height: 600px;">
+<div>
 
   @include('layouts._lg_other_header')
 
