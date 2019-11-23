@@ -13,9 +13,7 @@
 <body>
 <div id="app" class="{{ route_class() }}-page">
 
-
   @yield('content')
-
 
 </div>
 <script src="{{ mix('js/app.js') }}"></script>
