@@ -1,5 +1,5 @@
 <template>
-    <button type="button" class="btn btn-default btn-xs text-white-50" @mouseover="notice">【公告】{{ msg }}</button>
+    <button type="button" class="btn btn-default btn-xs text-white-50" @mouseover="Notice">【公告】{{ msg }}</button>
 </template>
 <script>
     export default {
@@ -10,7 +10,7 @@
         },
         // 这里大部分语法都是 zou cli的，很多都是以对象的方式
         methods: {
-            notice() {
+            Notice() {
                 setInterval(() => {
                     let start = this.msg.substring(0, 1);
                     // notice()

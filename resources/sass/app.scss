@@ -66,6 +66,11 @@ body {
     .register-dropdown-menu {
         background: linear-gradient(red, blue);
         box-shadow: 10px 10px 5px #211F1C;
+        display: none;
+    }
+
+    .lg-header-avatar:hover .register-dropdown-menu {
+        display: block;
     }
 }
 
@@ -208,11 +213,12 @@ body {
     }
 }
 
-// ========================= 电脑页面底部总导航 ======================//
+// ========================= 电脑主页面底部总导航 ======================//
 
 // 主页和分类页面大盒子
-.big-box{
-    height: 100%; width: 1263px;
+.big-box {
+    height: 100%;
+    width: 1263px;
 }
 
 // 电脑主页底部【总导航】
@@ -253,44 +259,8 @@ body {
     margin: 0 23px 0 auto;
 }
 
-// 电脑【人物经历】底部总导航红圆点
-.dot-experience {
-    width: 9px;
-    height: 9px;
-    border-radius: 4px;
-    background: red;
-    margin: 0 6px 0 auto;
-}
-
-// 电脑【个人宣传】底部总导航红圆点
-.dot-myself {
-    width: 9px;
-    height: 9px;
-    border-radius: 4px;
-    background: red;
-    margin: 0 6px 0 auto;
-}
-
-// 电脑【灵魂艺术】底部总导航红圆点
-.dot-art {
-    width: 9px;
-    height: 9px;
-    border-radius: 4.5px;
-    background: red;
-    margin: 0 6px 0 auto;
-}
-
-// 电脑【灵魂学院】底部总导航红圆点
-.dot-college {
-    width: 9px;
-    height: 9px;
-    border-radius: 4.5px;
-    background: red;
-    margin: 0 6px 0 auto;
-}
-
-// 电脑【灵魂共享】底部总导航红圆点
-.dot-share {
+// 电脑各分类底部总导航红圆点
+.dot-experience, .dot-myself, .dot-art, .dot-share, .dot-gift, .dot-heaven, .dot-serve, .dot-college {
     width: 9px;
     height: 9px;
     border-radius: 4.5px;
@@ -307,35 +277,7 @@ body {
     margin: 0 -3px 0 auto;
 }
 
-// 电脑【灵魂礼赞】底部总导航红圆点
-.dot-gift {
-    width: 9px;
-    height: 9px;
-    border-radius: 4.5px;
-    background: red;
-    margin: 0 auto;
-    margin-right: 6px;
-}
-
-// 电脑【灵魂极乐】底部总导航红圆点
-.dot-heaven {
-    width: 9px;
-    height: 9px;
-    border-radius: 4.5px;
-    background: red;
-    margin: 0 6px 0 auto;
-}
-
-// 电脑【灵魂服务】底部总导航红圆点
-.dot-serve {
-    width: 9px;
-    height: 9px;
-    border-radius: 4px;
-    background: red;
-    margin: 0 6px 0 auto;
-}
-
-// ===================== 电脑页面底部【灵魂服务-备案号】区域 ===================//
+// ===================== 电脑主页面底部【灵魂服务-备案号】区域 ===================//
 
 //电脑主页底部【灵魂服务】
 .serve {
@@ -589,7 +531,35 @@ hr {
     color: white;
 }
 
+
+//===================== 电脑版 其它页面顶部导航 =============================//
+// 个人中心顶部导航
+.lg-other-header {
+    span {
+        color: #FF6600;
+        border-radius: 50%;
+    }
+}
+// 头像
+.lg-other-header {
+    .lg-other-header-menu {
+        display: none;
+        background: linear-gradient(red, blue);
+        box-shadow: 10px 10px 5px #211F1C;
+    }
+
+    img:hover {
+        transform: scale(1.3);
+    }
+    // 鼠标移上头像，显示菜单
+    .img-dropdown-menu:hover .lg-other-header-menu {
+        display: block;
+    }
+}
+
+
 //====================== 电脑版 topic-show  ===============================//
+
 // topic show 左则广告文章推荐栏文字
 .topic-show-left {
     line-height: 26px;
@@ -646,7 +616,9 @@ hr {
     text-shadow: 2px 2px 4px #000000;
 }
 
+
 //======================= 手机版主页 ===========================//
+
 // 手机主页和分类顶部导航
 .xs-nav-category li {
     display: block;
@@ -666,7 +638,7 @@ hr {
 }
 
 // 手机分类盒子
-.xs-root-category-box{
+.xs-root-category-box {
     width: 100%;
 }
 
@@ -704,8 +676,8 @@ hr {
 
 
 //====================== 手机分类 ================================//
-.category-content-xs{
-    a{
+.category-content-xs {
+    a {
         color: white;
         background-color: #98520D;
     }

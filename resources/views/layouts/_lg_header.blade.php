@@ -19,13 +19,13 @@
                 <br>
                 <ul class="row">
                     @guest
-                        {{-- 邮箱注册登录 --}}
+                        {{-- 登录 --}}
                         <li class="mr-3"><a href="{{ route('login') }}"><h5>登录</h5></a></li>
-                        {{-- 微信注册登录 --}}
+                        {{-- 注册 --}}
                         <li><a href="{{ route('register') }}"><h5>注册</h5></a></li>
                     @else
                         {{-- 头像 --}}
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown lg-header-avatar">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
@@ -49,7 +49,7 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item btn-favor" href="">
                                     <i class="far fa-user mr-2"></i>
-                                    <h5>我的钱包</h5>
+                                    <h5>我的钱袋</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="">

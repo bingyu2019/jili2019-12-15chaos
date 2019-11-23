@@ -10693,6 +10693,11 @@ body a:hover {
 .register-box .register-dropdown-menu {
   background: linear-gradient(red, blue);
   box-shadow: 10px 10px 5px #211F1C;
+  display: none;
+}
+
+.register-box .lg-header-avatar:hover .register-dropdown-menu {
+  display: block;
 }
 
 .root-nav .root-nav-l {
@@ -10879,39 +10884,14 @@ body a:hover {
   margin: 0 23px 0 auto;
 }
 
-.dot-experience {
-  width: 9px;
-  height: 9px;
-  border-radius: 4px;
-  background: red;
-  margin: 0 6px 0 auto;
-}
-
-.dot-myself {
-  width: 9px;
-  height: 9px;
-  border-radius: 4px;
-  background: red;
-  margin: 0 6px 0 auto;
-}
-
-.dot-art {
-  width: 9px;
-  height: 9px;
-  border-radius: 4.5px;
-  background: red;
-  margin: 0 6px 0 auto;
-}
-
+.dot-experience,
+.dot-myself,
+.dot-art,
+.dot-share,
+.dot-gift,
+.dot-heaven,
+.dot-serve,
 .dot-college {
-  width: 9px;
-  height: 9px;
-  border-radius: 4.5px;
-  background: red;
-  margin: 0 6px 0 auto;
-}
-
-.dot-share {
   width: 9px;
   height: 9px;
   border-radius: 4.5px;
@@ -10925,31 +10905,6 @@ body a:hover {
   border-radius: 4.5px;
   background: red;
   margin: 0 -3px 0 auto;
-}
-
-.dot-gift {
-  width: 9px;
-  height: 9px;
-  border-radius: 4.5px;
-  background: red;
-  margin: 0 auto;
-  margin-right: 6px;
-}
-
-.dot-heaven {
-  width: 9px;
-  height: 9px;
-  border-radius: 4.5px;
-  background: red;
-  margin: 0 6px 0 auto;
-}
-
-.dot-serve {
-  width: 9px;
-  height: 9px;
-  border-radius: 4px;
-  background: red;
-  margin: 0 6px 0 auto;
 }
 
 .serve {
@@ -11079,6 +11034,20 @@ hr {
   background-color: white;
 }
 
+.lg-other-header .lg-other-header-menu {
+  display: none;
+  background: linear-gradient(red, blue);
+  box-shadow: 10px 10px 5px #211F1C;
+}
+
+.lg-other-header img:hover {
+  transform: scale(1.3);
+}
+
+.lg-other-header .img-dropdown-menu:hover .lg-other-header-menu {
+  display: block;
+}
+
 .experience-title {
   height: 50px;
   line-height: 50px;
@@ -11178,6 +11147,11 @@ hr {
 
 .pen:hover {
   color: white;
+}
+
+.lg-other-header span {
+  color: #FF6600;
+  border-radius: 50%;
 }
 
 .topic-show-left {

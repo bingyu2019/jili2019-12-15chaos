@@ -5,7 +5,7 @@
 
     {{--===========================  电脑版 ==================================--}}
     {{-- 电脑-顶部总导航 --}}
-    @include('layouts._other_header')
+    @include('layouts._lg_other_header')
 
     {{-- 电脑-左则-内容区域 --}}
     <div class="col-md-3 col-xs-12 float-left d-none d-sm-block">
@@ -43,6 +43,13 @@
             <p>第 1 号 用户</p>
 
             <hr>
+            <h5>❂ 用户组</h5>
+            <p><span style="border: solid 1px white;padding: 2px;border-radius: 5px;">Founder</span>
+                <span style="border: solid 1px white;padding: 2px;border-radius: 5px;">开发者</span>
+                <span style="border: solid 1px white;padding: 2px;border-radius: 5px;">管理员</span>
+                <span style="border: solid 1px white;padding: 2px;border-radius: 5px;">小学生</span></p>
+
+            <hr>
             <h5>❂ 最后活跃</h5>
             <p>2019-10-29 13：36：56</p>
             <br>
@@ -57,17 +64,8 @@
 
                 <div style="height: 90px;border-radius:5px;background: linear-gradient(to top, #000, #7C3A08,#EB9A02);">
                     {{-- 用户名--}}
-                    <div class="float-left" style="width: 80%;">
-                        <h1 class="text-center pt-2 offset-2">Bing</h1>
-                    </div>
-                    {{-- 消息通知--}}
-                    <div class="float-right pr-3 pt-0 d-none d-sm-block">
-                        <h1>✉</h1><h5>1</h5>
-                    </div>
-                    {{-- 头像--}}
-                    <div class="float-right">
-                        @include('layouts._lg_avatar')
-                    </div>
+                    <h1 class="text-center pt-2">Bing</h1>
+
                 </div>
                 {{-- 选项卡区域--}}
                 <div class="text-dark" style="width:100%;background: #E5A55D;">
@@ -271,6 +269,14 @@
         <hr>
         <h5>❂ jili20.com</h5>
         <p>第 1 号 用户</p>
+
+        <hr>
+        <h5>❂ 用户组</h5>
+        <p><span style="border: solid 1px white;padding: 2px;border-radius: 5px;">Founder</span>
+            <span style="border: solid 1px white;padding: 2px;border-radius: 5px;">开发者</span>
+            <span style="border: solid 1px white;padding: 2px;border-radius: 5px;">管理员</span>
+            <span style="border: solid 1px white;padding: 2px;border-radius: 5px;">小学生</span></p>
+
 
         <hr>
         <h5>❂ 最后活跃</h5>

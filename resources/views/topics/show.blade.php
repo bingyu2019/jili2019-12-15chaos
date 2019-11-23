@@ -5,7 +5,7 @@
 
     {{--===========================  电脑版 ==================================--}}
     {{-- 电脑-顶部总导航 --}}
-    @include('layouts._other_header')
+    @include('layouts._lg_other_header')
 
     {{-- 电脑-左则-内容区域 --}}
     <div class="col-md-3 col-xs-12 float-left d-none d-sm-block">
@@ -13,7 +13,7 @@
         <div class="user-info text-center"
              style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
 
-            <a href="{{ route('users.show') }}"><h5 class="pt-3 pb-2">作者：Bing </h5></a>
+            <a href="{{ route('users.show') }}"><h3 class="text-white pt-3 pb-2">作者：Bing </h3></a>
 
             <div>
                 <a href="{{ route('users.show') }}"><img class="img-fluid" src="/images/avatar/face250px.jpg"
@@ -41,21 +41,13 @@
     <div class="col-md-9 col-xs-12 float-left d-none d-sm-block">
         {{-- 右则-用户名-头像-通知 --}}
         <div class="container">
-            <div class=" text-white text-center">
+            <div class="text-white">
 
                 <div style="height: 90px;border-radius:5px;background: linear-gradient(to top, #000, #7C3A08,#EB9A02);">
+
                     {{-- 帖子标题--}}
-                    <div class="float-left" style="width: 80%;">
-                        <h3 class="text-center pt-4 offset-2">印巴关系突破，2500万印度锡克教徒完成朝圣心愿</h3>
-                    </div>
-                    {{-- 消息通知--}}
-                    <div class="float-right pr-3 pt-0 d-none d-sm-block">
-                        <h1>✉</h1><h5>1</h5>
-                    </div>
-                    {{-- 头像--}}
-                    <div class="float-right">
-                        @include('layouts._lg_avatar')
-                    </div>
+                    <h3 class="text-center pt-4">印巴关系突破，2500万印度锡克教徒完成朝圣心愿</h3>
+
                 </div>
                 {{-- 帖子内容区域--}}
                 <div class="text-dark" style="width:100%;background: #E5A55D;">
@@ -67,28 +59,24 @@
                         <div class="topic-show-total container text-cente float-left">
                             <div class="float-left" style="width: 22%;height: 25px;"></div>
                             {{-- 发表时间 --}}
-                            <div class="float-left" style="width:10%;"><a href=""><img
-                                        src="/images/icon/md-clo.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="发布于：2019-10-30 14:24:20">一年前</a>
+                            <div class="float-left" style="width:10%;"><a href="" data-toggle="tooltip"
+                                                                          data-placement="top" title="发布于：2019-10-30 14:24:20">🕒 一年前 </a>
                             </div>
                             {{-- 浏览次数 --}}
-                            <div class="float-left" style="width:8%;"><a href=""><img
-                                        src="/images/icon/md-eye.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="阅读">222 </a>
+                            <div class="float-left" style="width:8%;"><a href="" data-toggle="tooltip"
+                                                                         data-placement="top" title="阅读"> 👀 222 </a>
                             </div>
                             {{-- 回复次数 --}}
-                            <div class="float-left" style="width:8%;"><a href=""><img
-                                        src="/images/icon/md-rp.png" alt="" style="width: 28px;" data-toggle="tooltip"
-                                        data-placement="top" title="回复">222 </a>
+                            <div class="float-left" style="width:8%;"><a href="" data-toggle="tooltip"
+                                                                         data-placement="top" title="回复"> 💬 222 </a>
                             </div>
                             {{-- 收藏量 --}}
-                            <div class="float-left" style="width:8%;"><a href=""><img
-                                        src="/images/icon/md-like.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="收藏">222 </a>
+                            <div class="float-left" style="width:8%;"><a href="" data-toggle="tooltip"
+                                                                         data-placement="top" title="收藏"> 🤍 222 </a>
                             </div>
                             <div class="float-left" style="width:8%;"><a href=""><img
                                         src="/images/icon/md-up.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="赞一毛">222 </a>
+                                        data-placement="top" title="赞一朵">222 </a>
                             </div>
                             {{-- 打赏 --}}
                             <div class="float-left" style="width:8%;"><a href=""><img
@@ -222,24 +210,20 @@
                     <div class="topic-show-total container">
                         <div class="" style="width: 22%;height: 25px;"></div>
                         {{-- 发表时间 --}}
-                        <div class="float-left" style="width:30%;"><a href=""><img
-                                    src="/images/icon/md-clo.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                    data-placement="top" title="发布于：2019-10-30 14:24:20">一年前</a>
+                        <div class="float-left" style="width:30%;"><a href="" data-toggle="tooltip"
+                                                                      data-placement="top" title="发布于：2019-10-30 14:24:20">🕒 一年前</a>
                         </div>
                         {{-- 浏览次数 --}}
-                        <div class="float-left" style="width:20%;"><a href=""><img
-                                    src="/images/icon/md-eye.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                    data-placement="top" title="阅读">222 </a>
+                        <div class="float-left" style="width:20%;"><a href="" data-toggle="tooltip"
+                                                                      data-placement="top" title="阅读"> 👀 222 </a>
                         </div>
                         {{-- 回复次数 --}}
-                        <div class="float-left" style="width:20%;"><a href=""><img
-                                    src="/images/icon/md-rp.png" alt="" style="width: 28px;" data-toggle="tooltip"
-                                    data-placement="top" title="回复">222 </a>
+                        <div class="float-left" style="width:20%;"><a href="" data-toggle="tooltip"
+                                                                      data-placement="top" title="回复"> 💬 222 </a>
                         </div>
                         {{-- 收藏量 --}}
-                        <div class="float-left" style="width:20%;"><a href=""><img
-                                    src="/images/icon/md-like.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                    data-placement="top" title="收藏">222 </a>
+                        <div class="float-left" style="width:20%;"><a href="" data-toggle="tooltip"
+                                                                      data-placement="top" title="收藏"> 🤍 222 </a>
                         </div>
 
                         <br>
@@ -247,7 +231,7 @@
                         <div class="mx-auto">
                             <div class="float-left" style="width:30%;"><a href=""><img
                                         src="/images/icon/md-up.png" alt="" style="width: 25px;" data-toggle="tooltip"
-                                        data-placement="top" title="赞一毛">222 </a>
+                                        data-placement="top" title="赞一朵">222 </a>
                             </div>
                             {{-- 打赏 --}}
                             <div class="float-left" style="width:30%;"><a href=""><img

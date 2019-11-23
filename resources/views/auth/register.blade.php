@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('layouts._lg_header')
-    <br><br><br>
+    <div class="text-center">
+        <a href="{{ route('root') }}"><img class="img-fluid mt-3" src="/images/logo/logo.jpg"></a>
+    </div>
+
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">

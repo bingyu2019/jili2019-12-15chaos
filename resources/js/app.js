@@ -2,9 +2,12 @@ require('./bootstrap');
 
 import Vue from 'vue';
 
-Vue.component('test', require('./components/test.vue').default);
-Vue.component('notice', require('./components/notice.vue').default);
+Vue.component('notice', require('./components/Notice.vue').default);
 
 window.app = new Vue({
     el: "#app",
+});
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
 });

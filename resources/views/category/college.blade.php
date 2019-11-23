@@ -40,15 +40,16 @@
                     {{-- 分类二级类别 --}}
                     <div class="subclass container">
                         <div>
-                            <ul class="college-subclass text-center pt-5 col-sm-11">
-                                <li class="float-left text-white">│ <a href=""> &nbsp;好人好事 &nbsp;</a>│</li>
+                            <ul class=" text-center pt-5 col-sm-11 ml-5">
+                                <li class="float-left text-white pl-4">│ <a href=""> &nbsp;好人好事 &nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp;礼仪礼节&nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp;文明生活&nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp; 名言格言 &nbsp</a>│</li>
+
                                 <li class="float-left text-white"><a href="">&nbsp; 感人短片 &nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp;思想哲学 &nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp;小故事大道理 &nbsp;</a>│</li>
-                                <li class="float-left text-white"><a href="">&nbsp; 那些我们犯过的错 &nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">那些我们犯过的错 &nbsp;</a>│</li>
                             </ul>
                         </div>
                     </div>

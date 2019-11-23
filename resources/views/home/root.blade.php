@@ -12,7 +12,6 @@
 
                 {{-- 清除浮动 --}}
                 <div class="clear"></div>
-                <br>
 
                 {{-- 引入 vue 组件 公告 --}}
                 <notice></notice>
@@ -21,11 +20,11 @@
                 {{-- 电脑主页轮播图 --}}
                 @include('layouts._lg_carousel')
 
-                <br><br>
+                <br>
             </header>
 
             {{-- 电脑主体书本导航块 --}}
-            <nav class="root-nav row col-md-12">
+            <nav class="root-nav row col-md-12 mt-2">
                 <div class="root-nav-l">
                     <ul class="row">
                         <li><a href="{{ route('root') }}"><br>首<br>页</a></li>
@@ -47,7 +46,6 @@
             </nav>
 
             <section>
-                <br>
                 {{-- 电脑主页搜索框 --}}
                 @include('layouts._lg_search')
 
@@ -119,7 +117,7 @@
                             <div class="content-l">
                                 <h4 class="title-l text-center"><a href="{{ route('myself') }}">【个人宣传】</a></h4>
                                 <div class="text-l">
-                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-experience.jpg"
+                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-myself.png"
                                                     alt=""></a>
                                 </div>
                             </div>
@@ -173,7 +171,7 @@
                             <div class="content-l">
                                 <h4 class="title-l text-center"><a href="{{ route('art') }}">【灵魂艺术】</a></h4>
                                 <div class="text-l">
-                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-experience.jpg"
+                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-art.png"
                                                     alt=""></a>
                                 </div>
                             </div>
@@ -227,7 +225,7 @@
                             <div class="content-l">
                                 <h4 class="title-l text-center"><a href="{{ route('college') }}">【灵魂学院】</a></h4>
                                 <div class="text-l">
-                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-experience.jpg"
+                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-college.png"
                                                     alt=""></a>
                                 </div>
                             </div>
@@ -281,8 +279,7 @@
                             <div class="content-l">
                                 <h4 class="title-l text-center"><a href="{{ route('share') }}">【灵魂共享】</a></h4>
                                 <div class="text-l">
-                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-experience.jpg"
-                                                    alt=""></a>
+                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-share.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +332,7 @@
                             <div class="content-l">
                                 <h4 class="title-l text-center"><a href="{{ route('gift') }}">【灵魂礼赞】</a></h4>
                                 <div class="text-l">
-                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-show.jpg" alt=""></a>
+                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-gift.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -388,8 +385,7 @@
                             <div class="content-l">
                                 <h4 class="title-l text-center"><a href="{{ route('show') }}">【灵魂展览馆】</a></h4>
                                 <div class="text-l">
-                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-experience.jpg"
-                                                    alt=""></a>
+                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-show.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -442,7 +438,7 @@
                             <div class="content-l">
                                 <h4 class="title-l text-center"><a href="{{ route('heaven') }}">【灵魂极乐】</a></h4>
                                 <div class="text-l">
-                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-experience.jpg"
+                                    <a href=""><img class="pl-2 pt-2" src="/images/root/md-heaven.jpg"
                                                     alt=""></a>
                                 </div>
                             </div>
