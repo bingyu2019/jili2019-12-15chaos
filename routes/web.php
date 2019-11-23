@@ -26,13 +26,12 @@ Route::get('/category/heaven','CategoriesController@heaven')->name('heaven');
 Route::get('/category/serve','CategoriesController@serve')->name('serve');
 
 //============================ 用户路由 ==============================//
-//Route::resource('users', 'UsersController');
-Route::get('/users/show','UsersController@show')->name('users.show');
+Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 
 //============================ 帖子路由 ==============================//
 Route::get('/topics/show','TopicsController@show')->name('topics.show');
 
-//=========================== 认证用户系统 ===========================//
+//========================= 认证用户邮箱注册登录系统 ====================//
 //Auth::routes();
 // 用户身份验证相关的路由
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');

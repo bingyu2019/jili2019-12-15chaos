@@ -26,7 +26,7 @@
                     @else
                         {{-- 头像 --}}
                         <li class="nav-item dropdown lg-header-avatar">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown" role="button"
                                data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
                                 <img src="/images/avatar/face100px.jpg"
@@ -42,7 +42,7 @@
                                     <h5>管理后台</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{ route('users.show') }}">
+                                <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">
                                     <i class="far fa-user mr-2"></i>
                                     <h5>个人中心</h5>
                                 </a>

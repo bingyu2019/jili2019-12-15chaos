@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','灵魂深触-经历网 Bing ')
+@section('title', $user->name .'的个人中心')
 
 @section('content')
 
@@ -40,7 +40,7 @@
 
             <hr>
             <h5>❂ jili20.com</h5>
-            <p>第 1 号 用户</p>
+            <p>第 {{ $user->id }} 号 用户</p>
 
             <hr>
             <h5>❂ 用户组</h5>
@@ -64,7 +64,7 @@
 
                 <div style="height: 90px;border-radius:5px;background: linear-gradient(to top, #000, #7C3A08,#EB9A02);">
                     {{-- 用户名--}}
-                    <h1 class="text-center pt-2">Bing</h1>
+                    <h1 class="text-center pt-2">{{ $user->name }}</h1>
 
                 </div>
                 {{-- 选项卡区域--}}

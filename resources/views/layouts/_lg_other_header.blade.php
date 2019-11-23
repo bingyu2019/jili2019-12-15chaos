@@ -2,7 +2,7 @@
 <nav class="lg-other-header navbar navbar-expand-lg navbar-static-top mb-3 d-none d-sm-block" style="border-top:solid 6px #A25900;">
     <div class="container">
         <!-- Branding Image -->
-        <a class="navbar-brand " href="{{ url('/') }}">
+        <a class="navbar-brand " href="{{ route('root') }}">
             灵魂深触-经历网
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -44,7 +44,7 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown mr-4  img-dropdown-menu">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="/images/avatar/face100px.jpg"
                                  class="pt-0 register-avatar img-responsive img-circle" width="38px" style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 5px 3px #ccc;" alt="头像">
@@ -59,7 +59,7 @@
                                 </a>
                                 <div class="dropdown-divider"></div>
 {{--                            @endcan--}}
-                            <a class="dropdown-item" href="{{ route('users.show') }}">
+                            <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">
                                 <i class="far fa-user mr-2"></i>
                                 个人中心
                             </a>

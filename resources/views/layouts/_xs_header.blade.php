@@ -5,7 +5,7 @@
     <nav class="navbar fixed-top navbar-dark bg-dark d-block d-sm-none" style="background: linear-gradient(to top, #000000, #A25900);">
         <div class="container">
             <!-- Branding Image -->
-            <a class="navbar-brand " href="{{ url('/') }}">
+            <a class="navbar-brand " href="{{ route('root') }}">
                 <img src="/images/logo/xs-logo.png" alt="经历网主页">
             </a>
             <button class="navbar-toggler text-white" type="button" data-toggle="collapse"
@@ -62,7 +62,7 @@
                         <div style="border:solid 1px #584021;"></div>
                         {{-- 头像 --}}
                         <li class="nav-item dropdown pt-2">
-                            <a class="nav-link dropdown-toggle" href="{{ route('users.show') }}" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img
                                     src="/images/avatar/face100px.jpg"
@@ -74,7 +74,7 @@
                                  style="background: linear-gradient(to bottom, red, blue);">
                                 <a class="dropdown-item text-center text-light" href="">🔳 &nbsp;&nbsp;管理后台</a>
                                 <div style="border: solid 1px #ffffff;"></div>
-                                <a class="dropdown-item text-center text-light" href="{{ route('users.show') }}">🔳&nbsp;&nbsp; 个人中心</a>
+                                <a class="dropdown-item text-center text-light" href="{{ route('users.show', Auth::id()) }}">🔳&nbsp;&nbsp; 个人中心</a>
                                 <div style="border: solid 1px #ffffff;"></div>
                                 <a class="dropdown-item text-center text-light" href="">🔳&nbsp;&nbsp; 我的钱包</a>
                                 <div style="border: solid 1px #ffffff;"></div>
