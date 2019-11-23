@@ -24,7 +24,7 @@
 
             <div class="mt-3">
                 <h5>❂ 个人简介</h5>
-                <p>思想有多远，我就走多远！</p>
+                <p>{{ $user->introduction }}</p>
             </div>
 
             {{-- 关注按钮--}}
@@ -41,7 +41,7 @@
 
             <hr>
             <h5>❂ 注册于</h5>
-            <p>2019-10-29 13：36：56</p>
+            <p>{{ $user->created_at->diffForHumans() }} &nbsp;&nbsp;{{ $user->created_at }}</p>
 
             <hr>
             <h5>❂ jili20.com</h5>
@@ -254,7 +254,7 @@
 
         <div class="mt-3">
             <h5>❂ 个人简介</h5>
-            <p>思想有多远，我就走多远！</p>
+            <p>{{ $user->introduction }}</p>
         </div>
 
         <button type="button" class="btn btn-outline-light"
@@ -269,11 +269,11 @@
 
         <hr>
         <h5>❂ 注册于</h5>
-        <p>2019-10-29 13：36：56</p>
+        <p>{{ $user->created_at->diffForHumans() }} &nbsp;&nbsp;{{ $user->created_at }}</p>
 
         <hr>
         <h5>❂ jili20.com</h5>
-        <p>第 1 号 用户</p>
+        <p>第 {{ $user->id }} 号 用户</p>
 
         <hr>
         <h5>❂ 用户组</h5>
