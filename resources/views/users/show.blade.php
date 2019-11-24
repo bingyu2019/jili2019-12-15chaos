@@ -18,7 +18,7 @@
         <div class="user-info text-center"
              style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
             <div>
-                <a href=""><img class="img-fluid" src="/images/avatar/face250px.jpg"
+                <a href=""><img class="img-fluid" src="{{ $user->avatar }}"
                                 style="border-radius:5px;"></a>
             </div>
 
@@ -241,16 +241,15 @@
     </div>
 
     {{-- 手机-头像-简单-社交统计 --}}
-    <div class="col-xs-12 float-left d-block d-sm-none user-info text-center"
+    <div class="col-xs-12 d-block d-sm-none user-info text-center mx-auto"
          style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
         {{-- 左则：头像-简介-社交信息 --}}
         <div>
-            <a href=""><img class="img-fluid" src="/images/avatar/face250px.jpg"
-                            style="border-radius:5px;"></a>
+            <a href=""><img class="img-fluid" src="{{ $user->avatar }}" style="border-radius:5px;" alt="{{ $user->name }}"></a>
         </div>
 
         {{-- 用户名--}}
-        <h1 class="text-white mt-2">Bing</h1>
+        <h1 class="text-white mt-2">{{ $user->name }}</h1>
 
         <div class="mt-3">
             <h5>❂ 个人简介</h5>

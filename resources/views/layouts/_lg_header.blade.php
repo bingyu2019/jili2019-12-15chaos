@@ -29,32 +29,29 @@
                             <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown" role="button"
                                data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
-                                <img src="/images/avatar/face100px.jpg"
-                                     class="pt-0 register-avatar img-responsive img-circle"
-                                     width="40px"
-                                     style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc;"
-                                     alt="头像">
+                                <img src="{{ Auth::user()->avatar }}"
+                                     width="40px" alt="头像" style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc; ">
                                 {{ Auth::user()->name }}
                             </a>
                             <div class="dropdown-menu register-dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a href="" class="dropdown-item">
                                     <i class="fas fa-tachometer-alt mr-2"></i>
-                                    <h5>管理后台</h5>
+                                    <h5>🔴 管理后台</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">
                                     <i class="far fa-user mr-2"></i>
-                                    <h5>个人中心</h5>
+                                    <h5>🔴 个人中心</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item btn-favor" href="">
                                     <i class="far fa-user mr-2"></i>
-                                    <h5>我的钱袋</h5>
+                                    <h5>🔵 我的钱袋</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">
                                     <i class="far fa-edit mr-2"></i>
-                                    <h5>编辑资料</h5>
+                                    <h5>🔵 编辑资料</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" id="logout" href="#">

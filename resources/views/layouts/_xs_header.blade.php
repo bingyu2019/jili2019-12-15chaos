@@ -54,10 +54,8 @@
                             {{-- 消息通知 --}}
                             <h2 class="text-white float-left pt-2 pl-2"> 🔔 &nbsp;0</h2>
                             {{-- 发贴入口 --}}
-                            <a class="float-right pt-2 pr-2" href="https://www.baidu.com/"><img src="/images/icon/xs-pen.png" style="width: 45px;height: 30px;"> &nbsp;发布新帖</a>
+                            <a class="float-right pt-2 pr-2" href=""><img src="/images/icon/xs-pen.png" style="width: 45px;height: 30px;"> &nbsp;发布新帖</a>
                         </div>
-
-                        <div style="border:solid 1px #584021;"></div>
 
                         <div style="border:solid 1px #584021;"></div>
                         {{-- 头像 --}}
@@ -65,21 +63,15 @@
                             <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img
-                                    src="/images/avatar/face100px.jpg"
+                                    src="{{ $user->avatar }}"
                                     class="img-responsive img-circle"
                                     style="border-radius: 50%; width:40px;box-shadow:0px 0px 5px 5px #ccc;">
                                 {{ Auth::user()->name }}
                             </a>
-                            <div class="dropdown-menu col-xs-4" aria-labelledby="navbarDropdown"
-                                 style="background: linear-gradient(to bottom, red, blue);">
-                                <a class="dropdown-item text-center text-light" href="">🔳 &nbsp;&nbsp;管理后台</a>
-                                <div style="border: solid 1px #ffffff;"></div>
-                                <a class="dropdown-item text-center text-light" href="{{ route('users.show', Auth::id()) }}">🔳&nbsp;&nbsp; 个人中心</a>
-                                <div style="border: solid 1px #ffffff;"></div>
-                                <a class="dropdown-item text-center text-light" href="">🔳&nbsp;&nbsp; 我的钱包</a>
-                                <div style="border: solid 1px #ffffff;"></div>
-                                <a class="dropdown-item text-center text-light" href="{{ route('users.edit', Auth::id()) }}">🔳&nbsp;&nbsp; 编辑资料</a>
-                                <div style="border: solid 1px #ffffff;"></div>
+                            <div class="dropdown-menu mx-auto" aria-labelledby="navbarDropdown"
+                                 style="background: linear-gradient(to bottom, red, blue);border-radius: 5px; width: 70%;">
+                                <a class="dropdown-item text-center text-light" href="">🔴 管理后台</a><a class="dropdown-item text-center text-light" href="{{ route('users.show', Auth::id()) }}">🔴 个人中心</a><a class="dropdown-item text-center text-light" href="">🔵 我的钱袋</a><a class="dropdown-item text-center text-light" href="{{ route('users.edit', Auth::id()) }}">🔵 编辑资料</a>
+
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" id="logout" href="#">
                                     <form action="{{ route('logout') }}" method="POST">
