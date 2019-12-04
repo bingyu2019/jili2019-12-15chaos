@@ -29,7 +29,7 @@ class CreateCategoriesTable extends Migration
             $table->timestamp('created_at')->nullable()->comment('创建时间');
             $table->timestamp('updated_at')->nullable()->comment('修改时间');
             $table->bigInteger('created_admin_id')->default(0)->comment('创建人');
-            $table->bigInteger('created_admin_id')->default(0)->comment('修改人');
+            $table->bigInteger('update_admin_id')->default(0)->comment('修改人');
         });
     }
 
