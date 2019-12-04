@@ -174,9 +174,9 @@
             <br><br><br><br>
             {{-- 分类名称 --}}
             <div>
-                <h3 class="text-center text-white">〖 灵魂共享 〗</h3>
+                <h3 class="text-center text-white">❖ 灵魂共享 ❖</h3>
                 <br>
-                <p class=" mx-auto text-center text-white" style="width: 90%;">艺术给我们插上翅膀，把我们带到很远很远的地方。——契诃夫</p>
+                <p class=" mx-auto text-center text-white" style="width: 90%;">如果你把快乐告诉一个朋友，你将得到两个快乐，而如果你把忧愁向一个朋友倾诉，你将被分掉一半忧愁。<br>——培根</p>
             </div>
 
             {{-- 轮播图片 --}}

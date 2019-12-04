@@ -156,9 +156,9 @@
             <br><br><br><br>
             {{-- 分类名称 --}}
             <div>
-                <h3 class="text-center text-white">〖 灵魂礼赞 〗</h3>
+                <h3 class="text-center text-white">❖ 灵魂礼赞 ❖</h3>
                 <br>
-                <p class=" mx-auto text-center text-white" style="width: 90%;">艺术给我们插上翅膀，把我们带到很远很远的地方。——契诃夫</p>
+                <p class=" mx-auto text-center text-white" style="width: 90%;">礼物表达了人与人之间最温馨最美好的心意。<br> ――金大中</p>
             </div>
 
             {{-- 轮播图片 --}}

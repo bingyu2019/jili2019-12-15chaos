@@ -652,7 +652,7 @@
               <br>
               <h4>⚫ 个 人 宣 传</h4>
               <hr style="background: #000;">
-              <h5>✎ 您的经历就是您的财富！</h5>
+              <h5>✎ 让梦想飞扬！！！</h5>
               <hr style="background: #000;">
 
               {{-- 最新-更多 --}}
@@ -711,7 +711,7 @@
               <br><br>
               <h4>⚫ 灵 魂 艺 术</h4>
               <hr style="background: #000;">
-              <h5>✎ 您的经历就是您的财富！</h5>
+              <h5>✎ 艺术恒久，生命短暂。</h5>
               <hr style="background: #000;">
 
               {{-- 最新-更多 --}}
@@ -770,7 +770,7 @@
               <br><br>
               <h4>⚫ 灵 魂 学 院</h4>
               <hr style="background: #000;">
-              <h5>✎ 您的经历就是您的财富！</h5>
+              <h5>✎ 知识是灵魂的食粮！ </h5>
               <hr style="background: #000;">
 
               {{-- 最新-更多 --}}
@@ -829,7 +829,7 @@
               <br><br>
               <h4>⚫ 灵 魂 共 享</h4>
               <hr style="background: #000;">
-              <h5>✎ 您的经历就是您的财富！</h5>
+              <h5>✎ 有福同享，有难同当。</h5>
               <hr style="background: #000;">
 
               {{-- 最新-更多 --}}
@@ -888,7 +888,7 @@
               <br><br>
               <h4>⚫ 灵 魂 礼 赞</h4>
               <hr style="background: #000;">
-              <h5>✎ 您的经历就是您的财富！</h5>
+              <h5>✎千里送鹅毛，礼轻情意重。 </h5>
               <hr style="background: #000;">
 
               {{-- 最新-更多 --}}
@@ -946,7 +946,7 @@
               <br><br>
               <h4>⚫ 灵 魂 展 览 馆</h4>
               <hr style="background: #000;">
-              <h5>✎ 您的经历就是您的财富！</h5>
+              <h5>✎ 有处安放的才华！</h5>
               <hr style="background: #000;">
 
               {{-- 最新-更多 --}}
@@ -1134,7 +1134,7 @@
   <script>
       // 轮播图控件
       $('.carousel').carousel({
-          interval: 2000
+          interval: 1800
       });
 
   </script>

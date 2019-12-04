@@ -158,9 +158,9 @@
             <br><br><br><br>
             {{-- 分类名称 --}}
             <div>
-                <h3 class="text-center text-white">〖 灵魂展览馆 〗</h3>
+                <h3 class="text-center text-white">❖ 灵魂展览馆 ❖</h3>
                 <br>
-                <p class=" mx-auto text-center text-white" style="width: 90%;">艺术给我们插上翅膀，把我们带到很远很远的地方。——契诃夫</p>
+                <p class=" mx-auto text-center text-white" style="width: 90%;">修养的花儿在寂静中开过去了，<br>成功的果子便要在光明里结实。 <br>—— 冰心</p>
             </div>
 
             {{-- 轮播图片 --}}

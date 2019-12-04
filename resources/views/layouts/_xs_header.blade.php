@@ -1,7 +1,6 @@
 {{-- 手机版顶部导航-登录注册--}}
 <div class="d-block d-sm-none">
 
-  {{--    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">--}}
   <nav class="navbar fixed-top navbar-dark bg-dark d-block d-sm-none"
        style="background: linear-gradient(to top, #000000, #A25900);">
     <div class="container">
@@ -69,7 +68,7 @@
                 <img
                   src="{{ Auth::user()->avatar }}"
                   class="img-responsive img-circle"
-                  style="border-radius: 50%; width:40px;box-shadow:0px 0px 5px 5px #ccc;">
+                  style="border-radius: 50%; width:40px; height: 40px; box-shadow:0px 0px 8px 5px #ccc;">
                 {{ Auth::user()->name }}
               </a>
               <div class="dropdown-menu mx-auto login" aria-labelledby="navbarDropdown"
@@ -99,17 +98,3 @@
     </div>
   </nav>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

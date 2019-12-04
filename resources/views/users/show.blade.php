@@ -18,8 +18,8 @@
         <div class="user-info text-center"
              style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
             <div>
-                <a href=""><img class="img-fluid" src="{{ $user->avatar }}"
-                                style="border-radius:5px;"></a>
+                <a href=""><img class="img-fluid mt-2" src="{{ $user->avatar }}"
+                                style="border-radius:5px;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc;padding: 1px;" alt="{{ $user->name}}"></a>
             </div>
 
             <div class="mt-3">
@@ -236,16 +236,24 @@
     {{--===========================  手机版 ==================================--}}
     {{-- 手机顶部总导航 --}}
     <div class="d-block d-sm-none">
-        <br><br><br><br>
+        <br><br>
         @include('layouts._xs_header')
     </div>
 
+    <h5>
+      @include('shared._messages')
+    </h5>
+
     {{-- 手机-头像-简单-社交统计 --}}
     <div class="col-xs-12 d-block d-sm-none user-info text-center mx-auto"
-         style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
+         style="background: linear-gradient(to right, #7C3A08,#de8719, #A75615);border-radius:5px;width: 99%;">
         {{-- 左则：头像-简介-社交信息 --}}
         <div>
-            <a href=""><img class="img-fluid" src="{{ $user->avatar }}" style="border-radius:5px;" alt="{{ $user->name }}"></a>
+            <!-- <a href=""><img class="img-fluid" src="{{ $user->avatar }}" style="border-radius:5px;" alt="{{ $user->name }}"></a> -->
+            <a href=""><img class="img-fluid mt-2 p-2" src="{{ $user->avatar }}"
+                            style="border-radius:5px;border: solid 1px wheat;" alt="{{ $user->name}}"></a>
+
+
         </div>
 
         {{-- 用户名--}}
@@ -257,7 +265,7 @@
         </div>
 
         <button type="button" class="btn btn-outline-light"
-                style="width: 99%;"><h5 class="pt-2">✉ &nbsp;私信</h5>
+                style="width: 90%;"><h5 class="pt-2">✉ &nbsp;私信</h5>
         </button>
         <br>
         {{--关注按钮--}}
@@ -291,7 +299,7 @@
     {{-- 手机-个人关注-帖子-回复-收藏-经历-礼物 --}}
     <div class="col-xs-12 float-left d-block d-sm-none text-white text-center">
         {{-- 选项卡区域--}}
-        <div class="text-dark" style="width:100%;background: #E5A55D;">
+        <div class="text-dark mx-auto" style="width:99%;background: #E5A55D;">
 
             <br>
             <div class="text-dark mx-auto" style="border-radius: 5px;">

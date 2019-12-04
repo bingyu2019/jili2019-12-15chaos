@@ -166,9 +166,10 @@
             <br><br><br><br>
             {{-- 分类名称 --}}
             <div>
-                <h3 class="text-center text-white">〖 灵魂学院 〗</h3>
+                <h3 class="text-center text-white">❖ 灵魂学院 ❖</h3>
                 <br>
-                <p class=" mx-auto text-center text-white" style="width: 90%;">艺术给我们插上翅膀，把我们带到很远很远的地方。——契诃夫</p>
+                <p class=" mx-auto text-center text-white" style="width: 90%;">灵魂不能像肉体那样愚蠢地忍受痛苦，灵魂能支持肉体，<br>但肉体却不能支持灵魂，灵魂有办法在思考中治愈自己
+                  <br> 的创伤，就像女裁缝的炭斗可以烫平衣缝一样。<br> ——巴尔扎克</p>
             </div>
 
             {{-- 轮播图片 --}}

@@ -177,9 +177,9 @@
             <br><br><br><br>
             {{-- 分类名称 --}}
             <div>
-                <h3 class="text-center text-white">〖 灵魂艺术 〗</h3>
+                <h3 class="text-center text-white">❖ 灵魂艺术 ❖</h3>
                 <br>
-                <p class=" mx-auto text-center text-white" style="width: 90%;">艺术给我们插上翅膀，把我们带到很远很远的地方。——契诃夫</p>
+                <p class=" mx-auto text-center text-white" style="width: 90%;">艺术给我们插上翅膀，把我们带到很远很远的地方。<br>——契诃夫</p>
             </div>
 
             {{-- 轮播图片 --}}
@@ -210,7 +210,7 @@
                 <div>
                     <div class="category-background mx-auto p-3 mb-1 rounded">
                         <div class="float-left mt-0" style="width: 20%;">
-                            <a href="#"><img class="float-left"
+                            <a href="#"><img class="mx-auto "
                                              src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1507100205,3674590583&fm=26&gp=0.jpg"
                                              style="width: 92%;border-radius: 50%;border: solid 3px whitesmoke;"></a>
                         </div>

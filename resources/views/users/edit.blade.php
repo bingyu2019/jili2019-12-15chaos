@@ -4,10 +4,12 @@
   @include('layouts._xs_header')
   @include('layouts._lg_other_header')
 
+  <div class="d-block d-sm-none"><br><br><br><br><br></div>
+
   <div class="container">
     <div class="col-md-8 offset-md-2">
 
-      <div class="card">
+      <div class="card" style="background: linear-gradient(to top, #7C3A08,#EB9A02);">
         <div class="card-header">
           <h4>
             <i class="glyphicon glyphicon-edit"></i> 编辑个人资料
@@ -46,17 +48,20 @@
 
             <div class="form-group mb-4">
               <label for="" class="avatar-label">用户头像</label>
-              <input type="file" name="avatar" class="form-control-file">
+              <input type="file" name="avatar" class="form-control-file" onchange="showPreview(this)">
 
               @if($user->avatar)
                 <br>
-                <img class="thumbnail img-responsive" src="{{ $user->avatar }}" width="200"/>
+                <!-- <img src="{{ $user->avatar }}" id="portrait" class="img-fluid thumbnail img-responsive" width="250" -->
+                 <img class="thumbnail img-responsive" src="{{ $user->avatar }}" id="portrait"  width="200" height="200px" style="display:none;" />
+
               @endif
             </div>
 
 
             <div class="well well-sm">
-              <button type="submit" class="btn btn-primary">保存</button>
+              <button type="submit" class="btn btn-secondary"
+                      style="background: linear-gradient(to top, #7C3A08,#EB9A02);"><h5 class="pt-1">保存</h5></button>
             </div>
           </form>
         </div>
@@ -64,4 +69,22 @@
     </div>
   </div>
 
+@endsection
+
+@section('script')
+  <script>
+      function showPreview(source) {
+          var file = source.files[0];
+          if(window.FileReader) {
+              var fr = new FileReader();
+              console.log(fr);
+              var portrait = document.getElementById('portrait');
+              fr.onloadend = function(e) {
+                  portrait.src = e.target.result;
+              };
+              fr.readAsDataURL(file);
+              portrait.style.display = 'block';
+          }
+      }
+  </script>
 @endsection

@@ -624,7 +624,15 @@ hr {
 }
 
 
-//======================= 手机版主页 ===========================//
+//====================== users-edit  ===============================//
+.users-edit-page {
+  label {
+    font-size: 18px;
+  }
+}
+
+
+//======================= 手机版主页 =================================//
 
 // 手机主页和分类顶部导航
 .xs-nav-category li {
@@ -638,11 +646,14 @@ hr {
   background-image: linear-gradient(to right, #D3791C, #FAEDE0, #D3791C);
 }
 
-// 手机主页分类,和分类内容背景颜色和尺寸
-.root-background, .category-background {
+// 手机主页分类
+.root-background,.category-background {
   width: 99%;
-  background-image: linear-gradient(to right, #D3791C, #FCF5ED, #D3791C);
+  background-image: linear-gradient(to right, #D3791C, #fcc170, #D3791C);
 }
+
+// 分类内容背景颜色和尺寸
+
 
 // 手机分类盒子
 .xs-root-category-box {
@@ -652,7 +663,8 @@ hr {
 // 手机主页分类标题
 .xs-category-title {
   h4 {
-    text-shadow: 0 0 3px #000;
+    font-weight: bold;
+    font-size: 24px;
   }
 }
 
@@ -713,8 +725,9 @@ hr {
   }
 
 }
-.users-show-page{
-  p{
+
+.users-show-page {
+  p {
     font-size: 16px;
   }
 }
@@ -747,5 +760,7 @@ hr {
     padding: 3px;
   }
 }
+
+
 
 

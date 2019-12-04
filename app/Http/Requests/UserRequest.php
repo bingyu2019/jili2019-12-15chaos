@@ -22,7 +22,6 @@ class UserRequest extends FormRequest
         ];
     }
 
-
     public function messages()
     {
         return [
@@ -35,25 +34,3 @@ class UserRequest extends FormRequest
         ];
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

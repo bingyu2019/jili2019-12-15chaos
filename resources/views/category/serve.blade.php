@@ -40,17 +40,17 @@
                         <h3 class="text-white text-center pt-2">灵 &nbsp;&nbsp;魂&nbsp;&nbsp; 服&nbsp; &nbsp;务</h3>
                     </div>
                     {{-- 分类二级类别 --}}
-                    <div class="subclass serve-subclass container col-sm-11">
+                    <div class="subclass serve-subclass container col-sm-11 mx-auto">
                         <div>
-                            <ul class="text-center pt-5">
+                            <ul class="text-center pt-5 ">
                                 <li class="float-left text-white">│ <a href=""> &nbsp;影视制作 &nbsp;</a>│</li>
-                                <li class="float-left text-white"><a href="">&nbsp;书箱出版&nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp;作品订制&nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp; 作品朗读 &nbsp</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp; 广告投放 &nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp;成为赞助商 &nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp;意见建议 &nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp;举报投诉 &nbsp;</a>│</li>
+                                 <li class="float-left text-white"><a href="">&nbsp;有话要说 &nbsp;</a>│</li>
 
                             </ul>
                         </div>
@@ -163,7 +163,7 @@
             <br><br><br><br>
             {{-- 分类名称 --}}
             <div>
-                <h3 class="text-center text-white">〖 灵魂服务 〗</h3>
+                <h3 class="text-center text-white">❖ 灵魂服务 ❖</h3>
                 <br>
                 <p class=" mx-auto text-center text-white" style="width: 90%;">艺术给我们插上翅膀，把我们带到很远很远的地方。——契诃夫</p>
             </div>

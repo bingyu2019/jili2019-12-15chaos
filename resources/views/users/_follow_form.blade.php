@@ -6,13 +6,13 @@
             {{--                {{ csrf_field() }}--}}
             {{--                {{ method_field('DELETE') }}--}}
 
-            <button type="submit" class="btn btn-outline-light text-center" style="width: 99%;text-shadow:2px 2px 4px #000000;"><h5 class="pt-2">  取消关注</h5></button>
+            <button type="submit" class="btn btn-outline-light text-center" style="width: 90%;text-shadow:2px 2px 4px #000000;"><h5 class="pt-2">  取消关注</h5></button>
 
             </form>
 {{--        @else--}}
             <form action="" method="post">
 {{--                {{ csrf_field() }}--}}
-                <button type="submit" class="btn btn-outline-light text-center" style="width: 99%;text-shadow:2px 2px 4px #000000;"><h5 class="pt-2"><strong>+</strong>&nbsp; 关 注</h5></button>
+                <button type="submit" class="btn btn-outline-light text-center" style="width: 90%;text-shadow:2px 2px 4px #000000;"><h5 class="pt-2"><strong>+</strong>&nbsp; 关 注</h5></button>
             </form>
 {{--        @endif--}}
     </div>

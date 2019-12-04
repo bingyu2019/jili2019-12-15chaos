@@ -20,7 +20,7 @@
             <span class="carousel-control-prev-icon"></span>
         </a>
         <a class="carousel-control-next" href="#demo2" data-slide="next">
-            <span class="carousel-control-next-icon"><</span>
+            <span class="carousel-control-next-icon"></span>
         </a>
     </div>
 </div>

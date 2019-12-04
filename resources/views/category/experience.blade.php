@@ -199,9 +199,9 @@
             <br><br><br><br>
             {{-- 分类名称 --}}
             <div>
-                <h3 class="text-center text-white">〖 人物经历 〗</h3>
+                <h3 class="text-center text-white">❖ 人物经历 ❖</h3>
                 <br>
-                <p class=" mx-auto text-center text-white" style="width: 90%;">艺术给我们插上翅膀，把我们带到很远很远的地方。——契诃夫</p>
+                <p class=" mx-auto text-center text-white" style="width: 90%;">世界上没有一条道路是重复的，<br>也没有一个人生是可以替代的。<br>——余华</p>
             </div>
 
             {{-- 轮播图片 --}}
