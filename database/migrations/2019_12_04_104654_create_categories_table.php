@@ -16,6 +16,7 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->bigIncrements('id')->comment('ID');
             $table->unsignedBigInteger('parent_id')->nullable()->comment('父ID');
+            $table->foreign('parent_id')->references('id')->on('categories')->onDelete('cascade');
             $table->string('code',50)->unique()->comment('标识');
             $table->string('name',100)->default('')->comment('名称');
             $table->string('icon')->comment('图标');
