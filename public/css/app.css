@@ -12046,3 +12046,11 @@ hr {
   padding: 3px;
 }
 
+.admin-index-page .admin-info {
+  display: none;
+}
+
+.admin-index-page .admin-header:hover .admin-info {
+  display: block;
+}
+

@@ -1,9 +1,6 @@
 <?php
-//Route::get('/', function () {
-//    return view('welcome');
-//});
 
-// ========================== 静态页面【主页-分类】 ==============================//
+// ========================== 静态页面【主页/分类】 ==============================//
 // 首页
 Route::get('/', 'HomeController@root')->name('root');
 // 人物经历
@@ -29,7 +26,7 @@ Route::get('/category/serve','CategoriesController@serve')->name('serve');
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 
 //============================ 帖子路由 ==============================//
-Route::get('/topics/show','TopicsController@show')->name('topics.show');
+//Route::get('/topics/show','TopicsController@show')->name('topics.show');
 
 //========================= 认证用户邮箱注册登录系统 ====================//
 //Auth::routes();
@@ -53,4 +50,5 @@ Route::get('email/verify', 'Auth\VerificationController@show')->name('verificati
 Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->name('verification.verify');
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
-
+// ============================ 后台管理 ==============================//
+Route::get('/admin/index', 'Admin\AdminController@index')->name('admin.index');

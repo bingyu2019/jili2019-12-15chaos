@@ -34,31 +34,27 @@
                                 {{ Auth::user()->name }}
                             </a>
                             <div class="dropdown-menu register-dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a href="" class="dropdown-item">
-                                    <i class="fas fa-tachometer-alt mr-2"></i>
+                                <a href="{{ route('admin.index') }}" class="dropdown-item">
+{{--                                    <i class="fas fa-tachometer-alt mr-2"></i>--}}
                                     <h5>🔴 管理后台</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">
-                                    <i class="far fa-user mr-2"></i>
+{{--                                    <i class="far fa-user mr-2"></i>--}}
                                     <h5>🔴 个人中心</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item btn-favor" href="">
-                                    <i class="far fa-user mr-2"></i>
+{{--                                    <i class="far fa-user mr-2"></i>--}}
                                     <h5>🔵 我的钱袋</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">
-                                    <i class="far fa-edit mr-2"></i>
+{{--                                    <i class="far fa-edit mr-2"></i>--}}
                                     <h5>🔵 编辑资料</h5>
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" id="logout" href="#">
-
                                     <a href="javascript:void(0);" class="btn btn-danger btn-lg active btn-del-login" role="button" aria-pressed="true" style="width: 100%;"><h5>退出</h5></a>
-
-                                </a>
                             </div>
                         </li>
 

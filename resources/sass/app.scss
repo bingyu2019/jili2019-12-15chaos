@@ -647,7 +647,7 @@ hr {
 }
 
 // 手机主页分类
-.root-background,.category-background {
+.root-background, .category-background {
   width: 99%;
   background-image: linear-gradient(to right, #D3791C, #fcc170, #D3791C);
 }
@@ -749,7 +749,6 @@ hr {
   }
 }
 
-
 //======================== 注册 登录 ============================//
 /* User register page 验证码*/
 .register-page {
@@ -761,6 +760,15 @@ hr {
   }
 }
 
+//========================== 后台管理 ===========================//
+.admin-index-page {
+  .admin-info {
+    display: none;
+  }
 
+  .admin-header:hover .admin-info {
+    display: block;
+  }
 
+}
 
