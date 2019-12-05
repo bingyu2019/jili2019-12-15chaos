@@ -12060,11 +12060,11 @@ hr {
   padding: 3px;
 }
 
-.admin-index-page .admin-info {
+.admin-info {
   display: none;
 }
 
-.admin-index-page .admin-header:hover .admin-info {
+.admin-header:hover .admin-info {
   display: block;
 }
 

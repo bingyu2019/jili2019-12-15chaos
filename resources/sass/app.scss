@@ -463,6 +463,7 @@ hr {
       color: black;
     }
   }
+
   th, td, tr {
     vertical-align: middle;
     text-align: center;
@@ -774,20 +775,21 @@ hr {
 }
 
 //========================== 后台管理 ===========================//
-.admin-show-page {
-  .admin-info {
-    display: none;
-  }
 
-  .admin-header:hover .admin-info {
-    display: block;
-  }
+.admin-info {
+  display: none;
+}
 
+.admin-header:hover .admin-info {
+  display: block;
+}
+
+.admin-index-page {
   th, td {
     vertical-align: middle;
     text-align: center;
   }
-
-
 }
+
+
 

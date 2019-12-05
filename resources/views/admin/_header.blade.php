@@ -1,6 +1,6 @@
 <header class="admin-header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand text-light" href="#"><h4>灵魂深触-经历网</h4></a>
+    <a class="navbar-brand text-light" href="{{ route('admin.index') }}"><h4>灵魂深触-经历网</h4></a>
     <h5 class="text-white-50">把有限的生命投入到无限的为人民服务之中去！——雷锋</h5>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

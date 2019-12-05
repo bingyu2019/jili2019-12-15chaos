@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','编辑资料')
 @section('content')
   @include('layouts._xs_header')
   @include('layouts._lg_other_header')
@@ -21,9 +21,8 @@
           <form action="{{ route('users.update', $user->id) }}" method="POST"
                 accept-charset="UTF-8"
                 enctype="multipart/form-data">
-
-            <input type="hidden" name="_method" value="PUT">
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            @method('PUT')
+            @csrf
 
             @include('shared._error')
 
