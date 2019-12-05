@@ -51,4 +51,5 @@ Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->na
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
 // ============================ 后台管理 ==============================//
-Route::get('/admin/index', 'Admin\AdminController@index')->name('admin.index');
+Route::get('/admin/index','Admin\AdminController@index')->name('admin.index');
+Route::resource('admin', 'Admin\AdminController', ['only' => ['show', 'update', 'edit']]);

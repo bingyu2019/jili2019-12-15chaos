@@ -114,7 +114,7 @@
                         <div class="order-title container col-sm-11" style="border-top: solid 5px black;">
                             <table class="table category-table-center">
                                 <thead>
-                                <tr class="text-center">
+                                <tr>
                                     <th scope="col">头像</th>
                                     <th scope="col">经历主人</th>
                                     <th scope="col">日期</th>
@@ -126,11 +126,11 @@
                                 </thead>
                                 <tbody>
 
-                                <tr class="text-center">
+                                <tr>
                                     <td scope="row"><a href=""><img src="/images/avatar/face100px.jpg"
                                                                     class="img-thumbnail " alt="Cinque Terre"
                                                                     style="width: 60px;"></a></td>
-                                    <td style="width: 350px;"><a href="">了不起的比尔盖茨了不起的比尔盖茨了不起的比尔盖茨</a></td>
+                                    <td style="width: 350px;"><a href="">了不起的比尔盖茨了了不起的比尔盖茨了了不起的比尔盖茨了</a></td>
                                     <td style="width: 160px">2019-11-12</td>
                                     <td style="width: 130px">188888888</td>
                                     <td style="width: 130px">222222</td>

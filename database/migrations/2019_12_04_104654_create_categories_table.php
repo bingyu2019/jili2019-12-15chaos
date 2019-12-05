@@ -21,7 +21,7 @@ class CreateCategoriesTable extends Migration
             $table->string('name',100)->default('')->comment('名称');
             $table->string('icon')->comment('图标');
             $table->smallInteger('sort')->comment('排序');
-            $table->tinyInteger('status')->comment('状态[1:现实,0:隐藏,-1:删除]');
+            $table->tinyInteger('status')->default(1)->comment('状态[1:正常,0:隐藏,-1:删除]');
             $table->text('content')->nullable()->comment('内容');
             $table->boolean('is_directory')->comment('是否拥有子分类[0:否,1:是]');
             $table->unsignedInteger('level')->default(0)->comment('当前分类层次');

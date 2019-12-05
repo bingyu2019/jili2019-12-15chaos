@@ -240,7 +240,7 @@
         @include('layouts._xs_header')
     </div>
 
-    <h5>
+    <h5 class="d-block d-sm-none">
       @include('shared._messages')
     </h5>
 

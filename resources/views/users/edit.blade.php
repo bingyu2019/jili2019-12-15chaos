@@ -52,9 +52,8 @@
 
               @if($user->avatar)
                 <br>
-                <!-- <img src="{{ $user->avatar }}" id="portrait" class="img-fluid thumbnail img-responsive" width="250" -->
-                 <img class="thumbnail img-responsive" src="{{ $user->avatar }}" id="portrait"  width="200" height="200px" style="display:none;" />
-
+                <img src="{{ $user->avatar }}" id="portrait" class="img-fluid thumbnail img-responsive" width="200"
+                     style="display:none;">
               @endif
             </div>
 
@@ -67,24 +66,25 @@
         </div>
       </div>
     </div>
+    <br><br><br>
   </div>
 
 @endsection
 
-@section('script')
-  <script>
-      function showPreview(source) {
-          var file = source.files[0];
-          if(window.FileReader) {
-              var fr = new FileReader();
-              console.log(fr);
-              var portrait = document.getElementById('portrait');
-              fr.onloadend = function(e) {
-                  portrait.src = e.target.result;
-              };
-              fr.readAsDataURL(file);
-              portrait.style.display = 'block';
-          }
-      }
-  </script>
-@endsection
+
+<script>
+    function showPreview(source) {
+        var file = source.files[0];
+        if (window.FileReader) {
+            var fr = new FileReader();
+            console.log(fr);
+            var portrait = document.getElementById('portrait');
+            fr.onloadend = function (e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+</script>
+

@@ -17,11 +17,15 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('avatar')->nullable();
+            $table->string('avatar')->default('/images/avatar/default-avatar.png');
             $table->string('introduction')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->string('phone')->unique()->nullable()->comment('电话');
+            $table->tinyInteger('status')->default(1)->comment('状态[1:正常,0:隐藏,-1:删除]');
+            $table->string('identity')->default('小学生')->comment('用户组');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

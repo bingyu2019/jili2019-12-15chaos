@@ -64,66 +64,67 @@
 
     </div>
   </nav>
-  <div class="admin-info text-center" style="width: 100%;">
+  <div class="admin-info" style="width: 100%;z-index: 1;position: fixed;">
     <table class="table table-striped table-hover table-dark">
-      <tbody>
+      <tbody class="ml-5">
       <tr>
-        <th><h5>用户与权限</h5></th>
-        <td><a href="">👤 用户 </a>  <a href="">👤管理员</a></td>
-        <td><a href="">🔐权限管理 </a> &nbsp;<a href=""> 🔏角色管理</a></td>
-        <td><a href="">💻 站点配置</a></td>
+        <th><h5 class="ml-5">用户与权限 ➛ </h5></th>
+        <td><a href="{{ route('admin.index') }}" class="ml-5">👤 用户 </a>  <a href="">👤管理员</a></td>
+        <td><a href="" class="ml-5">🔐权限管理 </a> &nbsp;<a href=""> 🔏角色管理</a></td>
+        <td><a href="" class="ml-5">💻 站点配置</a></td>
       </tr>
       <tr>
-        <th><h5>分类管理</h5></th>
-        <td><a href="">所有分类</a></td>
-        <td><a href="">一级分类</a></td>
-        <td><a href="">二级分类</a></td>
+        <th><h5 class="ml-5">分类管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
+        <td><a href="" class="ml-5">所有分类</a></td>
+        <td><a href="" class="ml-5">一级分类</a></td>
+        <td><a href="" class="ml-5">二级分类</a></td>
       </tr>
       <tr>
-        <th><h5>财务管理</h5></th>
-        <td><a href="">🌺点赞 </a> <a href=""> 💰打赏 </a> <a href=""> 🎁礼赞</a></td>
-        <td><a href="">📚人物经历 </a> <a href=""> 💐灵魂展览馆</a></td>
-        <td><a href="">📡收入明细 </a> <a href=""> 📖支出明细</a></td>
+        <th><h5 class="ml-5">财务管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
+        <td><a href="" class="ml-5">🌺点赞 </a> <a href=""> 💰打赏 </a> <a href=""> 🎁礼赞</a></td>
+        <td><a href="" class="ml-5">📚人物经历 </a> <a href=""> 💐灵魂展览馆</a></td>
+        <td><a href="" class="ml-5">📡收入明细 </a> <a href=""> 📖支出明细</a></td>
       </tr>
       <tr>
-        <th><h5>内容管理</h5></th>
-        <td><a href="">📜 帖子管理</a></td>
-        <td><a href="">💬 回复管理 </a> &nbsp; <a href=""> 🔔私信管理</a></td>
-        <td><a href="">🌁 图片管理</a></td>
+        <th><h5 class="ml-5">内容管理&nbsp;&nbsp;&nbsp; ➛</h5></th>
+        <td><a href="" class="ml-5">📜 帖子管理</a></td>
+        <td><a href="" class="ml-5">💬 回复管理 </a> &nbsp; <a href=""> 🔔私信管理</a></td>
+        <td><a href="" class="ml-5">🌁 图片管理</a></td>
       </tr>
       <tr>
-        <th><h5>运营管理</h5></th>
-        <td><a href="">系统统计</a></td>
-        <td><a href="">系统管理</a></td>
-        <td><a href=""></a></td>
+        <th><h5 class="ml-5">运营管理&nbsp;&nbsp;&nbsp; ➛</h5></th>
+        <td><a href="" class="ml-5">系统统计</a></td>
+        <td><a href="" class="ml-5">系统管理</a></td>
+        <td><a href="" class="ml-5"></a></td>
       </tr>
       </tbody>
     </table>
-
-
-
-
-
-    {{--      <ul class="float-left mt-3">--}}
-    {{--        <li><h5>用户与权限</h5></li>--}}
-    {{--        <li><a href="">用户</a></li>--}}
-    {{--        <li><a href="">权限</a></li>--}}
-    {{--        <li><a href="">角色</a></li>--}}
-    {{--      </ul>--}}
-
-    {{--      <ul class="float-left mt-3">--}}
-    {{--        <li><h5>分类管理</h5></li>--}}
-    {{--        <li><a href="">一级分类</a></li>--}}
-    {{--        <li><a href="">二级分类</a></li>--}}
-    {{--      </ul>--}}
-
-    {{--      <ul class="float-left mt-3">--}}
-    {{--        <li><h5>文章管理</h5></li>--}}
-    {{--        <li><a href="">帖子</a></li>--}}
-    {{--        <li><a href="">回复</a></li>--}}
-    {{--        <li><a href="">图片</a></li>--}}
-    {{--      </ul>--}}
-
-
   </div>
 </header>
+
+@section('script')
+  <script>
+
+      $(document).ready(function () {
+// 退出登录确认按钮
+          $('.btn-del-login').click(function () {
+              swal({
+                  title: "您确认要退出吗？",
+                  icon: "warning",
+                  buttons: ['取消', '确定'],
+                  dangerMode: true,
+              })
+                  .then(function (willDelete) { // 用户点击按钮后会触发这个回调函数
+                      if (!willDelete) {
+                          return;
+                      }
+                      axios.post(`{{ route('logout') }}`)
+                          .then(function () {
+                              location.reload();
+                          })
+                  });
+          });
+
+      });
+  </script>
+@endsection

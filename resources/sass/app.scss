@@ -32,8 +32,8 @@ body {
     color: white;
     text-decoration: none;
   }
-
 }
+
 
 // ======================== 电脑主页样式 ====================//
 
@@ -412,6 +412,14 @@ hr {
 
 // =========================== 电脑【各分类】页面样式========================//
 // 分类主标题
+.category-experience-page {
+  tr, th, td {
+    vertical-align: middle;
+    text-align: center;
+  }
+
+}
+
 .experience-title {
   height: 50px;
   line-height: 50px;
@@ -455,6 +463,11 @@ hr {
       color: black;
     }
   }
+  th, td, tr {
+    vertical-align: middle;
+    text-align: center;
+  }
+
 }
 
 // 子分类名称区域
@@ -761,7 +774,7 @@ hr {
 }
 
 //========================== 后台管理 ===========================//
-.admin-index-page {
+.admin-show-page {
   .admin-info {
     display: none;
   }
@@ -769,6 +782,12 @@ hr {
   .admin-header:hover .admin-info {
     display: block;
   }
+
+  th, td {
+    vertical-align: middle;
+    text-align: center;
+  }
+
 
 }
 

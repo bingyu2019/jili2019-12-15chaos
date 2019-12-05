@@ -11762,6 +11762,13 @@ hr {
   background-color: white;
 }
 
+.category-experience-page tr,
+.category-experience-page th,
+.category-experience-page td {
+  vertical-align: middle;
+  text-align: center;
+}
+
 .experience-title {
   height: 50px;
   line-height: 50px;
@@ -11802,6 +11809,13 @@ hr {
 
 .category-table-center td a {
   color: black;
+}
+
+.category-table-center th,
+.category-table-center td,
+.category-table-center tr {
+  vertical-align: middle;
+  text-align: center;
 }
 
 .subclass {
@@ -12052,5 +12066,11 @@ hr {
 
 .admin-index-page .admin-header:hover .admin-info {
   display: block;
+}
+
+.admin-index-page th,
+.admin-index-page td {
+  vertical-align: middle;
+  text-align: center;
 }
 
