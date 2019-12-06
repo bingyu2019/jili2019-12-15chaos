@@ -104,8 +104,8 @@
 
               <div class="form-group row mb-0">
                 <div class="col-md-6 offset-md-4">
-                  <button type="submit" class="btn btn-secondary register text-white-50">
-                    {{ __('Register') }}
+                  <button type="submit" class="btn btn-secondary btn-block register text-white-50" style="height: 50px;">
+                    <h4> 注  &nbsp;册</h4>
                   </button>
                 </div>
               </div>
@@ -115,4 +115,5 @@
       </div>
     </div>
   </div>
+  <br><br><br><br>
 @endsection

@@ -54,7 +54,7 @@
 
             <div class="lg-other-header-menu dropdown-menu" aria-labelledby="navbarDropdown">
               {{--                            @can('manage_contents')--}}
-              <a class="dropdown-item" href="{{ route('admin.index') }}">
+              <a class="dropdown-item" href="{{ route('admin.users') }}">
                 🔴 管理后台
               </a>
               <div class="dropdown-divider"></div>
@@ -69,6 +69,10 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">
                 🔵 编辑资料
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="">
+                <h5>🔵 系统公告</h5>
               </a>
               <div class="dropdown-divider"></div>
                   <a href="javascript:void(0);" class="btn btn-danger btn-lg active btn-del-login" role="button" aria-pressed="true" style="width: 100%;"><h5>退出</h5></a>

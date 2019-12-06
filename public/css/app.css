@@ -12068,8 +12068,14 @@ hr {
   display: block;
 }
 
-.admin-index-page th,
-.admin-index-page td {
+.admin-users-page th,
+.admin-users-page td,
+.admin-admin-page th,
+.admin-admin-page td,
+.admin-permission-page th,
+.admin-permission-page td,
+.admin-role-page th,
+.admin-role-page td {
   vertical-align: middle;
   text-align: center;
 }

@@ -51,5 +51,12 @@ Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->na
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
 // ============================ 后台管理 ==============================//
-Route::get('/admin/index','Admin\AdminController@index')->name('admin.index');
-Route::resource('admin', 'Admin\AdminController', ['only' => ['update', 'edit','create']]);
+Route::get('/admin/users','Admin\AdminController@users')->name('admin.users'); // 用户列表
+Route::resource('admin', 'Admin\AdminController', ['only' => ['update', 'edit','create','s']]);
+Route::get('/admin/admin','Admin\AdminController@admin')->name('admin.admin'); // 管理员列表
+Route::get('/admin/permission', 'Admin\AdminController@permission')->name('admin.permission');//权限列表
+Route::get('/admin/permission_create_and_edit', 'Admin\AdminController@permissionCreateEdit')->name('admin.permissionCreateEdit');//权限列表
+Route::get('/admin/role', 'Admin\AdminController@role')->name('admin.role');//权限列表
+
+
+

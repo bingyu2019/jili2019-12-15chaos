@@ -1,6 +1,6 @@
 <header class="admin-header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand text-light" href="{{ route('admin.index') }}"><h4>灵魂深触-经历网</h4></a>
+    <a class="navbar-brand text-light" href="{{ route('admin.users') }}"><h4>灵魂深触-经历网</h4></a>
     <h5 class="text-white-50">把有限的生命投入到无限的为人民服务之中去！——雷锋</h5>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,10 @@
                 编辑资料
               </a>
               <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="">
+                系统公告
+              </a>
+              <div class="dropdown-divider"></div>
               <a href="javascript:void(0);" class="btn btn-danger btn-lg active btn-del-login" role="button"
                  aria-pressed="true" style="width: 100%;"><h5>退出</h5></a>
             </div>
@@ -69,8 +73,8 @@
       <tbody class="ml-5">
       <tr>
         <th><h5 class="ml-5">用户与权限 ➛ </h5></th>
-        <td><a href="{{ route('admin.index') }}" class="ml-5">👤 用户 </a>  <a href="">👤管理员</a></td>
-        <td><a href="" class="ml-5">🔐权限管理 </a> &nbsp;<a href=""> 🔏角色管理</a></td>
+        <td><a href="{{ route('admin.users') }}" class="ml-5">👤 用户 </a>  <a href="{{ route('admin.admin') }}">👤管理员</a></td>
+        <td><a href="{{ route('admin.permission') }}" class="ml-5">🔐权限管理 </a> &nbsp;<a href="{{ route('admin.role') }}"> 🔏角色管理</a></td>
         <td><a href="" class="ml-5">💻 站点配置</a></td>
       </tr>
       <tr>

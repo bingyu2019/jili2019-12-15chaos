@@ -81,6 +81,7 @@
 
                 <a class="dropdown-item text-center text-light" href="{{ route('users.edit', Auth::id()) }}">🔵 编辑资料</a>
 
+                <a class="dropdown-item text-center text-light" href="">🔴 系统公告</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" id="logout" href="#">
                   <form action="{{ route('logout') }}" method="POST">
