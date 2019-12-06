@@ -36,7 +36,7 @@
                 {{ Auth::user()->name }}
               </a>
               <div class="dropdown-menu register-dropdown-menu" aria-labelledby="navbarDropdown">
-                <a href="{{ route('admin.users') }}" class="dropdown-item">
+                <a href="{{ route('admin.users.index') }}" class="dropdown-item">
                   <h5>🔴 管理后台</h5>
                 </a>
                 <div class="dropdown-divider"></div>

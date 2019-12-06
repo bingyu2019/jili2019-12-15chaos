@@ -1,6 +1,6 @@
 <header class="admin-header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand text-light" href="{{ route('admin.users') }}"><h4>灵魂深触-经历网</h4></a>
+    <a class="navbar-brand text-light" href=""><h4>灵魂深触-经历网</h4></a>
     <h5 class="text-white-50">把有限的生命投入到无限的为人民服务之中去！——雷锋</h5>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,8 +73,8 @@
       <tbody class="ml-5">
       <tr>
         <th><h5 class="ml-5">用户与权限 ➛ </h5></th>
-        <td><a href="{{ route('admin.users') }}" class="ml-5">👤 用户 </a>  <a href="{{ route('admin.admin') }}">👤管理员</a></td>
-        <td><a href="{{ route('admin.permission') }}" class="ml-5">🔐权限管理 </a> &nbsp;<a href="{{ route('admin.role') }}"> 🔏角色管理</a></td>
+        <td><a href="{{ route('admin.users.index') }}" class="ml-5">👤 用户 </a>  <a href="{{ route('admin.admin.index') }}">👤管理员</a></td>
+        <td><a href="{{ route('admin.permissions.index') }}" class="ml-5">🔐权限管理 </a> &nbsp;<a href=""> 🔏角色管理</a></td>
         <td><a href="" class="ml-5">💻 站点配置</a></td>
       </tr>
       <tr>
@@ -106,29 +106,29 @@
   </div>
 </header>
 
-@section('script')
-  <script>
+{{--@section('script')--}}
+{{--  <script>--}}
 
-      $(document).ready(function () {
-// 退出登录确认按钮
-          $('.btn-del-login').click(function () {
-              swal({
-                  title: "您确认要退出吗？",
-                  icon: "warning",
-                  buttons: ['取消', '确定'],
-                  dangerMode: true,
-              })
-                  .then(function (willDelete) { // 用户点击按钮后会触发这个回调函数
-                      if (!willDelete) {
-                          return;
-                      }
-                      axios.post(`{{ route('logout') }}`)
-                          .then(function () {
-                              location.reload();
-                          })
-                  });
-          });
+{{--      $(document).ready(function () {--}}
+{{--      // 退出登录确认按钮--}}
+{{--          $('.btn-del-login').click(function () {--}}
+{{--              swal({--}}
+{{--                  title: "您确认要退出吗？",--}}
+{{--                  icon: "warning",--}}
+{{--                  buttons: ['取消', '确定'],--}}
+{{--                  dangerMode: true,--}}
+{{--              })--}}
+{{--                  .then(function (willDelete) { // 用户点击按钮后会触发这个回调函数--}}
+{{--                      if (!willDelete) {--}}
+{{--                          return;--}}
+{{--                      }--}}
+{{--                      axios.post(`{{ route('logout') }}`)--}}
+{{--                          .then(function () {--}}
+{{--                              location.reload();--}}
+{{--                          })--}}
+{{--                  });--}}
+{{--          });--}}
 
-      });
-  </script>
-@endsection
+{{--      });--}}
+{{--  </script>--}}
+{{--@endsection--}}

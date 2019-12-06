@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title',Auth::user()->name.'用户组管理')
 @section('content')
-  @include('admin._header')
+  @include('admin.layouts._header')
 
   <div class="card col-md-12 pt-1">
     <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">

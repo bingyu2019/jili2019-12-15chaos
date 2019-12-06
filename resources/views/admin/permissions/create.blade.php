@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title',Auth::user()->name.'管理权限')
 @section('content')
-  @include('admin._header')
+  @include('admin.layouts._header')
   <div class="container">
     <div class="col-md-8 offset-md-2">
 

@@ -1,14 +1,14 @@
 @extends('layouts.app')
-@section('title','编辑资料')
+@section('title','编辑用户')
 @section('content')
 
-  @include('admin._header')
+  @include('admin.layouts._header')
 
   <div class="col-md-12" style="background: #F0F0F0;">
     <div class="container">
       <div class="card col-md-10 mx-auto pt-2">
         <div class="card-header">
-          <h4>编辑个人资料</h4>
+          <h4>编辑用户</h4>
         </div>
         <div class="card-body">
           <form action="" method="POST"

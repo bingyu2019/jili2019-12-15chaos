@@ -1,14 +1,14 @@
 @extends('layouts.app')
-@section('title','编辑资料')
+@section('title','新建管理员')
 @section('content')
 
-  @include('admin._header')
+  @include('admin.layouts._header')
 
   <div class="col-md-12" style="background: #F0F0F0;">
     <div class="container">
       <div class="card col-md-10 mx-auto pt-2">
         <div class="card-header">
-          <h4>编辑个人资料</h4>
+          <h4>新建管理员</h4>
         </div>
         <div class="card-body">
           <form action="" method="POST"
@@ -20,7 +20,7 @@
             @include('shared._error')
 
             <div class="form-group">
-              <label for="name-field">用户名</label>
+              <label for="name-field">管理员</label>
               <input class="form-control" type="text" name="name" id="name-field"
                      value="{{ old('name', $user->name) }}"/>
             </div>
@@ -55,7 +55,6 @@
               <input type="checkbox" class="form-check-input" value="6"> 硕士&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input type="checkbox" class="form-check-input" value="7"> 博士&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input type="checkbox" class="form-check-input" value="8"> 博士后&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </label>
             </div>
             <hr>
             <div class="form-group">
@@ -70,7 +69,6 @@
               <input type="checkbox" class="form-check-input" value="18"> 运营&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input type="checkbox" class="form-check-input" value="18"> 营销&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </label>
             </div>
             <hr>
             <div class="form-group">
@@ -129,17 +127,17 @@
 
 
 <script>
-    function showPreview(source) {
-        var file = source.files[0];
-        if (window.FileReader) {
-            var fr = new FileReader();
-            console.log(fr);
-            var portrait = document.getElementById('portrait');
-            fr.onloadend = function (e) {
-                portrait.src = e.target.result;
-            };
-            fr.readAsDataURL(file);
-            portrait.style.display = 'block';
-        }
+  function showPreview(source) {
+    var file = source.files[0];
+    if (window.FileReader) {
+      var fr = new FileReader();
+      console.log(fr);
+      var portrait = document.getElementById('portrait');
+      fr.onloadend = function (e) {
+        portrait.src = e.target.result;
+      };
+      fr.readAsDataURL(file);
+      portrait.style.display = 'block';
     }
+  }
 </script>

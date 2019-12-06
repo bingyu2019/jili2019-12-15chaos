@@ -3,42 +3,43 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-//use App\Http\Requests\UserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class PermissionsController extends Controller
 {
-    public function index()
+
+    public function index(User $user)
     {
-        return view('admin.admin.index');
+        return view('admin.permissions.index',['user' => $user]);
     }
+
 
     public function create(User $user)
     {
-        return view('admin.admin.create',['user' => $user]);
+        return view('admin.permissions.create',['user' => $user]);
     }
-
 
     public function store(Request $request)
     {
         //
     }
 
+
     public function edit(User $user)
     {
-        return view('admin.admin.edit',['user' => $user]);
+        return view('admin.permissions.edit',['user' => $user]);
     }
+
 
     public function update(Request $request, $id)
     {
         //
     }
 
+
     public function destroy($id)
     {
         //
     }
-
 }
-

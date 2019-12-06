@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('title',Auth::user()->name.'管理权限')
 @section('content')
-  @include('admin._header')
+  @include('admin.layouts._header')
 
   <div class="card col-md-12 pt-1">
-    <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
+    <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;background: #CDDEEF;">
       <h3 class="text-center pb-4 pt-2">权限列表</h3>
-      <a href="{{ route('admin.permissionCreateEdit') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true"
+      <a href="{{ route('admin.permissions.create') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true"
          style="width: 130px;">添加权限</a>
     </div>
 
@@ -33,7 +33,7 @@
     </table>
 
     <form action="">
-      <table class="table table-bordered table-hover mt-2">
+      <table class="table table-bordered table-hover mt-2 admin-all-index">
         <thead>
         <tr class="card-header" style="font-size: 18px;">
           <th scope="col" style="width: 40px;">
@@ -67,7 +67,7 @@
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>
-          <td><a href="{{ route('admin.create') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
+          <td><a href="{{ route('admin.permissions.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
                                                                                              class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>
@@ -84,7 +84,7 @@
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>
-          <td><a href="{{ route('admin.create') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
+          <td><a href="{{ route('admin.permissions.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
                                                                                              class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>
@@ -102,7 +102,7 @@
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>
-          <td><a href="{{ route('admin.create') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
+          <td><a href="{{ route('admin.permissions.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
                                                                                              class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>
@@ -120,7 +120,7 @@
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>
-          <td><a href="{{ route('admin.create') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
+          <td><a href="{{ route('admin.permissions.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
                                                                                              class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>
@@ -137,7 +137,7 @@
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>
-          <td><a href="{{ route('admin.create') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
+          <td><a href="{{ route('admin.permissions.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
                                                                                              class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>
@@ -154,7 +154,7 @@
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>
-          <td><a href="{{ route('admin.create') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
+          <td><a href="{{ route('admin.permissions.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
                                                                                              class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>
@@ -171,7 +171,7 @@
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>
-          <td><a href="{{ route('admin.create') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
+          <td><a href="{{ route('admin.permissions.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
                                                                                              class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>
@@ -188,7 +188,7 @@
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>
-          <td><a href="{{ route('admin.create') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
+          <td><a href="{{ route('admin.admin.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
                                                                                              class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>

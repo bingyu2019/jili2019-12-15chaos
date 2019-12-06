@@ -21,8 +21,8 @@ class CreateUsersTable extends Migration
             $table->tinyInteger('status')->default(1)->comment('状态[1:正常,0:隐藏,-1:删除]');
             $table->tinyInteger('sex')->nullable()->comment('性别[1:男,0:女]');
             $table->string('grade')->default('1')->comment('用户组[1:小学生，2：初中生，3：高中生，4：大学生，5：学士,6：硕士,7:博士,8:博士后]');
-            $table->string('role')->nullable()->comment('角色[1:Founder,2:开发者,3:财务,4:管理员,5:总编辑,6：编辑,7:版主,8:实习版主,9:运营,10:营销]');
-            $table->string('permission')->nullable()->comment('权限[1：站点设置,2:修改、删除、审核用户,3:修改、删除、审核帖子,4:财务管理,5:允许查看财务,6：允许前台修改、删除、审核贴子,7:系统管理,8:市场营销]');
+            $table->string('roles')->nullable()->comment('角色[1:Founder,2:开发者,3:财务,4:管理员,5:总编辑,6：编辑,7:版主,8:实习版主,9:运营,10:营销]');
+            $table->string('permissions')->nullable()->comment('权限[1：站点设置,2:修改、删除、审核用户,3:修改、删除、审核帖子,4:财务管理,5:允许查看财务,6：允许前台修改、删除、审核贴子,7:系统管理,8:市场营销]');
             $table->softDeletes();
             $table->timestamps();
         });
