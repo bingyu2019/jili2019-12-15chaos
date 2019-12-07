@@ -9,15 +9,15 @@
       <h3 class="text-center pb-4 pt-2">🎁礼 赞 列 表🎁</h3>
       <a href="" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">刷新</a>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="礼赞日期" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="获礼用户" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="礼赞者" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="送礼用户" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="礼赞内容" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="帖子标题" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
     </div>
@@ -55,12 +55,13 @@
               </label>
             </div>
           </th>
-          <th scope="col">🎁ID</th>
-          <th scope="col">🎁礼赞者</th>
-          <th scope="col">🎁礼赞的内容</th>
-          <th scope="col">🎁礼赞金额</th>
-          <th scope="col" style="width: 160px;">🎁礼赞日期</th>
-          <th scope="col">🎁受礼赞人</th>
+          <th scope="col">ID</th>
+          <th scope="col">送礼用户</th>
+          <th scope="col">帖子标题</th>
+          <th scope="col">礼赞金额</th>
+          <th scope="col">版权用户</th>
+          <th scope="col" style="width: 160px;">礼赞日期</th>
+          <th scope="col">获礼用户</th>
         </tr>
         </thead>
         <tbody>
@@ -74,7 +75,8 @@
           <td>1</td>
           <td>Bing</td>
           <td>百年孤独</td>
-          <td>0.1元</td>
+          <td>🎁 0.1元</td>
+          <td>孤独求败</td>
           <td>2019-12-05 12:12:12</td>
           <td>鲁迅二世</td>
         </tr>

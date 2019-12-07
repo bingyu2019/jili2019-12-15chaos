@@ -49,6 +49,9 @@ class FinancesController extends Controller
         return view('admin.finances.show_edit');
     }
 
+
+
+
     public function store(Request $request)
     {
         //

@@ -2,7 +2,6 @@
 @section('title',Auth::user()->name.'新建帖子')
 @section('content')
   @include('admin.layouts._header')
-
   <div style="background: #F0F0F0;white:100%;">
     <div class="card mx-auto col-md-8">
       <div class="card-header mt-2">
@@ -10,28 +9,16 @@
           新增帖子
         </h4>
       </div>
-
       <div class="card-body">
-
         <form action="" method="POST"
               accept-charset="UTF-8"
               enctype="multipart/form-data">
-
           @include('shared._error')
-
           <div class="form-group">
             <label for="name-field">标题</label>
             <input class="form-control" type="text" name="name" id="name-field"
                    value=""/>
           </div>
-
-          <div class="form-group">
-            <label for="email-field">关键词</label>
-            <input class="form-control" type="text" name="email" id="email-field"
-                   value=""/>
-          </div>
-
-
           <div class="form-group">
             <label for="introduction-field">作者</label>
             <input class="form-control" type="text" name="email" id="email-field"
@@ -49,20 +36,21 @@
             <input class="form-control" type="text" name="email" id="email-field"
                    value=""/>
           </div>
-
-
+          <div class="form-group">
+            <label for="email-field">关键词</label>
+            <input class="form-control" type="text" name="email" id="email-field"
+                   value=""/>
+          </div>
           <div class="form-group">
             <label for="introduction-field">排序</label>
             <input class="form-control" type="text" name="email" id="email-field"
                    value=""/>
           </div>
-
           <div class="form-group">
             <label for="introduction-field">发布日期</label>
             <input class="form-control" type="text" name="email" id="email-field"
                    value=""/>
           </div>
-
           <div class="form-group">
             <label for="status-field">状态: &nbsp;</label>
             <input type="radio" name="status" value="1"/> 已发布&nbsp;&nbsp;

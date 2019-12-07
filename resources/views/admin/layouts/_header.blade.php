@@ -85,9 +85,9 @@
       </tr>
       <tr>
         <th><h5 class="ml-5">财务管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
-        <td><a href="{{ route('admin.finances.votes') }}" class="ml-5">🌺点赞 </a> <a href="{{ route('admin.finances.rewards') }}"> 💰打赏 </a> <a href="{{ route('admin.finances.gifts') }}"> 🎁礼赞</a></td>
+        <td><a href="" class="ml-5">📀 换币 </a> <a href="">📡收入 </a> <a href=""> 📖支出</a></td>
         <td><a href="{{ route('admin.finances.experience') }}" class="ml-5">📚人物经历 </a> <a href="{{ route('admin.finances.show') }}"> 💐灵魂展览馆</a></td>
-        <td><a href="" class="ml-5">📡收入明细 </a> <a href=""> 📖支出明细</a></td>
+        <td><a href="{{ route('admin.finances.votes') }}" class="ml-5">🌺点赞 </a> <a href="{{ route('admin.finances.rewards') }}"> 💰打赏 </a> <a href="{{ route('admin.finances.gifts') }}"> 🎁礼赞</a></td>
       </tr>
       <tr>
         <th><h5 class="ml-5">内容管理&nbsp;&nbsp;&nbsp; ➛</h5></th>

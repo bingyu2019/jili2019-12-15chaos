@@ -81,7 +81,7 @@
                                 <tr class="text-center">
                                     <th scope="col">头像</th>
                                     <th scope="col">礼品</th>
-                                    <th scope="col">发布者</th>
+                                    <th scope="col">版权所有者</th>
                                     <th scope="col">日期</th>
                                     <th scope="col">点赞</th>
                                     <th scope="col">购买</th>

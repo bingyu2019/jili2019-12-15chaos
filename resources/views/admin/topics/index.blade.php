@@ -57,7 +57,7 @@
           </th>
           <th scope="col">ID</th>
           <th scope="col">标题</th>
-          <th scope="col">关键词</th>
+          <th scope="col">顶级分类</th>
           <th scope="col">作者</th>
           <th scope="col">评论</th>
           <th scope="col">浏览</th>
@@ -79,7 +79,7 @@
             </div>
           <td>1</td>
           <td>农村部:生猪产能恢复较好 全国"猪价"连续4周回落</td>
-          <td>猪肉</td>
+          <td>灵魂共享</td>
           <td>Bing</td>
           <td>10000</td>
           <td>777</td>
