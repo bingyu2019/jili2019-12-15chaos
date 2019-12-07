@@ -81,6 +81,9 @@ Route::get('/admin/topics/index', 'Admin\TopicsController@index')->name('admin.t
 Route::get('/admin/topics/create', 'Admin\TopicsController@create')->name('admin.topics.create');
 Route::get('/admin/topics/edit', 'Admin\TopicsController@edit')->name('admin.topics.edit');
 
+// 后台图片列表
+Route::get('/admin/images/list', 'Admin\ImagesController@list')->name('images.list');
+
 //后台回复管理
 Route::get('/admin/replies/index', 'Admin\RepliesController@index')->name('admin.replies.index');
 Route::get('/admin/replies/edit', 'Admin\RepliesController@edit')->name('admin.replies.edit');
@@ -91,10 +94,17 @@ Route::get('/admin/notifications/system','Admin\NotificationsController@system')
 Route::get('/admin/notifications/create','Admin\NotificationsController@create')->name('notifications.create');
 Route::get('/admin/notifications/edit','Admin\NotificationsController@edit')->name('notifications.edit');
 
+// 后台站点设置
+Route::get('/admin/setting/edit','Admin\SettingController@edit')->name('setting.edit');
+
 //后台财务管理
-Route::get('/admin/finances/index', 'Admin\FinanceController@index')->name('admin.finances.index');
-Route::get('/admin/finances/create', 'Admin\FinanceController@create')->name('admin.finances.create');
-Route::get('/admin/finances/edit', 'Admin\FinanceController@edit')->name('admin.finances.edit');
+Route::get('/admin/finances/votes', 'Admin\FinancesController@votes')->name('admin.finances.votes');
+Route::get('/admin/finances/rewards', 'Admin\FinancesController@rewards')->name('admin.finances.rewards');
+Route::get('/admin/finances/gifts', 'Admin\FinancesController@gifts')->name('admin.finances.gifts');
+Route::get('/admin/finances/experience', 'Admin\FinancesController@experience')->name('admin.finances.experience');
+Route::get('/admin/finances/experience_edit', 'Admin\FinancesController@experienceEdit')->name('admin.finances.experienceEdit');
+Route::get('/admin/finances/show', 'Admin\FinancesController@show')->name('admin.finances.show');
+Route::get('/admin/finances/show_edit', 'Admin\FinancesController@showEdit')->name('admin.finances.showEdit');
 
 
 

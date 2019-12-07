@@ -1,23 +1,23 @@
 @extends('layouts.app')
-@section('title','管理后台')
+@section('title','点赞列表')
 @section('content')
   @include('admin.layouts._header')
 
 
   <div class="card col-md-12 pt-1">
     <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
-      <h3 class="text-center pb-4 pt-2">用 户 列 表</h3>
-      <a href="{{ route('admin.users.create') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">新建用户</a>
+      <h3 class="text-center pb-4 pt-2">🌺点 赞 列 表🌺</h3>
+      <a href="" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">刷新</a>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="邮箱" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="点赞日期" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="用户名" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="点赞者" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="ID" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="点赞内容" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
     </div>
@@ -26,7 +26,7 @@
       <thead>
       <tr>
         <th scope="col">
-          <button type="button" class="btn btn-danger float-left" style="width: 120px;">批量删除</button>
+          <button type="button" class="btn btn-danger float-left" style="width: 120px;">禁止删除</button>
         </th>
         <th scope="col"><h5>总数: 10 </h5></th>
         <th scope="col"><a href="" class="btn btn-outline-secondary">上一页</a> <a href=""
@@ -55,21 +55,12 @@
               </label>
             </div>
           </th>
-          <th scope="col">ID</th>
-          <th scope="col">头像</th>
-          <th scope="col">用户名</th>
-          <th scope="col">邮箱</th>
-          <th scope="col">电话</th>
-          <th scope="col">帖子</th>
-          <th scope="col">回复</th>
-          <th scope="col">获赞</th>
-          <th scope="col">获赏</th>
-          <th scope="col">获礼</th>
-          <th scope="col">余额</th>
-          <th scope="col" style="width: 100px;">注册日期</th>
-          <th scope="col" style="width: 65px;">性别</th>
-          <th scope="col">状态</th>
-          <th scope="col">管理</th>
+          <th scope="col">🌺ID</th>
+          <th scope="col">🌺点赞者</th>
+          <th scope="col">🌺点赞的内容</th>
+          <th scope="col">🌺点赞金额</th>
+          <th scope="col" style="width: 160px;">🌺点赞日期</th>
+          <th scope="col">🌺受赞人</th>
         </tr>
         </thead>
         <tbody>
@@ -81,31 +72,17 @@
               </label>
             </div>
           <td>1</td>
-          <td><img src="/images/avatar/default-avatar.png" style="width: 40px;height: 40px;" alt="头像"></td>
           <td>Bing</td>
-          <td>bing_yu2001@qq.com</td>
-          <td>13761719602</td>
-          <td>1000</td>
-          <td>10000</td>
-          <td>777</td>
-          <td>888</td>
-          <td>999</td>
-          <td>1234</td>
+          <td>百年孤独</td>
+          <td>0.1元</td>
           <td>2019-12-05 12:12:12</td>
-          <td>女</td>
-          <td>正常</td>
-          <td><a href="{{ route('admin.users.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
-                                                                                             class="btn btn-danger btn-sm">删除</a>
-          </td>
+          <td>鲁迅二世</td>
         </tr>
         </tbody>
       </table>
       <br>
     </form>
   </div>
-
-
-
 
 @endsection
 

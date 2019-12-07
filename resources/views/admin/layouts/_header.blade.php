@@ -75,7 +75,7 @@
         <th><h5 class="ml-5">用户与权限 ➛ </h5></th>
         <td><a href="{{ route('admin.users.index') }}" class="ml-5">👤 用户 </a>  <a href="{{ route('admin.admin.index') }}">👤管理员</a></td>
         <td><a href="{{ route('admin.permissions.index') }}" class="ml-5">🔐权限管理 </a> &nbsp;<a href="{{ route('admin.roles.index') }}"> 🔏角色管理</a></td>
-        <td><a href="" class="ml-5">💻 站点配置</a></td>
+        <td><a href="{{ route('setting.edit') }}" class="ml-5">💻 站点配置</a></td>
       </tr>
       <tr>
         <th><h5 class="ml-5">分类管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
@@ -85,15 +85,15 @@
       </tr>
       <tr>
         <th><h5 class="ml-5">财务管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
-        <td><a href="" class="ml-5">🌺点赞 </a> <a href=""> 💰打赏 </a> <a href=""> 🎁礼赞</a></td>
-        <td><a href="" class="ml-5">📚人物经历 </a> <a href=""> 💐灵魂展览馆</a></td>
+        <td><a href="{{ route('admin.finances.votes') }}" class="ml-5">🌺点赞 </a> <a href="{{ route('admin.finances.rewards') }}"> 💰打赏 </a> <a href="{{ route('admin.finances.gifts') }}"> 🎁礼赞</a></td>
+        <td><a href="{{ route('admin.finances.experience') }}" class="ml-5">📚人物经历 </a> <a href="{{ route('admin.finances.show') }}"> 💐灵魂展览馆</a></td>
         <td><a href="" class="ml-5">📡收入明细 </a> <a href=""> 📖支出明细</a></td>
       </tr>
       <tr>
         <th><h5 class="ml-5">内容管理&nbsp;&nbsp;&nbsp; ➛</h5></th>
         <td><a href="{{ route('admin.topics.index') }}" class="ml-5">📜 帖子管理</a></td>
         <td><a href="{{ route('admin.replies.index') }}" class="ml-5">💬 回复管理 </a> &nbsp; <a href="{{ route('notifications.users') }}"> 🔔 用户消息</a> <a href="{{ route('notifications.system') }}" class="ml-2">📩 系统通知 </a></td>
-        <td><a href="" class="ml-5">🌁 图片管理</a></td>
+        <td><a href="{{ route('images.list') }}" class="ml-5">🌁 帖子图片</a></td>
       </tr>
       <tr>
         <th><h5 class="ml-5">运营管理&nbsp;&nbsp;&nbsp; ➛</h5></th>
@@ -106,29 +106,29 @@
   </div>
 </header>
 
-{{--@section('script')--}}
-{{--  <script>--}}
+@section('script')
+  <script>
 
-{{--      $(document).ready(function () {--}}
-{{--      // 退出登录确认按钮--}}
-{{--          $('.btn-del-login').click(function () {--}}
-{{--              swal({--}}
-{{--                  title: "您确认要退出吗？",--}}
-{{--                  icon: "warning",--}}
-{{--                  buttons: ['取消', '确定'],--}}
-{{--                  dangerMode: true,--}}
-{{--              })--}}
-{{--                  .then(function (willDelete) { // 用户点击按钮后会触发这个回调函数--}}
-{{--                      if (!willDelete) {--}}
-{{--                          return;--}}
-{{--                      }--}}
-{{--                      axios.post(`{{ route('logout') }}`)--}}
-{{--                          .then(function () {--}}
-{{--                              location.reload();--}}
-{{--                          })--}}
-{{--                  });--}}
-{{--          });--}}
+      $(document).ready(function () {
+      // 退出登录确认按钮
+          $('.btn-del-login').click(function () {
+              swal({
+                  title: "您确认要退出吗？",
+                  icon: "warning",
+                  buttons: ['取消', '确定'],
+                  dangerMode: true,
+              })
+                  .then(function (willDelete) { // 用户点击按钮后会触发这个回调函数
+                      if (!willDelete) {
+                          return;
+                      }
+                      axios.post(`{{ route('logout') }}`)
+                          .then(function () {
+                              location.reload();
+                          })
+                  });
+          });
 
-{{--      });--}}
-{{--  </script>--}}
-{{--@endsection--}}
+      });
+  </script>
+@endsection

@@ -70,7 +70,6 @@
               <input type="checkbox" class="form-check-input" value="18"> 运营&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input type="checkbox" class="form-check-input" value="18"> 营销&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </label>
             </div>
             <hr>
             <div class="form-group">

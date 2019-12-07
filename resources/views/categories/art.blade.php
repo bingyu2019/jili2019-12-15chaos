@@ -49,7 +49,7 @@
                                 <li class="float-left text-white"><a href="">&nbsp; &nbsp;音乐 &nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp; &nbsp;摄影 &nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp; &nbsp;朗诵 &nbsp;</a>│</li>
-                                <li class="float-left text-white"><a href="">&nbsp; &nbsp;时装 &nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">&nbsp; &nbsp;时尚 &nbsp;</a>│</li>
                             </ul>
                             <br>
                             <ul class="atr-subclass-ul-down">
@@ -57,9 +57,9 @@
                                 <li class="float-left text-white"><a href="">&nbsp; &nbsp;段子&nbsp; </a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp; &nbsp;美术&nbsp; </a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp; &nbsp;歌舞 &nbsp;</a>│</li>
-                                <li class="float-left text-white"><a href="">&nbsp; &nbsp;健美 &nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">&nbsp; &nbsp;设计 &nbsp;</a>│</li>
                                 <li class="float-left text-white"><a href="">&nbsp; &nbsp;演讲 &nbsp;</a>│</li>
-                                <li class="float-left text-white"><a href="">&nbsp; &nbsp;彩妆 &nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">&nbsp; &nbsp;更多 &nbsp;</a>│</li>
                             </ul>
 
                         </div>
