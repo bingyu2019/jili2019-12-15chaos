@@ -4,10 +4,21 @@
   @include('admin.layouts._header')
 
   <div class="card col-md-12 pt-1">
-    <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;background: #CDDEEF;">
-      <h3 class="text-center pb-4 pt-2">权限列表</h3>
-      <a href="{{ route('admin.permissions.create') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true"
-         style="width: 130px;">添加权限</a>
+    <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
+      <h3 class="text-center pb-4 pt-2">权 限 列 表</h3>
+      <a href="{{ route('admin.permissions.create') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">新增权限</a>
+      <form class="form-inline my-2 my-lg-0 float-right mr-5">
+        <input class="form-control mr-sm-2" type="search" placeholder="角色" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
+      </form>
+      <form class="form-inline my-2 my-lg-0 float-right mr-5">
+        <input class="form-control mr-sm-2" type="search" placeholder="权限" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
+      </form>
+      <form class="form-inline my-2 my-lg-0 float-right mr-5">
+        <input class="form-control mr-sm-2" type="search" placeholder="ID" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
+      </form>
     </div>
 
     <table class="table table-striped table-bordered mt-2 card-header">
@@ -45,8 +56,8 @@
           </th>
           <th scope="col" style="width: 80px;">ID</th>
           <th scope="col">权限</th>
-          <th scope="col">执权角色</th>
-          <th scope="col" style="width: 200px;">修改日期</th>
+          <th scope="col">角色</th>
+          <th scope="col" style="width: 200px;">编辑日期</th>
           <th scope="col" style="width: 100px;">操作者</th>
           <th scope="col" style="width: 100px;">状态</th>
           <th scope="col" style="width: 150px;">管理</th>
@@ -167,7 +178,7 @@
             </div>
           <td>7</td>
           <td>系统管理</td>
-          <td>Founder 开发者 运营</td>
+          <td>Founder 开发者 运维</td>
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>

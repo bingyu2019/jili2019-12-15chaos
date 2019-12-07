@@ -5,17 +5,11 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class TopicsController extends Controller
+class RepliesController extends Controller
 {
-
     public function index()
     {
-        return view('admin.topics.index');
-    }
-
-    public function create()
-    {
-        return view('admin.topics.cerate');
+        return view('admin.replies.index');
     }
 
 
@@ -27,7 +21,7 @@ class TopicsController extends Controller
 
     public function edit()
     {
-        return view('admin.topics.edit');
+        return view('admin.replies.edit');
     }
 
 
@@ -41,4 +35,5 @@ class TopicsController extends Controller
     {
         //
     }
+
 }

@@ -44,19 +44,6 @@
               <input class="form-control" type="text" name="password_confirmation" id="password_confirmation-field"
                      value="{{ old('password', $user->password) }}"/>
             </div>
-            <br>
-            <div class="form-group">
-              <label for="Role-field">用户组: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="checkbox" class="form-check-input" value="1">小学生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="checkbox" class="form-check-input" value="2"> 初中生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="checkbox" class="form-check-input" value="3"> 高中生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="checkbox" class="form-check-input" value="4"> 大学生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="checkbox" class="form-check-input" value="5"> 学士&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="checkbox" class="form-check-input" value="6"> 硕士&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="checkbox" class="form-check-input" value="7"> 博士&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="checkbox" class="form-check-input" value="8"> 博士后&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </label>
-            </div>
             <hr>
             <div class="form-group">
               <label for="Role-field">角色: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>

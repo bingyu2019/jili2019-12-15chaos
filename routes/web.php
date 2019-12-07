@@ -62,9 +62,9 @@ Route::get('/admin/admin/create', 'Admin\AdminController@create')->name('admin.a
 Route::get('/admin/admin/edit', 'Admin\AdminController@edit')->name('admin.admin.edit');
 
 //后台角色管理
-Route::get('/admin/roles/index', 'Admin\RoleController@index')->name('admin.roles.index');
-Route::get('/admin/roles/create', 'Admin\RoleController@create')->name('admin.roles.create');
-Route::get('/admin/roles/edit', 'Admin\RoleController@edit')->name('admin.roles.edit');
+Route::get('/admin/roles/index', 'Admin\RolesController@index')->name('admin.roles.index');
+Route::get('/admin/roles/create', 'Admin\RolesController@create')->name('admin.roles.create');
+Route::get('/admin/roles/edit', 'Admin\RolesController@edit')->name('admin.roles.edit');
 
 //后台权限
 Route::get('/admin/permissions/index', 'Admin\PermissionsController@index')->name('admin.permissions.index');
@@ -80,6 +80,16 @@ Route::get('/admin/categories/edit', 'Admin\CategoriesController@edit')->name('a
 Route::get('/admin/topics/index', 'Admin\TopicsController@index')->name('admin.topics.index');
 Route::get('/admin/topics/create', 'Admin\TopicsController@create')->name('admin.topics.create');
 Route::get('/admin/topics/edit', 'Admin\TopicsController@edit')->name('admin.topics.edit');
+
+//后台回复管理
+Route::get('/admin/replies/index', 'Admin\RepliesController@index')->name('admin.replies.index');
+Route::get('/admin/replies/edit', 'Admin\RepliesController@edit')->name('admin.replies.edit');
+
+//后台用户消息/系统通知
+Route::get('/admin/notifications/users','Admin\NotificationsController@users')->name('notifications.users');
+Route::get('/admin/notifications/system','Admin\NotificationsController@system')->name('notifications.system');
+Route::get('/admin/notifications/create','Admin\NotificationsController@create')->name('notifications.create');
+Route::get('/admin/notifications/edit','Admin\NotificationsController@edit')->name('notifications.edit');
 
 //后台财务管理
 Route::get('/admin/finances/index', 'Admin\FinanceController@index')->name('admin.finances.index');

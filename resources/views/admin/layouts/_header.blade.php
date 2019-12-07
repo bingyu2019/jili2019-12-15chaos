@@ -74,14 +74,14 @@
       <tr>
         <th><h5 class="ml-5">用户与权限 ➛ </h5></th>
         <td><a href="{{ route('admin.users.index') }}" class="ml-5">👤 用户 </a>  <a href="{{ route('admin.admin.index') }}">👤管理员</a></td>
-        <td><a href="{{ route('admin.permissions.index') }}" class="ml-5">🔐权限管理 </a> &nbsp;<a href=""> 🔏角色管理</a></td>
+        <td><a href="{{ route('admin.permissions.index') }}" class="ml-5">🔐权限管理 </a> &nbsp;<a href="{{ route('admin.roles.index') }}"> 🔏角色管理</a></td>
         <td><a href="" class="ml-5">💻 站点配置</a></td>
       </tr>
       <tr>
         <th><h5 class="ml-5">分类管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
-        <td><a href="" class="ml-5">所有分类</a></td>
-        <td><a href="" class="ml-5">一级分类</a></td>
-        <td><a href="" class="ml-5">二级分类</a></td>
+        <td><a href="{{ route('admin.categories.index') }}" class="ml-5">所有分类</a></td>
+        <td><a href="{{ route('admin.categories.create') }}" class="ml-5">新增分类</a></td>
+        <td><a href="{{ route('admin.categories.edit') }}" class="ml-5">编辑分类</a></td>
       </tr>
       <tr>
         <th><h5 class="ml-5">财务管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
@@ -91,8 +91,8 @@
       </tr>
       <tr>
         <th><h5 class="ml-5">内容管理&nbsp;&nbsp;&nbsp; ➛</h5></th>
-        <td><a href="" class="ml-5">📜 帖子管理</a></td>
-        <td><a href="" class="ml-5">💬 回复管理 </a> &nbsp; <a href=""> 🔔私信管理</a></td>
+        <td><a href="{{ route('admin.topics.index') }}" class="ml-5">📜 帖子管理</a></td>
+        <td><a href="{{ route('admin.replies.index') }}" class="ml-5">💬 回复管理 </a> &nbsp; <a href="{{ route('notifications.users') }}"> 🔔 用户消息</a> <a href="{{ route('notifications.system') }}" class="ml-2">📩 系统通知 </a></td>
         <td><a href="" class="ml-5">🌁 图片管理</a></td>
       </tr>
       <tr>

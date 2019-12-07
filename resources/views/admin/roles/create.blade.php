@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title',Auth::user()->name.'编辑分类')
+@section('title',Auth::user()->name.'新建角色')
 @section('content')
   @include('admin.layouts._header')
 
@@ -7,7 +7,7 @@
     <div class="card mx-auto col-md-8">
       <div class="card-header mt-2">
         <h4>
-          编辑分类
+          新增角色
         </h4>
       </div>
 
@@ -16,45 +16,23 @@
         <form action="" method="POST"
               accept-charset="UTF-8"
               enctype="multipart/form-data">
+          @method('PUT')
+          @csrf
 
           @include('shared._error')
 
           <div class="form-group">
-            <label for="name-field">类名</label>
+            <label for="name-field">角色</label>
             <input class="form-control" type="text" name="name" id="name-field"
                    value=""/>
           </div>
 
           <div class="form-group">
-            <label for="email-field">描述</label>
+            <label for="email-field">权限</label>
             <input class="form-control" type="text" name="email" id="email-field"
                    value=""/>
           </div>
 
-
-          <div class="form-group">
-            <label for="introduction-field">级别</label>
-            <input class="form-control" type="text" name="email" id="email-field"
-                   value=""/>
-          </div>
-
-          <div class="form-group">
-            <label for="introduction-field">顶级类名</label>
-            <input class="form-control" type="text" name="email" id="email-field"
-                   value=""/>
-          </div>
-
-          <div class="form-group">
-            <label for="introduction-field">父级类名</label>
-            <input class="form-control" type="text" name="email" id="email-field"
-                   value=""/>
-          </div>
-
-          <div class="form-group">
-            <label for="introduction-field">编辑日期</label>
-            <input class="form-control" type="text" name="email" id="email-field"
-                   value=""/>
-          </div>
 
           <div class="form-group">
             <label for="introduction-field">操作者</label>
@@ -65,7 +43,7 @@
           <div class="form-group">
             <label for="status-field">状态: &nbsp;</label>
             <input type="radio" name="status" value="1"/> 正常&nbsp;&nbsp;
-            <input type="radio" name="status" value="0"/> 隐藏&nbsp;&nbsp;
+            <input type="radio" name="status" value="0"/> 失效&nbsp;&nbsp;
             <input type="radio" name="status" value="-1"/> 删除
           </div>
 
