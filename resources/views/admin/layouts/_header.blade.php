@@ -1,6 +1,6 @@
 <header class="admin-header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand text-light" href=""><h4>灵魂深触-经历网</h4></a>
+    <a class="navbar-brand text-light" href="{{ route('system.statistics') }}"><h4>灵魂深触-经历网</h4></a>
     <h5 class="text-white-50 pr-5" >把有限的生命投入到无限的为人民服务之中去！</h5>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +75,7 @@
         <th><h5 class="ml-5">用户与权限 ➛ </h5></th>
         <td><a href="{{ route('admin.users.index') }}" class="ml-5">👤 用户 </a>  <a href="{{ route('admin.admin.index') }}">👤管理员</a></td>
         <td><a href="{{ route('admin.permissions.index') }}" class="ml-5">🔐权限管理 </a> &nbsp;<a href="{{ route('admin.roles.index') }}"> 🔏角色管理</a></td>
-        <td><a href="{{ route('setting.edit') }}" class="ml-5">💻 站点配置</a></td>
+        <td><a href="{{ route('system.setting') }}" class="ml-5">💻 站点设置</a></td>
       </tr>
       <tr>
         <th><h5 class="ml-5">分类管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
@@ -85,8 +85,8 @@
       </tr>
       <tr>
         <th><h5 class="ml-5">财务管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
-        <td><a href="{{ route('admin.coins') }}" class="ml-5">📀 换币 </a> <a href="{{ route('admin.finance.list') }}">📡收入 </a> <a href="{{ route('admin.finance.payments') }}"> 📖支出</a></td>
-        <td><a href="{{ route('admin.usersProfits') }}" class="ml-5">💰用户收益</a> <a href="{{ route('admin.finances.experience') }}" class="ml-1">📚人物经历 </a> <a href="{{ route('admin.finances.show') }}"> 💐灵魂展览馆</a></td>
+        <td><a href="{{ route('admin.coins') }}" class="ml-5">📀 购币明细 </a> <a href="{{ route('admin.finance.list') }}">📡收入统计 </a> <a href="{{ route('admin.finance.payments') }}"> 📖支出明细</a></td>
+        <td><a href="{{ route('admin.usersProfits') }}" class="ml-5">💰用户收益发放</a> <a href="{{ route('admin.finances.experience') }}" class="ml-1">📚人物经历 </a> <a href="{{ route('admin.finances.show') }}"> 💐灵魂展览馆</a></td>
         <td><a href="{{ route('admin.finances.votes') }}" class="ml-5">🌺点赞 </a> <a href="{{ route('admin.finances.rewards') }}"> 💰打赏 </a> <a href="{{ route('admin.finances.gifts') }}"> 🎁礼赞</a></td>
       </tr>
       <tr>
@@ -97,9 +97,9 @@
       </tr>
       <tr>
         <th><h5 class="ml-5">运营管理&nbsp;&nbsp;&nbsp; ➛</h5></th>
-        <td><a href="" class="ml-5">系统统计</a></td>
+        <td><a href="{{ route('system.statistics') }}" class="ml-5">系统统计</a></td>
         <td><a href="" class="ml-5">系统管理</a></td>
-        <td><a href="" class="ml-5"></a></td>
+        <td><a href="{{ route('system.log') }}" class="ml-5">系统日志</a></td>
       </tr>
       </tbody>
     </table>

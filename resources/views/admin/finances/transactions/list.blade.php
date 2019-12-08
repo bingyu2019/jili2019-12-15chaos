@@ -1,19 +1,19 @@
 @extends('layouts.app')
-@section('title','系统收入明细')
+@section('title','系统收入统计')
 @section('content')
   @include('admin.layouts._header')
 
 
   <div class="card col-md-12 pt-1">
     <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
-      <h3 class="text-center pb-4 pt-2">系统收入明细</h3>
-      <a href="" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">刷新</a>
+      <h3 class="text-center pb-4 pt-2">系统收入统计</h3>
+      <a href="{{ route('admin.finance.listCreate') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">新建统计</a>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="date" placeholder="发布日期" aria-label="Search">
+        <input class="form-control mr-sm-2" type="date" placeholder="" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="用户名" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="种类" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
@@ -49,15 +49,12 @@
         <thead>
         <tr class="card-header" style="font-size: 16px;">
           <th scope="col">ID</th>
-          <th scope="col">邮箱</th>
-          <th scope="col">支付宝账号</th>
-          <th scope="col">账号实名</th>
-          <th scope="col">📀金币(1元1个)</th>
-          <th scope="col">💿银币(0.1元1个)</th>
-          <th scope="col">共计</th>
-          <th scope="col">服务费10%</th>
-          <th scope="col">实付金额</th>
-          <th scope="col" style="width: 160px;">兑币日期</th>
+          <th scope="col">年份</th>
+          <th scope="col">月分</th>
+          <th scope="col">服务费（元）</th>
+          <th scope="col">广告费（元）</th>
+          <th scope="col">其它（元）</th>
+          <th scope="col">共计（元）</th>
           <th scope="col">状态</th>
           <th scope="col">管理</th>
         </tr>
@@ -65,17 +62,14 @@
         <tbody>
         <tr class="pb-2">
           <td>1</td>
-          <td>bing_yu2001@qq.com</td>
-          <td>13761719602</td>
-          <td>王汝冰</td>
-          <td>10个 / 10元</td>
-          <td>100个 / 10元</td>
-          <td>20 元</td>
-          <td>2 元</td>
-          <td>22 元</td>
-          <td>2019-12-05 12:12:12</td>
-          <td>成功</td>
-          <td><a href="{{ route('admin.coinsEdit') }}" class="btn btn-success btn-sm">编辑</a>
+          <td>2019</td>
+          <td>12</td>
+          <td>98798</td>
+          <td>987970</td>
+          <td>07869086</td>
+          <td>60899087098 元</td>
+          <td>正常</td>
+          <td><a href="{{ route('admin.finance.listEdit') }}" class="btn btn-success btn-sm">编辑</a>
           </td>
         </tr>
         </tbody>

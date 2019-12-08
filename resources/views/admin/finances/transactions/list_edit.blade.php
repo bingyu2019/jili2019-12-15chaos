@@ -1,65 +1,55 @@
 @extends('layouts.app')
-@section('title',Auth::user()->name.'编辑展览')
+@section('title',Auth::user()->name.'编辑系统收入统计')
 @section('content')
   @include('admin.layouts._header')
+
   <div style="background: #F0F0F0;white:100%;">
     <div class="card mx-auto col-md-8">
       <div class="card-header mt-2">
-        <h4>编辑展览</h4>
+        <h4>编辑系统收入统计</h4>
       </div>
       <div class="card-body">
         <form action="" method="POST"
               accept-charset="UTF-8"
               enctype="multipart/form-data">
+          @method('PUT')
+          @csrf
           @include('shared._error')
           <div class="form-group">
-            <label for="name-field">标题</label>
+            <label for="name-field">年份</label>
             <input class="form-control" type="text" name="name" id="name-field"
-                   value="了不起的比尔盖茨" disabled />
+                   value=""/>
           </div>
-          <br>
           <div class="form-group">
-            <label for="email-field">创建者</label>
-            <input class="form-control" type="text" name="email" id="email-field"
-                   value="13761719602" disabled/>
+            <label for="name-field">月份</label>
+            <input class="form-control" type="text" name="name" id="name-field"
+                   value=""/>
           </div>
-          <br>
           <div class="form-group">
-            <label for="introduction-field">发布日期</label>
+            <label for="email-field">服务费（元）</label>
             <input class="form-control" type="text" name="email" id="email-field"
-                   value="王汝冰" disabled/>
+                   value=""/>
           </div>
-          <br>
           <div class="form-group">
-            <label for="introduction-field">参展人数</label>
+            <label for="introduction-field">广告费（元）</label>
             <input class="form-control" type="text" name="email" id="email-field"
-                   value="8888" disabled/>
+                   value=""/>
           </div>
-          <br>
           <div class="form-group">
-            <label for="introduction-field">付费参展 / 人 / 天</label>
+            <label for="introduction-field">其它（元）</label>
             <input class="form-control" type="text" name="email" id="email-field"
-                   value="2.00 元" />
+                   value=""/>
           </div>
-          <br>
           <div class="form-group">
-            <label for="introduction-field">点赞总额</label>
+            <label for="introduction-field">共计（元）</label>
             <input class="form-control" type="text" name="email" id="email-field"
-                   value="200 元" disabled/>
+                   value="" f/>
           </div>
-          <br>
           <div class="form-group">
-            <label for="introduction-field">打赏总额</label>
-            <input class="form-control" type="text" name="email" id="email-field"
-                   value="17，776 元" disabled/>
+            <label for="status-field">状态: &nbsp;</label>
+            <input type="radio" name="status" value="1"/> 正常&nbsp;&nbsp;
+            <input type="radio" name="status" value="0" checked/> 异常&nbsp;&nbsp;
           </div>
-          <br>
-          <div class="form-group">
-            <label for="introduction-field">礼赞总额</label>
-            <input class="form-control" type="text" name="email" id="email-field"
-                   value="0 元" disabled/>
-          </div>
-          <br>
           <div class="well well-sm">
             <button type="submit" class="btn btn-block btn-primary"><h5 class="pt-1">保存</h5></button>
           </div>

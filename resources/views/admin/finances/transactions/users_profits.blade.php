@@ -1,12 +1,12 @@
 @extends('layouts.app')
-@section('title','用户收益发放列表')
+@section('title','用户收益统计与发放')
 @section('content')
   @include('admin.layouts._header')
 
 
   <div class="card col-md-12 pt-1">
     <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
-      <h3 class="text-center pb-4 pt-2">用 户 收 益 发 放 列 表</h3>
+      <h3 class="text-center pb-4 pt-2">用户收益统计与发放</h3>
       <a href="{{ route('admin.users.create') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">刷新</a>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
         <input class="form-control mr-sm-2" type="search" placeholder="邮箱" aria-label="Search">

@@ -1,13 +1,13 @@
 @extends('layouts.app')
-@section('title','用户兑币记录')
+@section('title','用户购币记录')
 @section('content')
   @include('admin.layouts._header')
 
 
   <div class="card col-md-12 pt-1">
     <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
-      <h3 class="text-center pb-4 pt-2">用 户 兑 币 记 录</h3>
-      <a href="{{ route('admin.coinsCreate') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">新建兑币</a>
+      <h3 class="text-center pb-4 pt-2">用户购币记录</h3>
+      <a href="{{ route('admin.coinsCreate') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">新建购币记录</a>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
         <input class="form-control mr-sm-2" type="date" placeholder="发布日期" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>

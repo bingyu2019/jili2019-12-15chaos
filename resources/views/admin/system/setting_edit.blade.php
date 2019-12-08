@@ -10,7 +10,7 @@
       </div>
       <div class="card-body">
         <div>
-          <h5 class="float-left">站点名称：</h5>
+          <h5 class="float-left">网站名称：</h5>
           <p class="float-right">17 剩余字符串</p>
           <input class="form-control" type="text" name="name" id="name-field"
                  value="灵魂深触-经历网"/>
@@ -21,7 +21,7 @@
           <h5 class="float-left">联系人邮箱：</h5>
           <p class="float-right">35 剩余字符串</p>
           <input class="form-control" type="text" name="name" id="name-field"
-                 value="Bing@jili20.com"/>
+                 value="hello world@jili20.com"/>
         </div>
         <br>
         <br>
@@ -37,7 +37,31 @@
           <h5 class="float-left">SEO-Keyword：</h5>
           <p class="float-right">222 剩余字符串</p>
           <input class="form-control" type="text" name="name" id="name-field"
-                 value="论坛 社区 文学艺术社区"/>
+                 value="经历 论坛 社区 文学艺术社区"/>
+        </div>
+        <br>
+        <br>
+        <div>
+          <h5 class="float-left">底部版权信息：</h5>
+          <p class="float-right">222 剩余字符串</p>
+          <input class="form-control" type="text" name="name" id="name-field"
+                 value=""/>
+        </div>
+        <br>
+        <br>
+        <div>
+          <h5 class="float-left">备案号：</h5>
+          <p class="float-right">222 剩余字符串</p>
+          <input class="form-control" type="text" name="name" id="name-field"
+                 value=""/>
+        </div>
+        <br>
+        <br>
+        <div>
+          <h5 class="float-left">统计代码：</h5>
+          <p class="float-right">222 剩余字符串</p>
+          <input class="form-control" type="text" name="name" id="name-field"
+                 value=""/>
         </div>
         <br>
         <br>

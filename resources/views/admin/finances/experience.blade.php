@@ -46,17 +46,17 @@
     <form action="">
       <table class="table table-bordered table-hover mt-2 admin-all-index">
         <thead>
-        <tr class="card-header" style="font-size: 18px;">
+        <tr class="card-header" style="font-size: 16px;">
           <th scope="col">ID</th>
           <th scope="col">经历主人</th>
-          <th scope="col">创建者账号</th>
+          <th scope="col">创建者</th>
           <th scope="col" style="width: 160px;">发布日期</th>
-          <th scope="col">查看人数</th>
-          <th scope="col">收取版税/人/年</th>
-          <th scope="col">当月收益</th>
+          <th scope="col">阅读人数</th>
+          <th scope="col">付费阅读/人/年</th>
+          <th scope="col">点赞总额</th>
+          <th scope="col">打赏总额</th>
+          <th scope="col">礼赞总额</th>
           <th scope="col">累计收益</th>
-          <th scope="col">上月收益</th>
-          <th scope="col">月前余额</th>
           <th scope="col">管理</th>
         </tr>
         </thead>
@@ -70,39 +70,12 @@
           <td>2.00 元</td>
           <td>200 元</td>
           <td>17，776 元</td>
-          <td>未发放</td>
           <td>200 元</td>
+          <td>200000 元</td>
           <td><a href="{{ route('admin.finances.experienceEdit') }}" class="btn btn-success btn-sm">编辑</a>
           </td>
         </tr>
-        <tr class="pb-2">
-          <td>1</td>
-          <td>了不起的比尔盖茨</td>
-          <td>13761719602</td>
-          <td>2019-12-05 12:12:12</td>
-          <td>8888</td>
-          <td>2.00 元</td>
-          <td>200 元</td>
-          <td>17，776 元</td>
-          <td>已发放</td>
-          <td>0 元</td>
-          <td><a href="{{ route('admin.finances.experienceEdit') }}" class="btn btn-success btn-sm">编辑</a>
-          </td>
-        </tr>
-        <tr class="pb-2">
-          <td>1</td>
-          <td>了不起的比尔盖茨</td>
-          <td>13761719602</td>
-          <td>2019-12-05 12:12:12</td>
-          <td>8888</td>
-          <td>2.00 元</td>
-          <td>200 元</td>
-          <td>17，776 元</td>
-          <td>冻结</td>
-          <td>200 元</td>
-          <td><a href="{{ route('admin.finances.experienceEdit') }}" class="btn btn-success btn-sm">编辑</a>
-          </td>
-        </tr>
+
         </tbody>
       </table>
       <br>
