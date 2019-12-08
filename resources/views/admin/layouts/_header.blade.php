@@ -1,7 +1,7 @@
 <header class="admin-header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand text-light" href=""><h4>灵魂深触-经历网</h4></a>
-    <h5 class="text-white-50">把有限的生命投入到无限的为人民服务之中去！——雷锋</h5>
+    <h5 class="text-white-50 pr-5" >把有限的生命投入到无限的为人民服务之中去！</h5>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -85,8 +85,8 @@
       </tr>
       <tr>
         <th><h5 class="ml-5">财务管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
-        <td><a href="" class="ml-5">📀 换币 </a> <a href="">📡收入 </a> <a href=""> 📖支出</a></td>
-        <td><a href="{{ route('admin.finances.experience') }}" class="ml-5">📚人物经历 </a> <a href="{{ route('admin.finances.show') }}"> 💐灵魂展览馆</a></td>
+        <td><a href="{{ route('admin.coins') }}" class="ml-5">📀 换币 </a> <a href="{{ route('admin.finance.list') }}">📡收入 </a> <a href="{{ route('admin.finance.payments') }}"> 📖支出</a></td>
+        <td><a href="{{ route('admin.usersProfits') }}" class="ml-5">💰用户收益</a> <a href="{{ route('admin.finances.experience') }}" class="ml-1">📚人物经历 </a> <a href="{{ route('admin.finances.show') }}"> 💐灵魂展览馆</a></td>
         <td><a href="{{ route('admin.finances.votes') }}" class="ml-5">🌺点赞 </a> <a href="{{ route('admin.finances.rewards') }}"> 💰打赏 </a> <a href="{{ route('admin.finances.gifts') }}"> 🎁礼赞</a></td>
       </tr>
       <tr>

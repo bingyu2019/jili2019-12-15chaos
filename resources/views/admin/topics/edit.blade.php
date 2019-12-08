@@ -51,7 +51,7 @@
             <label for="status-field">状态: &nbsp;</label>
             <input type="radio" name="status" value="1"/> 已发布&nbsp;&nbsp;
             <input type="radio" name="status" value="0"/> 排队审核中&nbsp;&nbsp;
-            <input type="radio" name="status" value="-1"/> 删除
+            <input type="radio" name="status" value="-1"/> 隐藏
           </div>
           <div class="well well-sm">
             <button type="submit" class="btn btn-block btn-primary"><h5 class="pt-1">保存</h5></button>

@@ -54,7 +54,7 @@
 
             <div class="lg-other-header-menu dropdown-menu" aria-labelledby="navbarDropdown">
               {{--                            @can('manage_contents')--}}
-              <a class="dropdown-item" href="{{ route('admin.users') }}">
+              <a class="dropdown-item" href="{{ route('admin.users.index') }}">
                 🔴 管理后台
               </a>
               <div class="dropdown-divider"></div>

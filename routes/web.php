@@ -105,7 +105,14 @@ Route::get('/admin/finances/experience', 'Admin\FinancesController@experience')-
 Route::get('/admin/finances/experience_edit', 'Admin\FinancesController@experienceEdit')->name('admin.finances.experienceEdit');
 Route::get('/admin/finances/show', 'Admin\FinancesController@show')->name('admin.finances.show');
 Route::get('/admin/finances/show_edit', 'Admin\FinancesController@showEdit')->name('admin.finances.showEdit');
-
+Route::get('admin/finance/transactions/users_profits','Admin\TransactionsController@usersProfits')->name('admin.usersProfits');
+Route::get('admin/finance/transactions/users_profits_edit','Admin\TransactionsController@usersProfitsEdit')->name('admin.usersProfitsEdit');
+// 后台用户兑币
+Route::get('admin/finance/transactions/coins','Admin\TransactionsController@coins')->name('admin.coins');
+Route::get('admin/finance/transactions/coins_create','Admin\TransactionsController@coinsCreate')->name('admin.coinsCreate');
+Route::get('admin/finance/transactions/coins_edit','Admin\TransactionsController@coinsEdit')->name('admin.coinsEdit');
+Route::get('admin/finance/transactions/list','Admin\TransactionsController@list')->name('admin.finance.list');
+Route::get('admin/finance/transactions/payments','Admin\TransactionsController@payments')->name('admin.finance.payments');
 
 
 

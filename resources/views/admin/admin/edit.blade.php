@@ -81,8 +81,8 @@
             <div class="form-group">
               <label for="status-field">状态: &nbsp;</label>
               <input type="radio" name="status" value="1"/> 正常&nbsp;&nbsp;
-              <input type="radio" name="status" value="0"/> 隐藏&nbsp;&nbsp;
-              <input type="radio" name="status" value="-1"/> 删除
+              <input type="radio" name="status" value="0"/> 禁言&nbsp;&nbsp;
+              <input type="radio" name="status" value="-1"/> 隐藏
             </div>
             <hr>
             <div class="form-group">
@@ -94,14 +94,10 @@
               <label for="" class="avatar-label">用户头像</label>
               <input type="file" name="avatar" class="form-control-file" onchange="showPreview(this)">
 
-              @if($user->avatar)
-                <br>
-                <img src="{{ $user->avatar }}" id="portrait" class="img-fluid thumbnail img-responsive" width="200"
-                     style="display:none;">
-              @endif
+              <br>
+              <img src="" id="portrait" class="img-fluid thumbnail img-responsive" width="200">
+
             </div>
-
-
             <div class="well well-sm">
               <button type="submit" class="btn btn-block btn-primary"><h5 class="pt-1">保 存</h5></button>
             </div>

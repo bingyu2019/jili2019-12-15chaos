@@ -47,7 +47,7 @@
     <form action="">
       <table class="table table-bordered table-hover mt-2 admin-all-index">
         <thead>
-        <tr class="card-header" style="font-size: 18px;">
+        <tr class="card-header" style="font-size: 16px;">
           <th scope="col" style="width: 40px;">
             <div class="form-check">
               <label class="form-check-label mb-3">

@@ -1,15 +1,15 @@
 @extends('layouts.app')
-@section('title','管理后台')
+@section('title','用户兑币记录')
 @section('content')
   @include('admin.layouts._header')
 
 
   <div class="card col-md-12 pt-1">
     <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
-      <h3 class="text-center pb-4 pt-2">用 户 列 表</h3>
-      <a href="{{ route('admin.users.create') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">新建用户</a>
+      <h3 class="text-center pb-4 pt-2">用 户 兑 币 记 录</h3>
+      <a href="{{ route('admin.coinsCreate') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">新建兑币</a>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="邮箱" aria-label="Search">
+        <input class="form-control mr-sm-2" type="date" placeholder="发布日期" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
@@ -26,9 +26,9 @@
       <thead>
       <tr>
         <th scope="col">
-          <button type="button" class="btn btn-danger float-left" style="width: 120px;">批量删除</button>
+          <button type="button" class="btn btn-danger float-left" style="width: 120px;">禁止删除</button>
         </th>
-        <th scope="col"><h5>总数: 10 </h5></th>
+        <th scope="col"><h5>总数: 1000000 </h5></th>
         <th scope="col"><a href="" class="btn btn-outline-secondary">上一页</a> <a href=""
                                                                                 class="btn btn-outline-secondary">下一页</a>
           &nbsp;
@@ -47,51 +47,35 @@
     <form action="">
       <table class="table table-bordered table-hover mt-2 admin-all-index">
         <thead>
-        <tr class="card-header" style="font-size: 18px;">
-          <th scope="col" style="width: 40px;">
-            <div class="form-check">
-              <label class="form-check-label mb-3">
-                <input type="checkbox" class="form-check-input" value="">
-              </label>
-            </div>
-          </th>
+        <tr class="card-header" style="font-size: 16px;">
           <th scope="col">ID</th>
-          <th scope="col">头像</th>
-          <th scope="col">用户名</th>
           <th scope="col">邮箱</th>
           <th scope="col">支付宝账号</th>
           <th scope="col">账号实名</th>
-          <th scope="col">帖子</th>
-          <th scope="col">回复</th>
-          <th scope="col">金币</th>
-          <th scope="col">银币</th>
-          <th scope="col" style="width: 100px;">注册日期</th>
+          <th scope="col">📀金币(1元1个)</th>
+          <th scope="col">💿银币(0.1元1个)</th>
+          <th scope="col">共计</th>
+          <th scope="col">服务费10%</th>
+          <th scope="col">实付金额</th>
+          <th scope="col" style="width: 160px;">兑币日期</th>
           <th scope="col">状态</th>
           <th scope="col">管理</th>
         </tr>
         </thead>
         <tbody>
         <tr class="pb-2">
-          <th scope="col" style="width: 40px;">
-            <div class="form-check">
-              <label class="form-check-label mb-3">
-                <input type="checkbox" class="form-check-input" value="">
-              </label>
-            </div>
           <td>1</td>
-          <td><img src="/images/avatar/default-avatar.png" style="width: 40px;height: 40px;" alt="头像"></td>
-          <td>Bing</td>
           <td>bing_yu2001@qq.com</td>
           <td>13761719602</td>
           <td>王汝冰</td>
-          <td>10000</td>
-          <td>777</td>
-          <td>1234</td>
-          <td>1234</td>
+          <td>10个 / 10元</td>
+          <td>100个 / 10元</td>
+          <td>20 元</td>
+          <td>2 元</td>
+          <td>22 元</td>
           <td>2019-12-05 12:12:12</td>
-          <td>正常</td>
-          <td><a href="{{ route('admin.users.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
-                                                                                             class="btn btn-danger btn-sm">删除</a>
+          <td>成功</td>
+          <td><a href="{{ route('admin.coinsEdit') }}" class="btn btn-success btn-sm">编辑</a>
           </td>
         </tr>
         </tbody>
@@ -99,9 +83,5 @@
       <br>
     </form>
   </div>
-
-
-
-
 @endsection
 
