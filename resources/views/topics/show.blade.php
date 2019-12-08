@@ -13,10 +13,10 @@
         <div class="user-info text-center"
              style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
 
-            <a href="{{ route('users.show') }}"><h3 class="text-white pt-3 pb-2">作者：Bing </h3></a>
+            <a href="{{ route('users.show', Auth::id()) }}"><h3 class="text-white pt-3 pb-2">作者：Bing </h3></a>
 
             <div>
-                <a href="{{ route('users.show') }}"><img class="img-fluid" src="/images/avatar/face250px.jpg"
+                <a href="{{ route('users.show', Auth::id()) }}"><img class="img-fluid" src="/images/avatar/face250px.jpg"
                                                          style="border-radius:5px;"></a>
             </div>
 
@@ -167,11 +167,11 @@
     <div class="col-xs-12 float-left d-block d-sm-none user-info text-center"
          style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
         {{-- 作者 --}}
-        <a href="{{ route('users.show') }}"><h3 class="pt-3 pb-2 text-light">作者：Bing </h3></a>
+        <a href="{{ route('users.show', Auth::id()) }}"><h3 class="pt-3 pb-2 text-light">作者：Bing </h3></a>
 
         {{-- 左则：头像-简介-社交信息 --}}
         <div>
-            <a href="{{ route('users.show') }}"><img class="img-fluid" src="/images/avatar/face250px.jpg"
+            <a href="{{ route('users.show', Auth::id()) }}"><img class="img-fluid" src="/images/avatar/face250px.jpg"
                                                      style="border-radius:5px;"></a>
         </div>
 

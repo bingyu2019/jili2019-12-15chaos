@@ -26,7 +26,7 @@ Route::get('/categories/serve','CategoriesController@serve')->name('serve');
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 
 //============================ 帖子路由 ==============================//
-//Route::get('/topics/show','TopicsController@show')->name('topics.show');
+Route::get('/topics/show','TopicsController@show')->name('topics.show');
 
 //========================= 认证用户邮箱注册登录系统 ====================//
 //Auth::routes();

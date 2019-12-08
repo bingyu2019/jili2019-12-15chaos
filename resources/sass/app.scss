@@ -636,8 +636,18 @@ hr {
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-
-
+// 文章详情页面 帖子推荐
+.lg_topics_recommendation{
+  p{
+    font-size: 14px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  a:hover{
+    text-decoration:underline;
+  }
+}
 //====================== users-edit  ===============================//
 .users-edit-page {
   label {

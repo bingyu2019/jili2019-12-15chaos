@@ -54,11 +54,14 @@
 
             <div class="lg-other-header-menu dropdown-menu" aria-labelledby="navbarDropdown">
               {{--                            @can('manage_contents')--}}
-              <a class="dropdown-item" href="{{ route('admin.users.index') }}">
+              <a class="dropdown-item" href="{{ route('topics.show') }}">
+                🔴 帖子页面
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{{ route('system.statistics') }}">
                 🔴 管理后台
               </a>
               <div class="dropdown-divider"></div>
-              {{--                            @endcan--}}
               <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">
                 🔴 个人中心
               </a>

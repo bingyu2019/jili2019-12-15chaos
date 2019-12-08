@@ -11959,6 +11959,17 @@ hr {
   text-shadow: 2px 2px 4px #000000;
 }
 
+.lg_topics_recommendation p {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.lg_topics_recommendation a:hover {
+  text-decoration: underline;
+}
+
 .users-edit-page label {
   font-size: 18px;
 }
