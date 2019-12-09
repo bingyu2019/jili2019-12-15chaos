@@ -49,11 +49,10 @@
 
             <hr>
             <h5>❂ 用户组</h5>
-            <p><span style="border: solid 1px white;padding: 2px;border-radius: 5px;">Founder</span>
-                <span style="border: solid 1px white;padding: 2px;border-radius: 5px;">开发者</span>
-                <span style="border: solid 1px white;padding: 2px;border-radius: 5px;">管理员</span>
-                <span style="border: solid 1px white;padding: 2px;border-radius: 5px;">小学生</span></p>
-
+            <p><span class="grade-box login">Founder</span>
+                <span class="grade-box login">开发者</span>
+                <span class="grade-box login">管理员</span>
+                <span class="grade-box login">小学生</span></p>
             <hr>
             <h5>❂ 最后活跃</h5>
             <p>2019-10-29 13：36：56</p>

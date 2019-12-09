@@ -34,21 +34,37 @@ body {
     text-decoration: none;
   }
 
-  .border-radius{
+  .border-radius {
     border-radius: 5px;
   }
-  // 文字容器
-  .text-container{
-    background: #E5A55D;
-  }
+
   //圆形小头像
-  .round-avatar{
-    width: 40px;
-    height: 40px;
+  .round-avatar {
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
+    box-shadow: 0px 0px 8px 5px white;
+  }
+
+  // 方形小头像
+  .square-avatar {
+    width: 38px;
+    height: 38px;
+    box-shadow: 0px 0px 8px 5px white;
+  }
+
+  // 文本容器
+  .text-container {
+    background: #E5A55D;
+    width: 100%;
+  }
+
+  // 等级
+  .grade-box {
+    border: solid 1px white;
     padding: 3px;
-    background: cornsilk;
-    border: solid 1px #ccc;
+    border-radius: 5px;
+
   }
 }
 
@@ -593,14 +609,15 @@ hr {
 
 // ==================== PC 登录 注册 页面 ================================//
 
-.login, .register,.topic-create {
+.login, .register, .topic-create {
   background: linear-gradient(to bottom, #000000, #A25900, #000000);
 }
 
 //====================== 电脑版 create_and_edit  ===============================//
 .simditor-body img {
-  max-width:100%;
+  max-width: 100%;
 }
+
 // 显示帖子页面，未做逻辑
 //.topics-show-page {
 //
@@ -671,18 +688,47 @@ hr {
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
+
 // 文章详情页面 帖子推荐
-.lg_topics_recommendation{
-  p{
+.lg_topics_recommendation {
+  p {
     font-size: 14px;
     text-align: left;
     margin-left: 10px;
     margin-right: 10px;
   }
-  a:hover{
-    text-decoration:underline;
+
+  a:hover {
+    text-decoration: underline;
   }
 }
+
+// 点赞打赏礼赞容器
+.votes-container {
+  background: #E5A55D;
+  width: 100%;
+  height: 68px;
+  overflow: hidden;
+  small{
+    font-size: 18px;
+  }
+}
+
+// 回复框
+.reply-container {
+  border: solid 1px white;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+// 回复列表
+.reply-list {
+  td {
+    border-right: solid 1px white;
+    text-shadow: 5px 5px 8px #656B79;
+  }
+}
+
 //====================== users-edit  ===============================//
 .users-edit-page {
   label {
