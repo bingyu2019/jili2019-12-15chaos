@@ -28,6 +28,8 @@ Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit'
 //============================ 帖子路由 ==============================//
 Route::get('/topics/show','TopicsController@show')->name('topics.show');
 Route::get('/topics/create_and_edit','TopicsController@create')->name('topics.create');
+// 新建帖子页面，上传图片
+Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
 
 //========================= 认证用户邮箱注册登录系统 ====================//
 //Auth::routes();
@@ -51,7 +53,7 @@ Route::get('email/verify', 'Auth\VerificationController@show')->name('verificati
 Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->name('verification.verify');
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
-// ================================ 后台管理 =============================================================//
+// ================================ 后台管理 ================================//
 //后台用户管理
 Route::get('/admin/users/index', 'Admin\UsersController@index')->name('admin.users.index');
 Route::get('/admin/users/create', 'Admin\UsersController@create')->name('admin.users.create');

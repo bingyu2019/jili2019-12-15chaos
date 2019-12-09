@@ -6,12 +6,15 @@
   <div class="xs-hindd-block d-sm-none"><br><br><br></div>
     <div class="topic-create">
       <div class="col-md-10 offset-md-1">
-        <div class="card">
+        <div class="card" style="background: linear-gradient(to left, #FAD1A5, #E5A55D);">
+         @include('shared._messages')
+
             <h2 class="card-header">
+              <img src="/images/icon/pen.png" alt="">
 
-              编辑话题
+              编辑帖子
 
-              新建话题
+              发布新帖
 
             </h2>
           <div class="card-body">
@@ -30,18 +33,17 @@
                 </select>
               </div>
               <div class="form-group">
-                <textarea name="body" class="form-control" id="editor" rows="6" placeholder="请填入至少三个字符的内容。"
-                          required></textarea>
+                <textarea name="body" class="form-control" id="editor" rows="6" placeholder="请填入至少三个字符的内容。" required></textarea>
               </div>
 
               <div class="well well-sm">
-                <button type="submit" class="btn btn-primary btn-block"><i class="far fa-save mr-2" aria-hidden="true"></i> 保存
-                </button>
+                <button type="submit" class="btn btn-dark pr-4"><i class="far fa-save mr-2" aria-hidden="true"></i> 保存</button>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <br><br>
     </div>
 @endsection
 @section('styles')
@@ -58,7 +60,7 @@
         textarea: $('#editor'),
         toolbar: [ 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', '|', 'ol', 'ul', 'blockquote', 'code','|','hr','table','|', 'link', 'image', '|', 'indent', 'outdent', 'alignment'],
         upload: {
-          url: '',
+          url: '{{ route('topics.upload_image') }}',
           params: {
             _token: '{{ csrf_token() }}'
           },

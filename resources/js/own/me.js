@@ -19,5 +19,7 @@ $(document).ready(function () {
   });
 });
 
-// 发布新帖，编辑器 JS ===========================//
-
+// 鼠标移上消息提示 ===========================//
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
