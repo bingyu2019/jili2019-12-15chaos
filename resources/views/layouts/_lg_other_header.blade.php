@@ -32,23 +32,20 @@
           <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">登录</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">注册</a></li>
         @else
-          <li class="nav-item">
-            <a class="nav-link mt-1 font-weight-bold" href="">
-              <i class="fa fa-plus"></i>
-            </a>
-          </li>
-
+          <a href="{{ route('topics.create') }}" class="float-left mr-4 mt-2"><h3>+</h3></a>
           <li class="nav-item notification-badge mt-2">
             <h3><a
-              class="nav-link mr-3 badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white"
-              href="">1
-              {{--                            {{ Auth::user()->notification_count }}--}}
-            </a></h3>
+                class="nav-link mr-3 badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white"
+                href="">1
+                {{--                            {{ Auth::user()->notification_count }}--}}
+              </a></h3>
           </li>
 
           <li class="nav-item dropdown img-dropdown-menu">
-            <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="{{ Auth::user()->avatar }}" class="img-responsive img-circle" height="40px" width="40px" style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc;" alt="头像">
+            <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="{{ Auth::user()->avatar }}" class="img-responsive img-circle" height="40px" width="40px"
+                   style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc;" alt="头像">
               {{ Auth::user()->name }}
             </a>
 
@@ -78,7 +75,8 @@
                 <h5>🔵 系统公告</h5>
               </a>
               <div class="dropdown-divider"></div>
-                  <a href="javascript:void(0);" class="btn btn-danger btn-lg active btn-del-login" role="button" aria-pressed="true" style="width: 100%;"><h5>退出</h5></a>
+              <a href="javascript:void(0);" class="btn btn-danger btn-lg active btn-del-login" role="button"
+                 aria-pressed="true" style="width: 100%;"><h5>退出</h5></a>
             </div>
           </li>
         @endguest
@@ -86,32 +84,3 @@
     </div>
   </div>
 </nav>
-
-
-
-@section('script')
-  <script>
-
-      $(document).ready(function() {
-// 退出登录确认按钮
-          $('.btn-del-login').click(function() {
-              swal({
-                  title: "您确认要退出吗？",
-                  icon: "warning",
-                  buttons: ['取消', '确定'],
-                  dangerMode: true,
-              })
-                  .then(function(willDelete) { // 用户点击按钮后会触发这个回调函数
-                      if (!willDelete) {
-                          return;
-                      }
-                      axios.post(`{{ route('logout') }}`)
-                          .then(function () {
-                              location.reload();
-                          })
-                  });
-          });
-
-      });
-  </script>
-@endsection

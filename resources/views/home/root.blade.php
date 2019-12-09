@@ -1109,26 +1109,19 @@
                 <div>
                   <a href="">➓ 划重点！十九届四中全会公报速读</a>
                 </div>
-
               </div>
-
             </div>
-
           </div>
         </article>
       </div>
       <br>
       <hr style="background: #292929">
     </section>
-
     <footer>
       {{-- 手机主页底部 --}}
       @include('layouts._xs_footer')
     </footer>
-
   </div>
-
-
 @stop
 @section('script')
   <script>

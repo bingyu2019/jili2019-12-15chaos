@@ -14,12 +14,7 @@
           <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">登录</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">注册</a></li>
         @else
-          <li class="nav-item">
-            <a class="nav-link mt-1 font-weight-bold" href="">
-              <i class="fa fa-plus"></i>
-            </a>
-          </li>
-
+          <a href="{{ route('topics.create') }}" class="float-left mr-4 mt-2"><h3>+</h3></a>
           <li class="nav-item notification-badge mt-2">
             <h3><a
                 class="nav-link mr-3 badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white"
@@ -98,7 +93,7 @@
       <tr>
         <th><h5 class="ml-5">运营管理&nbsp;&nbsp;&nbsp; ➛</h5></th>
         <td><a href="{{ route('system.statistics') }}" class="ml-5">系统统计</a></td>
-        <td><a href="" class="ml-5">系统管理</a></td>
+        <td><a href="{{ route('system.message') }}" class="ml-5">工作交接</a></td>
         <td><a href="{{ route('system.log') }}" class="ml-5">系统日志</a></td>
       </tr>
       </tbody>

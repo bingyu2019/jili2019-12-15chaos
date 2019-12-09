@@ -27,6 +27,7 @@ Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit'
 
 //============================ 帖子路由 ==============================//
 Route::get('/topics/show','TopicsController@show')->name('topics.show');
+Route::get('/topics/create_and_edit','TopicsController@create')->name('topics.create');
 
 //========================= 认证用户邮箱注册登录系统 ====================//
 //Auth::routes();
@@ -50,7 +51,7 @@ Route::get('email/verify', 'Auth\VerificationController@show')->name('verificati
 Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->name('verification.verify');
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
-// ================================ 后台管理 =================================//
+// ================================ 后台管理 =============================================================//
 //后台用户管理
 Route::get('/admin/users/index', 'Admin\UsersController@index')->name('admin.users.index');
 Route::get('/admin/users/create', 'Admin\UsersController@create')->name('admin.users.create');
@@ -123,6 +124,9 @@ Route::get('/admin/system/setting_edit','Admin\SystemController@settingEdit')->n
 Route::get('admin/system/statistics','Admin\SystemController@statistics')->name('system.statistics');
 // 系统日志页面
 Route::get('/admin/system/log','Admin\SystemController@log')->name('system.log');
+//后台工作交接
+Route::get('/admin/system/message','Admin\SystemController@message')->name('system.message');
+Route::get('/admin/system/message_create','Admin\SystemController@messageCreate')->name('system.messageCreate');
 
 
 

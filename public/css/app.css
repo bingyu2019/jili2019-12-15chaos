@@ -11901,7 +11901,8 @@ hr {
 }
 
 .login,
-.register {
+.register,
+.topic-create {
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#A25900), to(#000000));
   background: linear-gradient(to bottom, #000000, #A25900, #000000);
 }

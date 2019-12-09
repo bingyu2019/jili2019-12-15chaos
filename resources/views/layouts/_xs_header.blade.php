@@ -55,8 +55,7 @@
               {{-- 消息通知 --}}
               <h2 class="text-white float-left pt-2 pl-2"> 🔔 &nbsp;0</h2>
               {{-- 发贴入口 --}}
-              <a class="float-right pt-2 pr-2" href=""><img src="/images/icon/xs-pen.png"
-                                                            style="width: 45px;height: 30px;"> &nbsp;发布新帖</a>
+              <a class="float-right pt-2 pr-2" href="{{ route('topics.create') }}"><img src="/images/icon/xs-pen.png" style="width: 45px;height: 30px;"> &nbsp;发布新帖</a>
             </div>
 
             <div style="border:solid 1px #584021;"></div>

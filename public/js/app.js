@@ -49436,6 +49436,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./own/me.js */ "./resources/js/own/me.js");
+
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('notice', __webpack_require__(/*! ./components/Notice.vue */ "./resources/js/components/Notice.vue")["default"]); // 首页关于图片版权的公告
 
@@ -49561,6 +49563,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notice_vue_vue_type_template_id_2ed81903___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/own/me.js":
+/*!********************************!*\
+  !*** ./resources/js/own/me.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// 退出登录确认按钮 ===========================//
+$(document).ready(function () {
+  $('.btn-del-login').click(function () {
+    swal({
+      title: "您确认要退出吗？",
+      icon: "warning",
+      buttons: ['取消', '确定'],
+      dangerMode: true
+    }).then(function (willDelete) {
+      // 用户点击按钮后会触发这个回调函数
+      if (!willDelete) {
+        return;
+      }
+
+      axios.post("{{ route('logout') }}").then(function () {
+        location.reload();
+      });
+    });
+  });
+}); // 发布新帖，编辑器 JS ===========================//
 
 /***/ }),
 

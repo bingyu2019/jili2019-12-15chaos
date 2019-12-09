@@ -25,6 +25,7 @@
             <li><a href="{{ route('register') }}"><h5>注册</h5></a></li>
           @else
             {{-- 头像 --}}
+            <a href="{{ route('topics.create') }}" class="float-left"><h3>+</h3></a>
             <li class="nav-item dropdown lg-header-avatar">
               <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown"
                  role="button"
@@ -36,7 +37,7 @@
                 {{ Auth::user()->name }}
               </a>
               <div class="dropdown-menu register-dropdown-menu" aria-labelledby="navbarDropdown">
-                <a href="{{ route('admin.users.index') }}" class="dropdown-item">
+                <a href="{{ route('system.statistics') }}" class="dropdown-item">
                   <h5>🔴 管理后台</h5>
                 </a>
                 <div class="dropdown-divider"></div>
@@ -60,40 +61,33 @@
                    aria-pressed="true" style="width: 100%;"><h5>退出</h5></a>
               </div>
             </li>
-
           @endguest
         </ul>
       </div>
-
     </div>
   </div>
 </div>
-
-
-
 @section('script')
   <script>
-
-      $(document).ready(function () {
-// 退出登录确认按钮
-          $('.btn-del-login').click(function () {
-              swal({
-                  title: "您确认要退出吗？",
-                  icon: "warning",
-                  buttons: ['取消', '确定'],
-                  dangerMode: true,
+    $(document).ready(function () {
+    // 退出登录确认按钮
+      $('.btn-del-login').click(function () {
+        swal({
+          title: "您确认要退出吗？",
+          icon: "warning",
+          buttons: ['取消', '确定'],
+          dangerMode: true,
+        })
+          .then(function (willDelete) { // 用户点击按钮后会触发这个回调函数
+            if (!willDelete) {
+              return;
+            }
+            axios.post(`{{ route('logout') }}`)
+              .then(function () {
+                location.reload();
               })
-                  .then(function (willDelete) { // 用户点击按钮后会触发这个回调函数
-                      if (!willDelete) {
-                          return;
-                      }
-                      axios.post(`{{ route('logout') }}`)
-                          .then(function () {
-                              location.reload();
-                          })
-                  });
           });
-
       });
+    });
   </script>
 @endsection
