@@ -134,19 +134,19 @@
           <small>🕒 昨天</small>
         </h5>
         <div class="clear" style="border-bottom: solid 1px white;"></div>
-        <table class="float-left text-center reply-list pt-1" style="width: 70%;height: 50px;">
+        <table class="float-left text-center reply-list pt-1" style="width: 60%;height: 50px;">
           <tr>
             <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 赏花 ">🌺 <small>888</small></h4></a></td>
             <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 赏银 ">💰 <small>888</small></h4></a></td>
-            <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 礼赞 ">🎁 <small>888</small></h4></a></td>
+            <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 礼赞 ">🎁 <small>8888</small></h4></a></td>
             <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 举报违规内容，共建美好家园 ">&nbsp;🚩<small>&nbsp;</small></h4></a></td>
-            <td><a href="" class="btn btn-outline-secondary btn-sm" role="button"> 编辑 </a></td>
+            <td><a href="" class="btn btn-outline-secondary btn-sm" role="button">编辑</a></td>
             <td><form action="" method="post"
                       style="display: inline-block;"
                       onsubmit="return confirm('您确定要删除吗？');">
                 {{--                                    {{ csrf_field() }}--}}
                 {{--                                    {{ method_field('DELETE') }}--}}
-                <button type="submit" class="btn btn-outline-secondary btn-sm"> 删除 </button>
+                <button type="submit" class="btn btn-outline-secondary btn-sm">删除</button>
               </form></td>
           </tr>
         </table>
@@ -159,17 +159,16 @@
         <div class="clear" style="border-bottom: solid 1px white;"></div>
         <h5 class="text-dark p-3">
           为了简便起见，第一个字节中 FIN=1，opcode 设置为
-          1，接下来检查数据的长度，这部分内容和解析数据长度的步骤刚好相反，就不再分析了，如果你把之前的都看懂了，这里也应该没有问题，但是特别注意了，之前我们就已经提到过，服务器返回给客户端的数据，不能加密，所以 mask
-          必须设置为 0，mask key 的长度为 0。
+
           <br><br>
           <small>🕒 昨天</small>
         </h5>
         <div class="clear" style="border-bottom: solid 1px white;"></div>
-        <table class="float-left text-center reply-list pt-1" style="width: 70%;height: 50px;">
+        <table class="float-left text-center reply-list pt-1" style="width: 60%;height: 50px;">
           <tr>
             <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 赏花 ">🌺 <small>888</small></h4></a></td>
-            <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 赏银 ">💰 <small>888</small></h4></a></td>
-            <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 礼赞 ">🎁 <small>888</small></h4></a></td>
+            <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 赏银 ">💰 <small>8</small></h4></a></td>
+            <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 礼赞 ">🎁 <small>88</small></h4></a></td>
             <td><a href=""><h4 class="pt-2" data-toggle="tooltip" title=" 举报违规内容，共建美好家园 ">&nbsp;🚩<small>&nbsp;</small></h4></a></td>
             <td><a href="" class="btn btn-outline-secondary btn-sm" role="button"> 编辑 </a></td>
             <td><form action="" method="post"
