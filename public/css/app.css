@@ -11832,7 +11832,7 @@ body a:hover {
 }
 
 body .border-radius {
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 body .round-avatar {
@@ -11848,15 +11848,46 @@ body .square-avatar {
   box-shadow: 0px 0px 8px 5px white;
 }
 
+body .emergence-avatar {
+  box-shadow: 0px 0px 8px 5px white;
+}
+
 body .text-container {
   background: #E5A55D;
   width: 100%;
 }
 
 body .grade-box {
-  border: solid 1px white;
-  padding: 3px;
+  border: solid 1px #cccccc;
+  padding: 3px 10px;
+  border-radius: 10px;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.header-color {
   border-radius: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(#7C3A08), to(#EB9A02));
+  background: linear-gradient(to top, #000, #7C3A08, #EB9A02);
+}
+
+.three-color {
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7C3A08), to(#EB9A02));
+  background: linear-gradient(to bottom, #7C3A08, #EB9A02);
+}
+
+.font-hover {
+  color: black;
+}
+
+.font-hover:hover {
+  color: white;
+}
+
+.hover-ccc {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .logo .logo-body {
@@ -12382,7 +12413,8 @@ hr {
 
 .login,
 .register,
-.topic-create {
+.topic-create,
+.user-edit {
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#A25900), to(#000000));
   background: linear-gradient(to bottom, #000000, #A25900, #000000);
 }
@@ -12435,7 +12467,7 @@ hr {
 
 .stats strong {
   display: block;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: black;
 }
 
@@ -12480,6 +12512,36 @@ hr {
 
 .users-edit-page label {
   font-size: 18px;
+}
+
+.users-show-page p {
+  border-bottom: solid 1px black;
+}
+
+.users-show-page .change-title a {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.users-show-page .total h4 {
+  float: left;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.users-show-page .total h4 small {
+  font-size: 16px;
+  color: white;
+  background: transparent;
+}
+
+.list {
+  color: black;
+}
+
+.list:hover {
+  text-shadow: 2px 2px 4px black;
+  text-decoration: underline;
 }
 
 .xs-nav-category li {

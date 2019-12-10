@@ -49444,9 +49444,6 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('notice', __webpack_require
 window.app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: "#app"
 });
-$(document).ready(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-});
 
 /***/ }),
 

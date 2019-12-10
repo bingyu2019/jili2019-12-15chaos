@@ -1,4 +1,4 @@
-<div class="stats" style="text-shadow:2px 2px 4px #000000;">
+<div class="stats mx-auto hover-ccc" style="width: 60%;">
     <a href="">
         <strong id="following" class="stat text-white">
             1

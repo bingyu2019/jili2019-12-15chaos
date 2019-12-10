@@ -37,7 +37,7 @@
               </div>
 
               <div class="well well-sm">
-                <button type="submit" class="btn btn-dark pr-4"><i class="far fa-save mr-2" aria-hidden="true"></i> 保存</button>
+                <button type="submit" class="btn btn-dark pr-4 "><i class="far fa-save mr-2" aria-hidden="true"></i> 保存</button>
               </div>
             </form>
           </div>

@@ -44,8 +44,8 @@
           <li class="nav-item dropdown img-dropdown-menu">
             <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown"
                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="{{ Auth::user()->avatar }}" class="img-responsive img-circle" height="40px" width="40px"
-                   style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc;" alt="头像">
+              <img src="{{ Auth::user()->avatar }}" class="img-responsive emergence-avatar img-circle" height="40px" width="40px"
+                   style="border-radius: 50%;" alt="头像">
               {{ Auth::user()->name }}
             </a>
 

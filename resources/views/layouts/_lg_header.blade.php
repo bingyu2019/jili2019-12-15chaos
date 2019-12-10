@@ -31,9 +31,9 @@
                  role="button"
                  data-toggle="dropdown"
                  aria-haspopup="true" aria-expanded="false">
-                <img src="{{ Auth::user()->avatar }}"
+                <img class="emergence-avatar" src="{{ Auth::user()->avatar }}"
                      width="40px" height="40px" alt="头像"
-                     style="border-radius: 50%;background-color: transparent;box-shadow:0px 0px 8px 5px #ccc; ">
+                     style="border-radius: 50%;">
                 {{ Auth::user()->name }}
               </a>
               <div class="dropdown-menu register-dropdown-menu" aria-labelledby="navbarDropdown">

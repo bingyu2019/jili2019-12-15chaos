@@ -124,7 +124,7 @@
         <img src="https://cdn.learnku.com/uploads/avatars/27828_1572963233.png!/both/400x400"
              class="square-avatar float-left m-2 mt-3 ml-3">
         <a href="" class="text-dark float-left m-2 mt-4 ml-3"><h4><b>Smoker</b></h4></a>
-        <small class="grade-box login float-left m-2 mt-4 ml-1">&nbsp;&nbsp;Founder&nbsp;&nbsp;</small>
+        <small class="grade-box login float-left m-2 mt-4 ml-1">Founder</small>
         <div class="clear" style="border-bottom: solid 1px white;"></div>
         <h5 class="text-dark p-3">
           为了简便起见，第一个字节中 FIN=1，opcode 设置为
@@ -155,7 +155,7 @@
         <img src="https://cdn.learnku.com/uploads/avatars/27828_1572963233.png!/both/400x400"
              class="square-avatar float-left m-2 mt-3 ml-3">
         <a href="" class="text-dark float-left m-2 mt-4 ml-3"><h4><b>Bing</b></h4></a>
-        <small class="grade-box login float-left m-2 mt-4 ml-1">&nbsp;&nbsp;Founder&nbsp;&nbsp;</small>
+        <small class="grade-box login float-left m-2 mt-4 ml-1">Founder</small>
         <div class="clear" style="border-bottom: solid 1px white;"></div>
         <h5 class="text-dark p-3">
           为了简便起见，第一个字节中 FIN=1，opcode 设置为

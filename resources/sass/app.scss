@@ -1,17 +1,7 @@
-// Variables
 @import 'variables';
-// Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import "topic_body";
-
-//// Fontawesome
-//@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-//@import '~@fortawesome/fontawesome-free/scss/regular';
-//@import '~@fortawesome/fontawesome-free/scss/solid';
-//@import '~@fortawesome/fontawesome-free/scss/brands';
-
-
-// 全局通用样式 universal
+// 全局通用样式 universal =================================== //
 body {
   font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
   font-size: 14px;
@@ -35,7 +25,7 @@ body {
   }
 
   .border-radius {
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
   //圆形小头像
@@ -53,19 +43,51 @@ body {
     box-shadow: 0px 0px 8px 5px white;
   }
 
+  // 头像羽化边框
+  .emergence-avatar {
+    box-shadow: 0px 0px 8px 5px white;
+  }
+
   // 文本容器
   .text-container {
     background: #E5A55D;
     width: 100%;
   }
 
-  // 等级
+  // 徽章 等级
   .grade-box {
-    border: solid 1px white;
-    padding: 3px;
-    border-radius: 5px;
-
+    border: solid 1px #cccccc;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #cccccc;
+    font-size: 14px;
   }
+}
+
+.header-color {
+  border-radius: 5px;
+  background: linear-gradient(to top, #000, #7C3A08, #EB9A02);
+}
+
+.three-color {
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #7C3A08, #EB9A02);
+}
+
+
+.font-hover {
+  color: black;
+
+}
+
+.font-hover:hover {
+  color: white;
+}
+
+// 白字，阴影，鼠标移上变灰
+.hover-ccc {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -609,7 +631,7 @@ hr {
 
 // ==================== PC 登录 注册 页面 ================================//
 
-.login, .register, .topic-create {
+.login, .register, .topic-create, .user-edit {
   background: linear-gradient(to bottom, #000000, #A25900, #000000);
 }
 
@@ -678,7 +700,7 @@ hr {
 
   strong {
     display: block;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: black;
   }
 }
@@ -709,7 +731,8 @@ hr {
   width: 100%;
   height: 68px;
   overflow: hidden;
-  small{
+
+  small {
     font-size: 18px;
   }
 }
@@ -721,6 +744,7 @@ hr {
   margin: 0 auto;
   border-radius: 5px;
 }
+
 // 回复列表
 .reply-list {
   td {
@@ -729,13 +753,46 @@ hr {
   }
 }
 
-//====================== users-edit  ===============================//
+//====================== PC users-edit  ===============================//
 .users-edit-page {
   label {
     font-size: 18px;
   }
 }
 
+//====================== PC users-show  ===============================//
+.users-show-page {
+  p {
+    border-bottom: solid 1px black;
+  }
+
+  .change-title {
+    a {
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  .total h4 {
+    float: left;
+    text-shadow: 2px 2px 4px #000000;
+
+    small {
+      font-size: 16px;
+      color: white;
+      background: transparent;
+
+    }
+  }
+}
+.list{
+  color: black;
+}
+.list:hover{
+  text-shadow: 2px 2px 4px black;
+  text-decoration:underline;
+}
 
 //======================= 手机版主页 =================================//
 
@@ -796,7 +853,7 @@ hr {
 }
 
 
-//====================== 手机分类 ================================//
+//====================== 手机分类 =========================================//
 .category-content-xs {
   a {
     color: white;
@@ -805,7 +862,7 @@ hr {
 }
 
 
-//====================== users.show =============================//
+//====================== 手机 users.show =============================//
 // 顶部总导航
 .user-show-nav {
   li {
@@ -834,7 +891,7 @@ hr {
   }
 }
 
-//======================= topics.show ========================//
+//=======================手机 topics.show ========================//
 // 手机左则帖子推荐栏
 .xs_topics_recommendation {
   white-space: nowrap;
