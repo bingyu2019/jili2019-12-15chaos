@@ -3,11 +3,13 @@
 
 @section('content')
     {{--=================== 灵魂艺术-电脑版 ======================--}}
-    <div>
-        <div class="big-box mx-auto d-none d-sm-block">
+    <div class="d-none d-sm-block">
+        <div class="big-box mx-auto">
             <header>
                 {{-- 电脑版 logo 注册登录 --}}
                 @include('layouts._lg_header')
+              <div class="clear"></div>
+              <br>
             </header>
             {{-- 分类页面主体导航--}}
             <nav class="root-nav row col-md-12">

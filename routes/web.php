@@ -33,8 +33,7 @@ Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload
 
 //============================ 前台消息通知路由 =========================//
 Route::get('notifications/list','NotificationsController@list')->name('notifications');
-
-
+Route::get('notifications/_create_letter','NotificationsController@createLetter')->name('createLetter');
 
 
 //========================= 认证用户邮箱注册登录系统 ======================//
@@ -97,8 +96,9 @@ Route::get('/admin/images/list', 'Admin\ImagesController@list')->name('images.li
 Route::get('/admin/replies/index', 'Admin\RepliesController@index')->name('admin.replies.index');
 Route::get('/admin/replies/edit', 'Admin\RepliesController@edit')->name('admin.replies.edit');
 
-//后台用户消息/系统通知
-Route::get('/admin/notifications/users','Admin\NotificationsController@users')->name('notifications.users');
+//后台用户私信、提醒、系统公告
+Route::get('/admin/notifications/letter','Admin\NotificationsController@letter')->name('admin.letter');
+Route::get('/admin/notifications/remind','Admin\NotificationsController@remind')->name('admin.remind');
 Route::get('/admin/notifications/system','Admin\NotificationsController@system')->name('notifications.system');
 Route::get('/admin/notifications/create','Admin\NotificationsController@create')->name('notifications.create');
 Route::get('/admin/notifications/edit','Admin\NotificationsController@edit')->name('notifications.edit');

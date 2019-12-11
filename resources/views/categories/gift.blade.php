@@ -4,8 +4,8 @@
 @section('content')
 
     {{-- ================= 灵魂礼赞-电脑版 ====================== --}}
-    <div>
-        <div class="big-box mx-auto d-none d-sm-block">
+    <div class="d-none d-sm-block">
+        <div class="big-box mx-auto">
 
             <header>
                 {{-- 电脑版 logo 注册登录 --}}

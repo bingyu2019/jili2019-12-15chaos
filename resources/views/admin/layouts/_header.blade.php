@@ -87,7 +87,7 @@
       <tr>
         <th><h5 class="ml-5">内容管理&nbsp;&nbsp;&nbsp; ➛</h5></th>
         <td><a href="{{ route('admin.topics.index') }}" class="ml-5">📜 帖子管理</a></td>
-        <td><a href="{{ route('admin.replies.index') }}" class="ml-5">💬 回复管理 </a> &nbsp; <a href="{{ route('notifications.users') }}"> 🔔 用户消息</a> <a href="{{ route('notifications.system') }}" class="ml-2">📩 系统通知 </a></td>
+        <td><a href="{{ route('admin.replies.index') }}" class="ml-5">💬 回复管理 </a> &nbsp; <a href="{{ route('admin.letter') }}"> 🔔 私信</a> <a href="{{ route('admin.remind') }}" class="ml-2">🔔 提醒 </a><a href="{{ route('notifications.system') }}" class="ml-2">📩 公告 </a></td>
         <td><a href="{{ route('images.list') }}" class="ml-5">🌁 帖子图片</a></td>
       </tr>
       <tr>

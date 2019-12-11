@@ -1,12 +1,12 @@
 @extends('layouts.app')
-@section('title','用户消息通知列表')
+@section('title','提醒列表')
 @section('content')
   @include('admin.layouts._header')
 
 
   <div class="card col-md-12 pt-1">
     <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
-      <h3 class="text-center pb-4 pt-2">用户消息通知列表</h3>
+      <h3 class="text-center pb-4 pt-2">提醒列表</h3>
       <a href="" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">刷新</a>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
         <input class="form-control mr-sm-2" type="search" placeholder="接收者" aria-label="Search">
@@ -73,7 +73,7 @@
             </div>
           <td>1</td>
           <td>Bing</td>
-          <td>测试用户私信功能。测试用户私信功能。</td>
+          <td>测试用户提醒功能。测试用户提醒功能。</td>
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>已查看</td>

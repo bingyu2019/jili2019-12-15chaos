@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title',Auth::user()->name.' 编辑系统消息通知')
+@section('title',Auth::user()->name.' 编辑系统公告')
 @section('content')
   @include('admin.layouts._header')
 
@@ -7,7 +7,7 @@
     <div class="card mx-auto col-md-8">
       <div class="card-header mt-2">
         <h4>
-          编辑系统消息通知
+          编辑系统公告
         </h4>
       </div>
 
@@ -20,7 +20,7 @@
           @include('shared._error')
 
           <div class="form-group">
-            <label for="introduction-field">消息通知内容</label>
+            <label for="introduction-field">公告内容</label>
             <textarea name="introduction" id="introduction-field" class="form-control" rows="3"></textarea>
           </div>
 

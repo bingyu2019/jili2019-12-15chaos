@@ -1,13 +1,13 @@
 @extends('layouts.app')
-@section('title','管理系统消息通知')
+@section('title','系统公告')
 @section('content')
   @include('admin.layouts._header')
 
 
   <div class="card col-md-12 pt-1">
     <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
-      <h3 class="text-center pb-4 pt-2">系统消息通知列表</h3>
-      <a href="{{ route('notifications.create') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">新建消息通知</a>
+      <h3 class="text-center pb-4 pt-2">系统公告</h3>
+      <a href="{{ route('notifications.create') }}" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">新建系统公告</a>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
         <input class="form-control mr-sm-2" type="search" placeholder="内容" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>

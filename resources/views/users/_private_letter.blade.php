@@ -1,4 +1,2 @@
 {{-- 私信按钮 --}}
-<button type="button" class="btn btn-outline-light"
-        style="width: 100%;"><h5 class="pt-2 hover-ccc">✉ &nbsp;私信</h5>
-</button>
+<a href="{{ route('createLetter') }}" class="btn btn-lg active text-light" id="send-letter" role="button" style="width: 100%;border: solid 1px white;border-radius: 5px;"><h5>✉ &nbsp;私信</h5></a>

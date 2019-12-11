@@ -57,8 +57,8 @@
                   <h5>🔵 编辑资料</h5>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">
-                  <h5>🔵 系统公告</h5>
+                <a class="dropdown-item" href="{{ route('notifications') }}">
+                  <h5>🔵 消息通知</h5>
                 </a>
                 <div class="dropdown-divider"></div>
                 <a href="javascript:void(0);" class="btn btn-danger btn-lg active btn-del-login" role="button"

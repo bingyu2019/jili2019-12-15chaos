@@ -830,7 +830,6 @@ hr {
   text-decoration: underline;
 }
 
-//==================== PC 前台消息通知 notifications  ===============//
 .letter {
   color: black;
 }
@@ -838,6 +837,12 @@ hr {
 .letter:hover {
   color: rebeccapurple;
   text-decoration: underline;
+}
+
+//==================== PC 前台私信、提醒、公告 notifications  ===============//
+#send-letter:hover{
+  background: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 //======================= 手机版主页 =================================//

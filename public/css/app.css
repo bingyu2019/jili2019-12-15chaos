@@ -12584,6 +12584,11 @@ hr {
   text-decoration: underline;
 }
 
+#send-letter:hover {
+  background: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 .xs-nav-category li {
   display: block;
   border-bottom: solid 1px #584021;
