@@ -36,7 +36,7 @@
           <li class="nav-item notification-badge mt-2">
             <h3><a
                 class="nav-link mr-3 badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white"
-                href="">1
+                href="{{ route('notifications') }}">1
                 {{--                            {{ Auth::user()->notification_count }}--}}
               </a></h3>
           </li>

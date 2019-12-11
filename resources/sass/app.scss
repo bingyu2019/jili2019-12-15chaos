@@ -71,7 +71,7 @@ body {
 
 .three-color {
   border-radius: 5px;
-  background: linear-gradient(to bottom, #eb880c,#7C3A08, #EB9A02);
+  background: linear-gradient(to bottom, #eb880c, #7C3A08, #EB9A02);
 }
 
 
@@ -89,7 +89,10 @@ body {
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-
+// p 标签字体
+.sixteen {
+  font-size: 16px;
+}
 
 // ======================== 电脑主页样式 ====================//
 
@@ -128,6 +131,27 @@ body {
   .lg-header-avatar:hover .register-dropdown-menu {
     display: block;
   }
+}
+
+//主页面顶部 发贴入口定位
+.create-ten {
+  position: relative;
+  left: -70px;
+  top: -10px
+}
+
+// 主页面顶部 消息通知 定位
+.root-note {
+  position: relative;
+  left: -53px;
+  top: -5px
+}
+
+// 主页面顶部头像定位
+.lg-header-avatar {
+  position: relative;
+  left: 0px;
+  top: -55px
 }
 
 // 电脑主页书本导航
@@ -762,9 +786,9 @@ hr {
 
 //====================== PC users-show  ===============================//
 .users-show-page {
-    .p {
-      border-bottom: solid 1px black;
-    }
+  .p {
+    border-bottom: solid 1px black;
+  }
 
 
   .change-title {
@@ -797,12 +821,23 @@ hr {
   text-decoration: underline;
 }
 
-.vote-link{
+.vote-link {
   color: black;
   float: left;
 }
-.vote-link:hover{
-  text-decoration:underline;
+
+.vote-link:hover {
+  text-decoration: underline;
+}
+
+//==================== PC 前台消息通知 notifications  ===============//
+.letter {
+  color: black;
+}
+
+.letter:hover {
+  color: rebeccapurple;
+  text-decoration: underline;
 }
 
 //======================= 手机版主页 =================================//

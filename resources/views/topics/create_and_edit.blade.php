@@ -6,7 +6,7 @@
   <div class="xs-hindd-block d-sm-none"><br><br><br></div>
     <div class="topic-create">
       <div class="col-md-10 offset-md-1">
-        <div class="card" style="background: linear-gradient(to left, #FAD1A5, #E5A55D);">
+        <div class="card" style="background:  #E5A55D;">
          @include('shared._messages')
 
             <h2 class="card-header">

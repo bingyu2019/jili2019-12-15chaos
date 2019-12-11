@@ -1,31 +1,22 @@
 @extends('layouts.app')
 @section('title','灵魂深触-经历网')
-
 @section('content')
   {{--==================== 主页-电脑版=========================--}}
   <div class="d-none d-sm-block">
     <div class="big-box mx-auto">
-
       <header>
         {{-- 电脑版 logo 注册登录 --}}
         @include('layouts._lg_header')
-
         {{-- 清除浮动 --}}
         <div class="clear"></div>
-
         {{-- 消息提醒视图 --}}
         @include('shared._messages')
-
         {{-- 引入 vue 组件 公告 --}}
         <notice></notice>
-
-
         {{-- 电脑主页轮播图 --}}
         @include('layouts._lg_carousel')
-
         <br>
       </header>
-
       {{-- 电脑主体书本导航块 --}}
       <nav class="root-nav row col-md-12 mt-2">
         <div class="root-nav-l">

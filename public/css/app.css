@@ -11890,6 +11890,10 @@ body .grade-box {
   text-shadow: 2px 2px 4px #000000;
 }
 
+.sixteen {
+  font-size: 16px;
+}
+
 .logo .logo-body {
   height: 100px;
   background: black;
@@ -11924,6 +11928,24 @@ body .grade-box {
 
 .register-box .lg-header-avatar:hover .register-dropdown-menu {
   display: block;
+}
+
+.create-ten {
+  position: relative;
+  left: -70px;
+  top: -10px;
+}
+
+.root-note {
+  position: relative;
+  left: -53px;
+  top: -5px;
+}
+
+.lg-header-avatar {
+  position: relative;
+  left: 0px;
+  top: -55px;
 }
 
 .root-nav .root-nav-l {
@@ -12550,6 +12572,15 @@ hr {
 }
 
 .vote-link:hover {
+  text-decoration: underline;
+}
+
+.letter {
+  color: black;
+}
+
+.letter:hover {
+  color: rebeccapurple;
   text-decoration: underline;
 }
 

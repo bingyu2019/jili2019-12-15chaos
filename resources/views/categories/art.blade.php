@@ -5,17 +5,10 @@
     {{--=================== 灵魂艺术-电脑版 ======================--}}
     <div>
         <div class="big-box mx-auto d-none d-sm-block">
-
             <header>
-
                 {{-- 电脑版 logo 注册登录 --}}
                 @include('layouts._lg_header')
-
-                {{-- 清除浮动 --}}
-                <div class="clear"></div>
-                <br>
             </header>
-
             {{-- 分类页面主体导航--}}
             <nav class="root-nav row col-md-12">
                 @include('layouts._lg_category_nav')

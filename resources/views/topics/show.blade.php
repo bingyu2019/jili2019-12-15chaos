@@ -33,7 +33,7 @@
     {{-- 右则-用户名-头像-通知 --}}
     <div class="container">
       <div class="text-white">
-        <div style="height: 90px;border-radius:5px;background: linear-gradient(to top, #000, #7C3A08,#EB9A02);">
+        <div class="header-color" style="height: 90px;">
           {{-- 帖子标题--}}
           <h3 class="text-center pt-4">印巴关系突破，2500万印度锡克教徒完成朝圣心愿</h3>
         </div>
@@ -83,9 +83,9 @@
         </div>
       </div>
       <br>
-      {{-- 赏花--}}
+      {{-- 送花--}}
       <div class="border-radius followers-container topic-show-total float-left">
-        <a href="#"><h2 class="pl-3 float-left pt-3 pr-3 pb-1">🌺 <small>2 人赏花</small></h2></a>
+        <a href="#"><h2 class="pl-3 float-left pt-3 pr-3 pb-1">🌺 <small>2 人送花</small></h2></a>
         <img src="https://cdn.learnku.com/uploads/avatars/27828_1572963233.png!/both/400x400"
              class="round-avatar float-left m-2 mt-3">
         <img src="https://cdn.learnku.com/uploads/images/201801/03/1/ow6ZdlsdS2.jpg"

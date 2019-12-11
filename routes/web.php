@@ -31,7 +31,13 @@ Route::get('/topics/create_and_edit','TopicsController@create')->name('topics.cr
 // 新建帖子页面，上传图片
 Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
 
-//========================= 认证用户邮箱注册登录系统 ====================//
+//============================ 前台消息通知路由 =========================//
+Route::get('notifications/list','NotificationsController@list')->name('notifications');
+
+
+
+
+//========================= 认证用户邮箱注册登录系统 ======================//
 //Auth::routes();
 // 用户身份验证相关的路由
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
