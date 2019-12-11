@@ -1,4 +1,4 @@
-{{-- 我的发布 --}}
+{{-- 我的收藏 --}}
 <div class="shadow p-3 mb-5 rounded" style="background: #E5A55D">
   {{--                @if (count($topics))--}}
   <ul class="list-unstyled list-abc">
@@ -13,7 +13,7 @@
       <div class="media-body">
         <div class="media-heading mt-0 mb-1">
           <a href="" title="标题" class="list">
-            金融深1度：资本市场新一轮改革加速推进
+            收藏帖子的标题-金融深1度：资本市场新一轮改革加速推进
           </a>
           <a class="float-right" href="">
             <span class="badge badge-secondary badge-pill"> </span>
@@ -60,7 +60,7 @@
   </ul>
 
   {{--                @else--}}
-{{--  <div style="color: black;">暂无数据 ~_~</div>--}}
+  {{--  <div style="color: black;">暂无数据 ~_~</div>--}}
   {{--                @endif--}}
 
 </div>

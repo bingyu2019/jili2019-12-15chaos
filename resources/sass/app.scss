@@ -71,7 +71,7 @@ body {
 
 .three-color {
   border-radius: 5px;
-  background: linear-gradient(to bottom, #7C3A08, #EB9A02);
+  background: linear-gradient(to bottom, #eb880c,#7C3A08, #EB9A02);
 }
 
 
@@ -726,7 +726,7 @@ hr {
 }
 
 // 点赞打赏礼赞容器
-.votes-container {
+.followers-container {
   background: #E5A55D;
   width: 100%;
   height: 68px;
@@ -762,9 +762,10 @@ hr {
 
 //====================== PC users-show  ===============================//
 .users-show-page {
-  p {
-    border-bottom: solid 1px black;
-  }
+    .p {
+      border-bottom: solid 1px black;
+    }
+
 
   .change-title {
     a {
@@ -786,11 +787,21 @@ hr {
     }
   }
 }
-.list{
+
+.list {
   color: black;
 }
-.list:hover{
+
+.list:hover {
   text-shadow: 2px 2px 4px black;
+  text-decoration: underline;
+}
+
+.vote-link{
+  color: black;
+  float: left;
+}
+.vote-link:hover{
   text-decoration:underline;
 }
 

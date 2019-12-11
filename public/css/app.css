@@ -11873,8 +11873,8 @@ body .grade-box {
 
 .three-color {
   border-radius: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#7C3A08), to(#EB9A02));
-  background: linear-gradient(to bottom, #7C3A08, #EB9A02);
+  background: -webkit-gradient(linear, left top, left bottom, from(#eb880c), color-stop(#7C3A08), to(#EB9A02));
+  background: linear-gradient(to bottom, #eb880c, #7C3A08, #EB9A02);
 }
 
 .font-hover {
@@ -12487,14 +12487,14 @@ hr {
   text-decoration: underline;
 }
 
-.votes-container {
+.followers-container {
   background: #E5A55D;
   width: 100%;
   height: 68px;
   overflow: hidden;
 }
 
-.votes-container small {
+.followers-container small {
   font-size: 18px;
 }
 
@@ -12514,7 +12514,7 @@ hr {
   font-size: 18px;
 }
 
-.users-show-page p {
+.users-show-page .p {
   border-bottom: solid 1px black;
 }
 
@@ -12541,6 +12541,15 @@ hr {
 
 .list:hover {
   text-shadow: 2px 2px 4px black;
+  text-decoration: underline;
+}
+
+.vote-link {
+  color: black;
+  float: left;
+}
+
+.vote-link:hover {
   text-decoration: underline;
 }
 

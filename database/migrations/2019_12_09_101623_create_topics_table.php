@@ -16,7 +16,7 @@ class CreateTopicsTable extends Migration
             $table->integer('category_id')->unsigned()->index();
             $table->integer('reply_count')->unsigned()->default(0)->comment('回复总数');
             $table->integer('view_count')->unsigned()->default(0)->comment('浏览总数');
-            $table->integer('votes_count')->unsigned()->default(0)->comment('点赞总数');
+            $table->integer('followers_count')->unsigned()->default(0)->comment('点赞总数');
             $table->integer('rewards_count')->unsigned()->default(0)->comment('打赏总数');
             $table->integer('gifts_count')->unsigned()->default(0)->comment('礼赞总数');
             $table->integer('favorites_count')->unsigned()->default(0)->comment('收藏总数');

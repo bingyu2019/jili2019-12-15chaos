@@ -32,9 +32,9 @@
         @include('shared._statistics')
         <div class="mt-3">
           <h5 class="hover-ccc">❂ 个人简介</h5>
-          <p class="hover-ccc pr-2 pb-1">{{ $user->introduction }}</p>
+          <p class="hover-ccc pr-2 pb-1 p">{{ $user->introduction }}</p>
           <h5 class="hover-ccc">❂ 用户组</h5>
-          <p style="border-bottom: solid 1px black;"><span class="grade-box login">Founder</span>
+          <p class="p"><span class="grade-box login">Founder</span>
             <span class="grade-box login">开发者</span>
             <span class="grade-box login">管理员</span>
             <span class="grade-box login">管理员</span>
@@ -43,9 +43,9 @@
             <span class="grade-box login">管理员</span>
             <span class="grade-box login">小学生</span></p>
           <h5 class="hover-ccc">❂ 注册于</h5>
-          <p class="hover-ccc">{{ $user->created_at->diffForHumans() }}{{ $user->created_at }}</p>
+          <p class="hover-ccc p">{{ $user->created_at->diffForHumans() }}{{ $user->created_at }}</p>
           <h5 class="hover-ccc">❂ 最后活跃时间</h5>
-          <p class="hover-ccc">2019-10-29 13：36：56</p>
+          <p class="hover-ccc p">2019-10-29 13：36：56</p>
           <div class="total">
             <h4>👀 <small>893759</small></h4>
             <h4 class="ml-4">💬 <small>893759</small></h4>
@@ -64,28 +64,28 @@
           <br>
           <ul class="nav nav-tabs change-title" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active text-dark" data-toggle="tab" href="#">关注动态</a>
+              <a class="nav-link active text-dark" data-toggle="tab" href="#">关注人动态</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" data-toggle="tab" href="#b">我的发布</a>
+              <a class="nav-link text-dark" data-toggle="tab" href="#topics">我的发布</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" data-toggle="tab" href="#c">我的回复</a>
+              <a class="nav-link text-dark" data-toggle="tab" href="#replies">我的回复</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" data-toggle="tab" href="#d">我的经历</a>
+              <a class="nav-link text-dark" data-toggle="tab" href="#experience">我的经历</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" data-toggle="tab" href="#e">我的收藏</a>
+              <a class="nav-link text-dark" data-toggle="tab" href="#favorite">我的收藏</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" data-toggle="tab" href="#f">我的关注</a>
+              <a class="nav-link text-dark" data-toggle="tab" href="#followings">我的关注</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" data-toggle="tab" href="#g">我的粉丝</a>
+              <a class="nav-link text-dark" data-toggle="tab" href="#fans">我的粉丝</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" data-toggle="tab" href="#h">我的红花 </a>
+              <a class="nav-link text-dark" data-toggle="tab" href="#flowers">我的红花 </a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" data-toggle="tab" href="#i">我的金币</a>
@@ -95,58 +95,54 @@
             </li>
           </ul>
           <div class="tab-content">
-            {{--  我的关注内容 --}}
+            {{--  关注动态 --}}
             <div id="a" class="container tab-pane active"><br>
-              <h3>关注动态</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
+              @include('topics._topic_list')
+              @include('topics._topic_list')
 
-            {{-- 我的发布内容 --}}
-            <div id="b" class="container tab-pane fade"><br>
+            </div>
+            {{-- 我的帖子 --}}
+            <div id="topics" class="container tab-pane fade"><br>
               @include('topics._topic_list')
               @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
-              @include('topics._topic_list')
+
+            </div>
+            {{-- 我的回复 --}}
+            <div id="replies" class="container tab-pane fade"><br>
+              @include('users._replies')
+              @include('users._replies')
+
+            </div>
+            {{-- 我的经历 --}}
+            <div id="experience" class="container tab-pane fade"><br>
               @include('topics._topic_list')
             </div>
-            <div id="c" class="container tab-pane fade"><br>
+            {{-- 我的收藏 --}}
+            <div id="favorite" class="container tab-pane fade"><br>
+              @include('users._favorite')
               @include('topics._topic_list')
             </div>
-            <div id="d" class="container tab-pane fade"><br>
-              @include('topics._topic_list')
+            {{-- 我的关注 --}}
+            <div id="followings" class="container tab-pane fade"><br>
+              @include('users._followings')
+              @include('users._followings')
             </div>
-            <div id="e" class="container tab-pane fade"><br>
-              @include('topics._topic_list')
+            {{-- 我的粉丝 --}}
+            <div id="fans" class="container tab-pane fade"><br>
+              @include('users._followers')
+              @include('users._followers')
             </div>
-            <div id="f" class="container tab-pane fade"><br>
-              @include('topics._topic_list')
+            {{-- 我的红花 --}}
+            <div id="flowers" class="container tab-pane fade"><br>
+              @include('users._flowers')
             </div>
-            <div id="g" class="container tab-pane fade"><br>
-              @include('topics._topic_list')
-            </div>
-            <div id="h" class="container tab-pane fade"><br>
-              @include('topics._topic_list')
-            </div>
+            {{-- 我的金币 --}}
             <div id="i" class="container tab-pane fade"><br>
-              @include('topics._topic_list')
+              @include('users._coin')
             </div>
+            {{-- 我的礼物 --}}
             <div id="j" class="container tab-pane fade"><br>
-              @include('topics._topic_list')
+              @include('users._gift')
             </div>
           </div>
         </div>

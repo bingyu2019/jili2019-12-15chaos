@@ -2,10 +2,11 @@
 @section('title','灵魂深触-经历网 Bing ')
 @section('content')
   {{--===========================  电脑版 ==================================--}}
+ @include('layouts._xs_header')
   {{-- 电脑-顶部总导航 --}}
   @include('layouts._lg_other_header')
   {{-- 电脑-左则-内容区域 --}}
-  <div class="col-md-3 col-xs-12 float-left d-none d-sm-block">
+  <div class="col-md-3 col-xs-12 float-left">
     {{-- 左则：头像-简介-社交信息 --}}
     <div class="user-info text-center"
          style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
@@ -83,7 +84,7 @@
       </div>
       <br>
       {{-- 赏花--}}
-      <div class="border-radius votes-container topic-show-total float-left">
+      <div class="border-radius followers-container topic-show-total float-left">
         <a href="#"><h2 class="pl-3 float-left pt-3 pr-3 pb-1">🌺 <small>2 人赏花</small></h2></a>
         <img src="https://cdn.learnku.com/uploads/avatars/27828_1572963233.png!/both/400x400"
              class="round-avatar float-left m-2 mt-3">
@@ -91,7 +92,7 @@
              class="round-avatar float-left m-2 mt-3">
       </div>
       {{-- 赏銀 --}}
-      <div class="border-radius votes-container topic-show-total float-left mt-4">
+      <div class="border-radius followers-container topic-show-total float-left mt-4">
         <a href="#" class="mb-2"><h2 class="pl-3 float-left pt-3 pr-3 pb-1">💰 <small>3 人赏银</small></h2></a>
         <img src="https://cdn.learnku.com/uploads/avatars/29780_1537002042.jpg!/both/400x400"
              class="round-avatar float-left m-2 mt-3">
@@ -99,7 +100,7 @@
              class="round-avatar float-left m-2 mt-3">
       </div>
       {{-- 赏礼物 --}}
-      <div class="border-radius votes-container topic-show-total float-left mt-4">
+      <div class="border-radius followers-container topic-show-total float-left mt-4">
         <a href="#" class="pb-1"><h2 class="pl-3 float-left pt-3 pr-3 pb-1">🎁 <small>1 人礼赞</small></h2></a>
         <img src="/images/avatar/Founder.png" class="round-avatar float-left m-2 mt-3">
         <img src="https://cdn.learnku.com/uploads/avatars/20049_1571133240.png!/both/400x400"

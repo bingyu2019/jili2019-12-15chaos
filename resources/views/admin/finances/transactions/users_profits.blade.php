@@ -54,7 +54,7 @@
           <th scope="col">账号名</th>
           <th scope="col">经历</th>
           <th scope="col">展览</th>
-          <th scope="col">获赞</th>
+          <th scope="col">获花</th>
           <th scope="col">获赏</th>
           <th scope="col">获礼</th>
           <th scope="col">累计收益</th>

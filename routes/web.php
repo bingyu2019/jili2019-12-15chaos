@@ -98,7 +98,7 @@ Route::get('/admin/notifications/create','Admin\NotificationsController@create')
 Route::get('/admin/notifications/edit','Admin\NotificationsController@edit')->name('notifications.edit');
 
 //后台财务管理
-Route::get('/admin/finances/votes', 'Admin\FinancesController@votes')->name('admin.finances.votes');
+Route::get('/admin/finances/followers', 'Admin\FinancesController@followers')->name('admin.finances.followers');
 Route::get('/admin/finances/rewards', 'Admin\FinancesController@rewards')->name('admin.finances.rewards');
 Route::get('/admin/finances/gifts', 'Admin\FinancesController@gifts')->name('admin.finances.gifts');
 Route::get('/admin/finances/experience', 'Admin\FinancesController@experience')->name('admin.finances.experience');

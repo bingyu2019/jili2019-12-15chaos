@@ -9,9 +9,9 @@ class FinancesController extends Controller
 {
 
     // 点赞列表视图
-    public function votes()
+    public function followers()
     {
-        return view('admin.finances.votes');
+        return view('admin.finances.followers');
     }
 
     // 打赏列表视图
