@@ -6,7 +6,7 @@
   <div class="xs-hindd-block d-sm-none"><br><br><br></div>
 
   <div class="topic-create" style="width: 100%;height: 600px;">
-    <div class="header-color mx-auto d-none d-sm-block" style="height: 60px;width:64.5%;">
+    <div class="header-color mx-auto d-none d-sm-block" style="height: 55px;width:64.5%;">
 
       <h3 class="text-center text-light pt-3">📩 发送私信 </h3>
     </div>
@@ -17,7 +17,7 @@
       <div class="border-radius text-container  float-left mt-4">
         <br>
         <h5 class="reply-container p-3">
-          <strong>☻</strong> 请勿发送违法违规的内容，也请勿回复此类私信。私信侵扰不礼貌，请慎重发送。
+          <b class="i">ℹ</b> 请勿发送违法违规的内容，也请勿回复此类私信。私信侵扰不礼貌，请慎重发送。
         </h5>
         <div class="row mt-2">
           <h5 class="pl-5 pt-4">私信给 </h5>

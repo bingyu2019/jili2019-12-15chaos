@@ -93,7 +93,7 @@
       </div>
       {{-- 赏銀 --}}
       <div class="border-radius followers-container topic-show-total float-left mt-4">
-        <a href="#" class="mb-2"><h2 class="pl-3 float-left pt-3 pr-3 pb-1">💰 <small>3 人赏银</small></h2></a>
+        <a href="#" class="mb-2"><h2 class="pl-3 float-left pt-3 pr-3 pb-1">💰 <small>3 人奖赏</small></h2></a>
         <img src="https://cdn.learnku.com/uploads/avatars/29780_1537002042.jpg!/both/400x400"
              class="round-avatar float-left m-2 mt-3">
         <img src="https://cdn.learnku.com/uploads/avatars/42627_1560587560.jpg!/both/400x400"

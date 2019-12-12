@@ -22,18 +22,21 @@ Route::get('/categories/heaven','CategoriesController@heaven')->name('heaven');
 // 灵魂服务
 Route::get('/categories/serve','CategoriesController@serve')->name('serve');
 
-//============================ 用户路由 ==============================//
+//============================ 前台用户路由 ==============================//
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 
-//============================ 帖子路由 ==============================//
+//============================ 前台帖子路由 ==============================//
 Route::get('/topics/show','TopicsController@show')->name('topics.show');
 Route::get('/topics/create_and_edit','TopicsController@create')->name('topics.create');
 // 新建帖子页面，上传图片
 Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
 
 //============================ 前台消息通知路由 =========================//
-Route::get('notifications/list','NotificationsController@list')->name('notifications');
-Route::get('notifications/_create_letter','NotificationsController@createLetter')->name('createLetter');
+Route::get('/notifications/list','NotificationsController@list')->name('notifications');
+Route::get('/notifications/_create_letter','NotificationsController@createLetter')->name('createLetter');
+
+//========================= 前台用户-我的钱袋 ======================//
+Route::get('/wallets/list','WalletsController@list')->name('wallets.list');
 
 
 //========================= 认证用户邮箱注册登录系统 ======================//

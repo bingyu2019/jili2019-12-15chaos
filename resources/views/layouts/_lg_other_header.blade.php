@@ -63,7 +63,7 @@
                 🔴 个人中心
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="">
+              <a class="dropdown-item" href="{{ route('wallets.list') }}">
                 🔵 我的钱袋
               </a>
               <div class="dropdown-divider"></div>

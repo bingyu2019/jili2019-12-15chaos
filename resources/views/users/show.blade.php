@@ -89,7 +89,7 @@
               <a class="nav-link text-dark" data-toggle="tab" href="#flowers">我的红花 </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" data-toggle="tab" href="#i">我的赏银</a>
+              <a class="nav-link text-dark" data-toggle="tab" href="#i">我的奖赏</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" data-toggle="tab" href="#j">我的礼物 </a>

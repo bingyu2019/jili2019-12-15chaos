@@ -11894,6 +11894,10 @@ body .grade-box {
   font-size: 16px;
 }
 
+.bottom-line {
+  border-bottom: solid 2px black;
+}
+
 .logo .logo-body {
   height: 100px;
   background: black;
@@ -12587,6 +12591,10 @@ hr {
 #send-letter:hover {
   background: white;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.i {
+  font-size: 1.5em;
 }
 
 .xs-nav-category li {

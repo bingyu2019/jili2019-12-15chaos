@@ -94,6 +94,11 @@ body {
   font-size: 16px;
 }
 
+.bottom-line{
+  border-bottom: solid 2px black;
+}
+
+
 // ======================== 电脑主页样式 ====================//
 
 // 电脑主页 logo
@@ -843,6 +848,9 @@ hr {
 #send-letter:hover{
   background: white;
   text-shadow: 2px 2px 4px #000000;
+}
+.i{
+  font-size: 1.5em;
 }
 
 //======================= 手机版主页 =================================//
