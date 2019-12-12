@@ -7,6 +7,7 @@
 
   <div class="topic-create" style="width: 100%;height: 600px;">
     <div class="header-color mx-auto d-none d-sm-block" style="height: 60px;width:64.5%;">
+
       <h3 class="text-center text-light pt-3">📩 发送私信 </h3>
     </div>
     <div class="header-color mx-auto mb-0 xs-hindd-block d-sm-none" style="height: 70px;width: 92%;">

@@ -4,7 +4,9 @@
   @include('layouts._xs_header')
   @include('layouts._lg_other_header')
 
-  <div class="d-block d-sm-none"><br><br><br><br><br></div>
+  <div class="d-block d-sm-none"><br><br><br></div>
+  <div class="header-color mx-auto mb-0 d-none d-sm-block" style="height: 80px;width: 64.5%;"></div>
+  <div class="header-color mx-auto mb-0 xs-hindd-block d-sm-none" style="height: 70px;width: 94%;"></div>
   <div class="user-edit">
     <div class="col-md-8 offset-md-2">
         <div class="card text-container">

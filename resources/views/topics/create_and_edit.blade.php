@@ -4,6 +4,8 @@
   @include('layouts._lg_other_header')
   @include('layouts._xs_header')
   <div class="xs-hindd-block d-sm-none"><br><br><br></div>
+  <div class="header-color mx-auto mb-0 d-none d-sm-block" style="height: 80px;width: 81.2%;"></div>
+  <div class="header-color mx-auto mb-0 xs-hindd-block d-sm-none" style="height: 70px;width: 93%;"></div>
     <div class="topic-create">
       <div class="col-md-10 offset-md-1">
         <div class="card" style="background:  #E5A55D;">

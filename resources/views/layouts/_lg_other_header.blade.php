@@ -71,10 +71,6 @@
                 🔵 编辑资料
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{{ route('notifications') }}">
-                <h5>🔵 消息通知</h5>
-              </a>
-              <div class="dropdown-divider"></div>
               <a href="javascript:void(0);" class="btn btn-danger btn-lg active btn-del-login" role="button"
                  aria-pressed="true" style="width: 100%;"><h5>退出</h5></a>
             </div>

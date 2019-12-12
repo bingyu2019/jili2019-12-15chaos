@@ -3,49 +3,108 @@
 @section('content')
   @include('admin.layouts._header')
   <div style="background: #F0F0F0;white:100%;">
-    <br>
-    <div class="col-md-11 mx-auto text-center text-secondary bg-white pt-3 " style="height: 60px;border-radius: 5px;">
-      <h2>后台主页系统统计信息</h2>
-    </div>
-    <div class=" bg-white float-left mb-4" style="width: 21%; margin: 20px 20px 0 55px;border-radius: 5px;">
-      <p class="mt-4 ml-2 text-secondary" style="font-size: 20px;">总访问量:</p>
-      <hr>
-      <h1 class="text-center text-primary mt-4 mb-4">999,999,999</h1>
-      <hr>
-      <p class="mt-4 ml-2 mb-4 text-secondary" style="font-size: 16px;">今日访问量: 23443 人次</p>
-    </div>
-    <div class=" bg-white float-left mb-4" style="width: 21%; margin: 20px 13px 0 10px;border-radius: 5px;">
-      <p class="mt-4 ml-2 text-secondary" style="font-size: 20px;">会员总数:</p>
-      <hr>
-      <h1 class="text-center text-success mt-4 mb-4">999,999,999 人</h1>
-      <hr>
-      <p class="mt-4 ml-2 mb-4 text-secondary" style="font-size: 16px;">今日新增会员: 23443 人</p>
-    </div>
-    <div class=" bg-white float-left mb-4" style="width: 21%;margin:20px 15px 0 20px;border-radius: 5px;">
-      <p class="mt-4 ml-2 text-secondary" style="font-size: 20px;">文章总数:</p>
-      <h3 class="text-center text-success">999,999,999 篇</h3>
-      <p class="ml-2 text-secondary" style="font-size: 16px;">今日新增文章: 23443 篇</p>
-      <hr>
-      <p class="mt-4 ml-2 text-secondary" style="font-size: 20px;">回复总数:</p>
-      <h3 class="text-center text-primary">999,999,999 篇</h3>
-      <p class="ml-2 text-secondary" style="font-size: 16px;">今日新增回复: 23443 篇</p>
-    </div>
-    <div class=" bg-white float-left mb-4" style="width: 21%;margin: 20px 20px 0 15px;border-radius: 5px;">
-      <p class="mt-4 ml-2 text-secondary" style="font-size: 20px;">购币总额:</p>
-      <hr>
-      <h1 class="text-center text-danger mt-4 mb-4">￥ 999,999,999 元</h1>
-      <hr>
-      <p class="mt-4 ml-2 mb-4 text-secondary" style="font-size: 16px;">今日购币总额￥ 23443 元</p>
+    <table class="col-md-11 mx-auto table table-bordered bg-white">
+      <tr class="card-header text-center" style="font-size: 18px;">
+        <td>欢迎 <b>Bing</b> 登录后台管理</td>
+        <td>登录次数：18</td>
+        <td>上次登录时间：2019-12-12 11:19:55</td>
+        <td>上次登录IP：222.35.131.79.1</td>
+      </tr>
+    </table>
+    <div class="col-md-11 mx-auto text-center text-secondary bg-white pt-3 rounded mb-4">
+      <h4>后台系统统计信息</h4>
+      <div class="mx-auto">
+        <table class="table table-bordered table-hover text-center sixteen">
+          <thead>
+          <tr>
+            <th scope="col" style="width: 100px;">类型</th>
+            <th scope="col">今天</th>
+            <th scope="col">一周</th>
+            <th scope="col">一月</th>
+            <th scope="col">半年</th>
+            <th scope="col">一年</th>
+            <th scope="col">累计</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">访问量</th>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">会员</th>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">文章</th>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">回复</th>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">图片</th>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">私信</th>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">购币</th>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
     </div>
 
+
     <div class="card mx-auto col-md-11">
-      <table class="table table-bordered mt-3">
-        <tr class="card-header text-center" style="font-size: 18px;">
-          <td>登录次数：18</td>
-          <td>上次登录IP：222.35.131.79.1</td>
-          <td>上次登录时间：2014-6-14 11:19:55</td>
-        </tr>
-      </table>
+      {{--      <table class="table table-bordered mt-3">--}}
+      {{--        <tr class="card-header text-center" style="font-size: 18px;">--}}
+      {{--          <td>登录次数：18</td>--}}
+      {{--          <td>上次登录IP：222.35.131.79.1</td>--}}
+      {{--          <td>上次登录时间：2014-6-14 11:19:55</td>--}}
+      {{--        </tr>--}}
+      {{--      </table>--}}
       <table class="table table-bordered table-hover">
         <thead>
         <tr>
