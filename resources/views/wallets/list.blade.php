@@ -9,7 +9,7 @@
     <div class="topic-create">
       <div class="col-md-10 mx-auto">
         <div class="header-color" style="height: 80px;">
-          <h3 class="text-center text-light pt-4"><b>💰💰💰</b> 我的钱袋 💰💰💰</h3>
+          <h3 class="text-center text-light pt-4"> 我的钱袋 💰</h3>
         </div>
         {{--银币统计--}}
         <div class="shadow pt-3 rounded sixteen text-container">
