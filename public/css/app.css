@@ -11898,6 +11898,10 @@ body .grade-box {
   border-bottom: solid 2px black;
 }
 
+.modal-body {
+  background: #FFE4E1;
+}
+
 .logo .logo-body {
   height: 100px;
   background: black;
@@ -12546,7 +12550,6 @@ hr {
 
 .users-show-page .change-title a {
   color: black;
-  font-weight: bold;
   font-size: 18px;
 }
 

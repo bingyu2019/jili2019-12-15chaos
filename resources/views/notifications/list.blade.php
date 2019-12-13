@@ -16,13 +16,13 @@
             <br>
             <ul class="nav nav-tabs change-title" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active text-dark" data-toggle="tab" href="#remind">我的提醒</a>
+                <a class="nav-link active text-dark" data-toggle="tab" href="#remind"><b>我的提醒</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" data-toggle="tab" href="#letter">我的私信</a>
+                <a class="nav-link text-dark" data-toggle="tab" href="#letter"><b>我的私信</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" data-toggle="tab" href="#notifications">系统公告</a>
+                <a class="nav-link text-dark" data-toggle="tab" href="#notifications"><b>系统公告</b></a>
               </li>
             </ul>
             {{-- 选项卡内容 --}}
@@ -125,14 +125,10 @@
                   <div class="clear"></div>
                 </div>
 
-
-
               </div>
-
-
-              {{-- 我的私信--}}
+              {{--===== 我的私信 =========================================--}}
               <div id="letter" class="container tab-pane fade pb-5"><br>
-                <div class="mt-3 pt-3" style="border: solid 2px black;border-radius: 10px;">
+                <div class="mb-4 pt-3" style="border: solid 2px black;border-radius: 10px;">
                   <div class="text-container container">
                     <a href=""><img class="round-avatar float-left"
                                     src="https://cdn.learnku.com/uploads/avatars/46186_1564453747.jpeg!/both/400x400"
@@ -145,7 +141,7 @@
                   <br>
                   <div class="clear"></div>
                 </div>
-                <div class="mt-3 pt-3" style="border: solid 2px black;border-radius: 10px;">
+                <div class="mb-4 pt-3" style="border: solid 2px black;border-radius: 10px;">
                   <div class="text-container container">
                     <a href=""><img class="round-avatar float-left"
                                     src="https://cdn.learnku.com/uploads/avatars/46186_1564453747.jpeg!/both/400x400"
@@ -160,9 +156,9 @@
                 </div>
               </div>
 
-              {{-- 系统公告 --}}
+              {{-- 系统公告 =============================================--}}
               <div id="notifications" class="container tab-pane fade pb-5"><br>
-                <div class="mt-3 pt-3" style="border: solid 2px black;border-radius: 10px;">
+                <div class="mb-4 pt-3" style="border: solid 2px black;border-radius: 10px;">
                   <div class="text-container container">
                     <img class="float-left" src="/images/logo/xs-logo.png" alt="">
                     <h5 class="float-left ml-4 pt-1"><b>上月收益已发放，请注意查收。如有问题，请到【灵魂服务】发贴上报。</b></h5>
@@ -172,7 +168,7 @@
                   <br>
                   <div class="clear"></div>
                 </div>
-                <div class="mt-3 pt-3" style="border: solid 2px black;border-radius: 10px;">
+                <div class="mb-4 pt-3" style="border: solid 2px black;border-radius: 10px;">
                   <div class="text-container container">
                     <img class="float-left" src="/images/logo/xs-logo.png" alt="">
                     <h5 class="float-left ml-4 pt-1"><b>上月收益已发放，请注意查收。如有问题，请到【灵魂服务】发贴上报。</b></h5>
