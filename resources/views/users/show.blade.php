@@ -9,7 +9,7 @@
   @include('shared._messages')
 
   {{-- 设计全页个人中心 --}}
-  <div class="col-md-12 float-left ">
+  <div class="col-md-12 float-left">
     <div class="header-color col-md-3 float-left pl-3 pt-2" style="height: 90px;">
       <h4><b>❂ jili20.com</b></h4>
       <h5 class="text-center font-hover">第 {{ $user->id }} 号 用户</h5>

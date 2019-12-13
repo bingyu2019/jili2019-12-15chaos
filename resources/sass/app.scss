@@ -802,6 +802,11 @@ hr {
   margin-right: 38px;
 }
 
+// 模态框头部
+.my-modal-header{
+  background-image: linear-gradient(to top, black, #EE82EE);
+}
+
 //====================== PC users-edit  ===============================//
 .users-edit-page {
   label {
@@ -881,17 +886,12 @@ hr {
   border-bottom: solid 1px #584021;
 }
 
-// 手机主页诗歌背景颜色
-.root-background-poetry {
-  width: 85%;
+// 手机主页和分类背景颜色
+.root-background-poetry, .category-background {
+  width: 99%;
   background-image: linear-gradient(to right, #D3791C, #FAEDE0, #D3791C);
 }
 
-// 手机主页分类
-.root-background, .category-background {
-  width: 99%;
-  background-image: linear-gradient(to right, #D3791C, #fcc170, #D3791C);
-}
 
 // 手机分类盒子
 .xs-root-category-box {

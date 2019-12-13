@@ -10,7 +10,7 @@
     {{-- 左则：头像-简介-社交信息 --}}
     <div class="user-info text-center"
          style="background: linear-gradient(to right, #7C3A08,#DE9008, #A75615);border-radius:5px;">
-      <a href="{{ route('users.show', Auth::id()) }}"><h3 class="text-white pt-3 pb-2">作者：Bing </h3></a>
+      <a href="{{ route('users.show', Auth::id()) }}"><h3 class="text-white pt-3 pb-2 hover-ccc">作者：Bing </h3></a>
       <div>
         <a href="{{ route('users.show', Auth::id()) }}"><img class="img-fluid" src="/images/avatar/face250px.jpg"
                                                              style="border-radius:5px;"></a>
@@ -35,13 +35,13 @@
       <div class="text-white">
         <div class="header-color" style="height: 90px;">
           {{-- 帖子标题--}}
-          <h3 class="text-center pt-4">印巴关系突破，2500万印度锡克教徒完成朝圣心愿</h3>
+          <h3 class="text-center pt-4 hover-ccc">印巴关系突破，2500万印度锡克教徒完成朝圣心愿</h3>
         </div>
         {{-- 帖子内容区域--}}
         <div class="text-dark border-radius text-container">
           <br>
           {{-- 量统计：发表时间-回复-浏览-点赞-礼赞-收藏量 --}}
-          <div class="topic-show-total container text-cente float-left">
+          <div class="topic-show-total container text-cente float-left hover-ccc">
             <div class="float-left" style="width: 33%;height: 25px;"></div>
             {{-- 发表时间 --}}
             <div class="float-left" style="width:11%;"><a href="" data-toggle="tooltip"
@@ -121,7 +121,7 @@
           <div class="modal-dialog modal-lg">
             <div class=" modal-content">
               {{--模态框头部--}}
-              <div class="modal-header" style="background: linear-gradient(to bottom, 	#FF69B4, black);">
+              <div class="modal-header  my-modal-header" >
                 <h4 class="modal-title text-light">送花 <span class="hover-ccc">🌺</span></h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
@@ -161,7 +161,7 @@
           <div class="modal-dialog modal-lg">
             <div class=" modal-content">
               {{--模态框头部--}}
-              <div class="modal-header" style="background: linear-gradient(to bottom, 	#FF69B4, black);">
+              <div class="modal-header  my-modal-header" >
                 <h4 class="modal-title text-light">奖赏 <span class="hover-ccc">💰</span></h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
@@ -200,7 +200,7 @@
           <div class="modal-dialog modal-lg">
             <div class=" modal-content">
               {{--模态框头部--}}
-              <div class="modal-header" style="background: linear-gradient(to bottom, 	#FF69B4, black);">
+              <div class="modal-header  my-modal-header">
                 <h4 class="modal-title text-light">礼赞 <span class="hover-ccc">🎁</span></h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
@@ -353,7 +353,7 @@
             <div class="modal-dialog modal-lg">
               <div class=" modal-content">
                 {{--模态框头部--}}
-                <div class="modal-header" style="background: linear-gradient(to bottom, 	#FF69B4, black);">
+                <div class="modal-header  my-modal-header" >
                   <h4 class="modal-title text-light">送花 <span class="hover-ccc">🌺</span></h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -395,7 +395,7 @@
             <div class="modal-dialog modal-lg">
               <div class=" modal-content">
                 {{--模态框头部--}}
-                <div class="modal-header" style="background: linear-gradient(to bottom, 	#FF69B4, black);">
+                <div class="modal-header  my-modal-header" >
                   <h4 class="modal-title text-light">奖赏 <span class="hover-ccc">💰</span></h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -434,7 +434,7 @@
             <div class="modal-dialog modal-lg">
               <div class=" modal-content">
                 {{--模态框头部--}}
-                <div class="modal-header" style="background: linear-gradient(to bottom, 	#FF69B4, black);">
+                <div class="modal-header  my-modal-header" >
                   <h4 class="modal-title text-light">礼赞 <span class="hover-ccc">🎁</span></h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>

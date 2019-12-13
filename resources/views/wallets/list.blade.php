@@ -39,10 +39,10 @@
                     <td>微信账号实名：</td>
                   </tr>
                   <tr>
-                    <td style="width: 50%;"><a href="" type="btn" class="btn" style="border: solid 1px black;"
+                    <td style="width: 50%;"><a href="" type="btn" class="btn wallets-a"
                                                data-toggle="modal" data-target="#myModal">兑换金币</a>
                     </td>
-                    <td><a href="" type="btn" class="btn" style="border: solid 1px black;" data-toggle="modal"
+                    <td><a href="" type="btn" class="btn wallets-a" data-toggle="modal"
                            data-target="#myMoney">申请提现</a></td>
                   </tr>
                 </table>
@@ -51,66 +51,73 @@
           </ul>
         </div>
 
-        {{-- 兑换金币模态框 ======================================--}}
+
+        {{--兑换金币-模态框==================================--}}
         <div class="container">
-          {{--模态框--}}
           <div class="modal fade" id="myModal">
             <div class="modal-dialog modal-lg">
-              <div class="modal-content mt-5">
+              <div class=" modal-content">
                 {{--模态框头部--}}
-                <div class="modal-header header-color">
+                <div class="modal-header  my-modal-header" >
                   <h4 class="modal-title text-light">兑换金币</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                {{--模态框主体--}}
-                <div class="modal-body sixteen">
-                  <h5>您现在拥有金币 <b style="color: red;">0</b> 个 </h5>
-                  <p>▸ 兑币规则：金币每个 1.00 元，服务费10% 即 0.10元，实付金额 1.10元，如此类推。（金额单位为RMB）
-                  <p>▸ 除此之外，平台不再收取任何费用。</p>
-                  <p>▸ 满 20 金币可申请提现。收益多少，提现多少，免服务费。</p>
-                  <p>▸ 平台内，1金币可免服务费兑换10银币。1 🌺 = 1银币，即 0.10元（RMB)。</p>
+                <div class="modal-body rounded">
+                  {{--模态框主体--}}
+                  <div class="modal-body sixteen">
+                    <h5>您现在拥有金币 <b style="color: red;">0</b> 个 </h5>
+                    <p>▸ 兑币规则：金币每个 1.00 元，服务费10% 即 0.10元，实付金额 1.10元，如此类推。（金额单位为RMB）
+                    <p>▸ 除此之外，平台不再收取任何费用。</p>
+                    <p>▸ 满 20 金币可申请提现。收益多少，提现多少，免服务费。</p>
+                    <p>▸ 平台内，1金币可免服务费兑换10银币。1 🌺 = 1银币，即 0.10元（RMB)。</p>
+                  </div>
+                  {{--模态框底部--}}
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-lg">确定</button>
+
                 </div>
-                {{--模态框底部--}}
-                <div class="modal-footer text-container">
-                  <a href="" class="btn btn-lg btn-outline-danger btn-block">我已熟知兑币规则　现在就兑换金币</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {{-- 申请提现模态框 ======================================--}}
+
+
+        {{--申请提现-模态框==================================--}}
         <div class="container">
-          {{--模态框--}}
           <div class="modal fade" id="myMoney">
             <div class="modal-dialog modal-lg">
-              <div class="modal-content mt-5">
+              <div class=" modal-content">
                 {{--模态框头部--}}
-                <div class="modal-header header-color">
+                <div class="modal-header  my-modal-header" >
                   <h4 class="modal-title text-light">申请提现</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                {{--模态框主体--}}
-                <div class="modal-body sixteen">
-                  <div class="form-group">
-                    <p>▸ 提现须知：收益满 <b style="color: red;">20</b> 个金币或以上，才可申请提现。</p>
-                    <h5>▸ 您现在拥有金币 <b style="color: red;">20</b> 个，可以申请提现。 </h5>
-                    {{--                    <h5>您现在拥有金币不满 <b style="color: red;">20</b> 个，暂时不能提现。 </h5>--}}
-                    <input type="text" class="form-control" id="usr" placeholder="请输入提现金币数量">
+                <div class="modal-body rounded">
+                  {{--模态框主体--}}
+                  <div class="modal-body sixteen">
+                    <div class="form-group">
+                      <p>▸ 提现须知：收益满 <b style="color: red;">20</b> 个金币或以上，才可申请提现。</p>
+                      <h5>▸ 您现在拥有金币 <b style="color: red;">20</b> 个，可以申请提现。 </h5>
+                      {{--                    <h5>您现在拥有金币不满 <b style="color: red;">20</b> 个，暂时不能提现。 </h5>--}}
+                      <input type="text" class="form-control" id="usr" placeholder="请输入提现金币数量">
+                    </div>
+                    <div class="form-group">
+                      <p>▸ 合计提现金额为： <b style="color: red;">20</b> 元 </p>
+                      <p>▸ 您的支付宝提款账号是： 13761719602</p>
+                      {{--                    <p>您的微信提款账号是： 13761719602</p>--}}
+                      <p>▸ 您的提款账号实名是：王汝冰</p>
+                    </div>
+                    <div>
+                      ▸ 信息有误 <a href="" class="text-danger">修改账号</a>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <p>▸ 合计提现金额为： <b style="color: red;">20</b> 元 </p>
-                    <p>▸ 您的支付宝提款账号是： 13761719602</p>
-                    {{--                    <p>您的微信提款账号是： 13761719602</p>--}}
-                    <p>▸ 您的提款账号实名是：王汝冰</p>
+                  {{--模态框底部--}}
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-lg">确定</button>
+
                   </div>
-                  <div>
-                    ▸ 信息有误 <a href="" class="text-danger">修改账号</a>
-                  </div>
-                </div>
-                {{--模态框底部--}}
-                <div class="modal-footer text-container">
-                  <a href="" class="btn btn-lg btn-outline-danger btn-block"><b>信息确认无误，现在就申请提现</b></a>
                 </div>
               </div>
             </div>
@@ -133,7 +140,7 @@
                 <a class="nav-link text-dark" data-toggle="tab" href="#royalty"><b>支付版税</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" data-toggle="tab" href="#gift"><b>购买礼物</b></a>
+                <a class="nav-link text-dark" data-toggle="tab" href="#gift"><b>已购礼物</b></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark" data-toggle="tab" href="#send-gift"><b>赠送记录</b></a>

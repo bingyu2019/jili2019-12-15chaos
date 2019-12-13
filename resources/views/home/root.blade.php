@@ -552,7 +552,7 @@
       <div class="mx-auto xs-root-category-box">
 
         {{-- 手机主页开头诗 --}}
-        <article class="root-background-poetry mx-auto text-center shadow-lg p-3 mb-5 rounded">
+        <article class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto text-center shadow-lg p-3 mb-5 rounded">
           <h4><strong>我的心灵和我的一切</strong></h4>
           <small>作者：卡蒙斯【葡萄牙】 / &nbsp;翻译：肖佳平</small><br>
           <hr style="background: #000;">
@@ -574,7 +574,7 @@
         {{-- 各大分类 --}}
         <article class="xs-category-content">
           {{-- 人物经历 --}}
-          <div class="root-background mx-auto shadow-lg p-3 mb-5 rounded">
+          <div class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto shadow-lg p-3 mb-5 rounded">
 
             <div class="xs-category-title">
               <img class="img-fluid " src="/images/category/xs-experience.jpg" style="width: 100%;">
@@ -635,7 +635,7 @@
             </div>
           </div>
           {{-- 个人宣传 --}}
-          <div class="root-background mx-auto shadow-lg p-3 mb-5 rounded">
+          <div class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto shadow-lg p-3 mb-5 rounded">
             <div class="xs-category-title">
               <div class="pl-0">
                 <img class="img-fluid" src="/images/category/xs-mysealf.jpg" style="width: 100%;">
@@ -695,7 +695,7 @@
 
           </div>
           {{-- 灵魂艺术 --}}
-          <div class="root-background mx-auto shadow-lg p-3 mb-5 rounded">
+          <div class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto shadow-lg p-3 mb-5 rounded">
             <div class="xs-category-title">
               <img
                 class=" img-fluid" src="/images/category/xs-art.jpg" style="width: 100%;">
@@ -754,7 +754,7 @@
 
           </div>
           {{-- 灵魂学院 --}}
-          <div class="root-background mx-auto shadow-lg p-3 mb-5 rounded">
+          <div class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto shadow-lg p-3 mb-5 rounded">
             <div class="xs-category-title">
               <img
                 class=" img-fluid" src="/images/category/xs-college.jpg" style="width: 100%;">
@@ -813,7 +813,7 @@
 
           </div>
           {{-- 灵魂共享 --}}
-          <div class="root-background mx-auto shadow-lg p-3 mb-5 rounded">
+          <div class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto shadow-lg p-3 mb-5 rounded">
             <div class="xs-category-title">
               <img
                 class=" img-fluid" src="/images/category/xs-share.jpg" style="width: 100%;">
@@ -872,7 +872,7 @@
 
           </div>
           {{-- 灵魂礼赞 --}}
-          <div class="root-background mx-auto shadow-lg p-3 mb-5 rounded">
+          <div class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto shadow-lg p-3 mb-5 rounded">
             <div class="xs-category-title">
               <img
                 class=" img-fluid" src="/images/category/xs-gift.jpg" style="width: 100%;">
@@ -931,7 +931,7 @@
 
           </div>
           {{-- 灵魂展览馆 --}}
-          <div class="root-background mx-auto shadow-lg p-3 mb-5 rounded">
+          <div class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto shadow-lg p-3 mb-5 rounded">
             <div class="xs-category-title">
               <img class="img-fluid" src="/images/category/xs-show.jpg" style="width: 100%;">
               <br><br>
@@ -989,7 +989,7 @@
 
           </div>
           {{-- 灵魂极乐 --}}
-          <div class="root-background mx-auto shadow-lg p-3 mb-5 rounded">
+          <div class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto shadow-lg p-3 mb-5 rounded">
             <div class="xs-category-title">
               <img
                 class=" img-fluid" src="/images/category/xs-heaven.jpg" style="width: 100%;">
@@ -1048,7 +1048,7 @@
 
           </div>
           {{-- 灵魂服务 --}}
-          <div class="root-background mx-auto shadow-lg p-3 mb-5 rounded">
+          <div class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto shadow-lg p-3 mb-5 rounded">
             <div class="xs-category-title">
               <img
                 class=" img-fluid" src="/images/category/xs-sever.jpg" style="width: 100%;">

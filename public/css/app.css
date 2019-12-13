@@ -12553,6 +12553,11 @@ hr {
   margin-right: 38px;
 }
 
+.my-modal-header {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(#EE82EE));
+  background-image: linear-gradient(to top, black, #EE82EE);
+}
+
 .users-edit-page label {
   font-size: 18px;
 }
@@ -12618,17 +12623,11 @@ hr {
   border-bottom: solid 1px #584021;
 }
 
-.root-background-poetry {
-  width: 85%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#D3791C), color-stop(#FAEDE0), to(#D3791C));
-  background-image: linear-gradient(to right, #D3791C, #FAEDE0, #D3791C);
-}
-
-.root-background,
+.root-background-poetry,
 .category-background {
   width: 99%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#D3791C), color-stop(#fcc170), to(#D3791C));
-  background-image: linear-gradient(to right, #D3791C, #fcc170, #D3791C);
+  background-image: -webkit-gradient(linear, left top, right top, from(#D3791C), color-stop(#FAEDE0), to(#D3791C));
+  background-image: linear-gradient(to right, #D3791C, #FAEDE0, #D3791C);
 }
 
 .xs-root-category-box {
