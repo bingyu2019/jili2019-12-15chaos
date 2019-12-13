@@ -94,7 +94,7 @@
                 <div class="modal-body sixteen">
                   <div class="form-group">
                     <p>▸ 提现须知：收益满 <b style="color: red;">20</b> 个金币或以上，才可申请提现。</p>
-                    <h5>▸ 您现在拥有金币 <b style="color: red;">20</b> 个，可以提现。 </h5>
+                    <h5>▸ 您现在拥有金币 <b style="color: red;">20</b> 个，可以申请提现。 </h5>
                     {{--                    <h5>您现在拥有金币不满 <b style="color: red;">20</b> 个，暂时不能提现。 </h5>--}}
                     <input type="text" class="form-control" id="usr" placeholder="请输入提现金币数量">
                   </div>
@@ -235,7 +235,7 @@
                 </div>
               </div>
 
-              {{-- 购买记录 --}}
+              {{-- 购买礼物 --}}
               <div id="gift" class="container tab-pane pb-5"><br>
                 {{--购买帖子使用版权--}}
                 <div>

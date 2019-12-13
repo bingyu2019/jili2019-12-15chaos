@@ -11902,6 +11902,15 @@ body .grade-box {
   background: #FFE4E1;
 }
 
+.wallets-a {
+  border: solid 1px #CF261D;
+}
+
+.wallets-a:hover {
+  color: white;
+  background: #CF261D;
+}
+
 .logo .logo-body {
   height: 100px;
   background: black;
@@ -12538,6 +12547,10 @@ hr {
 .reply-list td {
   border-right: solid 1px white;
   text-shadow: 5px 5px 8px #656B79;
+}
+
+.report {
+  margin-right: 38px;
 }
 
 .users-edit-page label {

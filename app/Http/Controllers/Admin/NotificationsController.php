@@ -35,4 +35,27 @@ class NotificationsController
     {
         return view('admin.notifications.edit');
     }
+
+
+    // 举报列表页面
+    public function report()
+    {
+        return view('admin.notifications.report');
+    }
+
+    // 编辑举报页面
+    public function editReport()
+    {
+        return view('admin.notifications.edit_report');
+    }
 }
+
+
+
+
+
+
+
+
+
+

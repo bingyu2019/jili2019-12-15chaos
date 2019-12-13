@@ -104,6 +104,16 @@ body {
 }
 
 
+// 送花 奖赏 礼赞 换币 入口
+.wallets-a {
+  border: solid 1px #CF261D;
+}
+
+.wallets-a:hover {
+  color: white;
+  background: #CF261D;
+}
+
 // ======================== 电脑主页样式 ====================//
 
 // 电脑主页 logo
@@ -785,6 +795,11 @@ hr {
     border-right: solid 1px white;
     text-shadow: 5px 5px 8px #656B79;
   }
+}
+
+// 文章详情页-举报确定按钮
+.report {
+  margin-right: 38px;
 }
 
 //====================== PC users-edit  ===============================//

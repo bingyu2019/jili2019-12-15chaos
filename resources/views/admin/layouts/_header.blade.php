@@ -1,7 +1,7 @@
 <header class="admin-header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand text-light" href="{{ route('system.statistics') }}"><h4>灵魂深触-经历网</h4></a>
-    <h5 class="text-white-50 pr-5" >把有限的生命投入到无限的为人民服务之中去！</h5>
+    <h5 class="text-white-50 pr-5">把有限的生命投入到无限的为人民服务之中去！</h5>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -68,8 +68,10 @@
       <tbody class="ml-5">
       <tr>
         <th><h5 class="ml-5">用户与权限 ➛ </h5></th>
-        <td><a href="{{ route('admin.users.index') }}" class="ml-5">👤 用户 </a>  <a href="{{ route('admin.admin.index') }}">👤管理员</a></td>
-        <td><a href="{{ route('admin.permissions.index') }}" class="ml-5">🔐权限管理 </a> &nbsp;<a href="{{ route('admin.roles.index') }}"> 🔏角色管理</a></td>
+        <td><a href="{{ route('admin.users.index') }}" class="ml-5">👤 用户 </a> <a
+            href="{{ route('admin.admin.index') }}">👤管理员</a></td>
+        <td><a href="{{ route('admin.permissions.index') }}" class="ml-5">🔐权限管理 </a> &nbsp;<a
+            href="{{ route('admin.roles.index') }}"> 🔏角色管理</a></td>
         <td><a href="{{ route('system.setting') }}" class="ml-5">💻 站点设置</a></td>
       </tr>
       <tr>
@@ -80,14 +82,25 @@
       </tr>
       <tr>
         <th><h5 class="ml-5">财务管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
-        <td><a href="{{ route('admin.coins') }}" class="ml-5">📀 购币明细 </a> <a href="{{ route('admin.finance.list') }}">📡收入统计 </a> <a href="{{ route('admin.finance.payments') }}"> 📖支出明细</a></td>
-        <td><a href="{{ route('admin.usersProfits') }}" class="ml-5">💰用户收益发放</a> <a href="{{ route('admin.finances.experience') }}" class="ml-1">📚人物经历 </a> <a href="{{ route('admin.finances.show') }}"> 💐灵魂展览馆</a></td>
-        <td><a href="{{ route('admin.finances.followers') }}" class="ml-5">🌺送花 </a> <a href="{{ route('admin.finances.rewards') }}"> 💰打赏 </a> <a href="{{ route('admin.finances.gifts') }}"> 🎁礼赞</a></td>
+        <td><a href="{{ route('admin.coins') }}" class="ml-5">📀 购币明细 </a> <a href="{{ route('admin.finance.list') }}">📡收入统计 </a>
+          <a href="{{ route('admin.finance.payments') }}"> 📖支出明细</a></td>
+        <td><a href="{{ route('admin.usersProfits') }}" class="ml-5">💰用户收益发放</a> <a
+            href="{{ route('admin.finances.experience') }}" class="ml-1">📚人物经历 </a> <a
+            href="{{ route('admin.finances.show') }}"> 💐灵魂展览馆</a></td>
+        <td><a href="{{ route('admin.finances.followers') }}" class="ml-5">🌺送花 </a> <a
+            href="{{ route('admin.finances.rewards') }}"> 💰打赏 </a> <a href="{{ route('admin.finances.gifts') }}">
+            🎁礼赞</a></td>
       </tr>
       <tr>
         <th><h5 class="ml-5">内容管理&nbsp;&nbsp;&nbsp; ➛</h5></th>
-        <td><a href="{{ route('admin.topics.index') }}" class="ml-5">📜 帖子管理</a></td>
-        <td><a href="{{ route('admin.replies.index') }}" class="ml-5">💬 回复管理 </a> &nbsp; <a href="{{ route('admin.letter') }}"> 🔔 私信</a> <a href="{{ route('admin.remind') }}" class="ml-2">🔔 提醒 </a><a href="{{ route('notifications.system') }}" class="ml-2">📩 公告 </a></td>
+        <td><a href="{{ route('admin.topics.index') }}" class="ml-5">📜 帖子管理</a> <a
+            href="{{ route('admin.replies.index') }}" class="ml-1">💬 回复管理</a></td>
+        <td>
+          <a class="ml-5" href="{{ route('admin.letter') }}"> 🔔 私信</a>&nbsp;
+          <a href="{{ route('admin.remind') }}" class="ml-2">🔔 提醒 </a>
+          <a href="{{ route('notifications.system') }}" class="ml-2">📩 公告 </a>
+          <a href="{{ route('admin.report') }}" class="ml-2">🚩举报 </a>
+        </td>
         <td><a href="{{ route('images.list') }}" class="ml-5">🌁 帖子图片</a></td>
       </tr>
       <tr>
@@ -104,26 +117,26 @@
 @section('script')
   <script>
 
-      $(document).ready(function () {
+    $(document).ready(function () {
       // 退出登录确认按钮
-          $('.btn-del-login').click(function () {
-              swal({
-                  title: "您确认要退出吗？",
-                  icon: "warning",
-                  buttons: ['取消', '确定'],
-                  dangerMode: true,
+      $('.btn-del-login').click(function () {
+        swal({
+          title: "您确认要退出吗？",
+          icon: "warning",
+          buttons: ['取消', '确定'],
+          dangerMode: true,
+        })
+          .then(function (willDelete) { // 用户点击按钮后会触发这个回调函数
+            if (!willDelete) {
+              return;
+            }
+            axios.post(`{{ route('logout') }}`)
+              .then(function () {
+                location.reload();
               })
-                  .then(function (willDelete) { // 用户点击按钮后会触发这个回调函数
-                      if (!willDelete) {
-                          return;
-                      }
-                      axios.post(`{{ route('logout') }}`)
-                          .then(function () {
-                              location.reload();
-                          })
-                  });
           });
-
       });
+
+    });
   </script>
 @endsection

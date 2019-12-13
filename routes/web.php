@@ -105,6 +105,8 @@ Route::get('/admin/notifications/remind','Admin\NotificationsController@remind')
 Route::get('/admin/notifications/system','Admin\NotificationsController@system')->name('notifications.system');
 Route::get('/admin/notifications/create','Admin\NotificationsController@create')->name('notifications.create');
 Route::get('/admin/notifications/edit','Admin\NotificationsController@edit')->name('notifications.edit');
+Route::get('/admin/notifications/report','Admin\NotificationsController@report')->name('admin.report');
+Route::get('/admin/notifications/edit_report','Admin\NotificationsController@editReport')->name('admin.editReport');
 
 //后台财务管理
 Route::get('/admin/finances/followers', 'Admin\FinancesController@followers')->name('admin.finances.followers');
