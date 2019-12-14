@@ -9,7 +9,7 @@
 
             <header>
                 {{-- 电脑版 logo 注册登录 --}}
-                @include('layouts._lg_header')
+                @include('layouts._header')
 
                 {{-- 清除浮动 --}}
                 <div class="clear"></div>

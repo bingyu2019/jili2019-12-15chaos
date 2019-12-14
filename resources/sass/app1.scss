@@ -95,15 +95,14 @@ body {
   font-size: 16px;
 }
 
-// 底部黑边
 .black-border {
   border: solid 2px black;
 }
 
-// 模态框主体颜色
 .modal-body {
   background: #FFE4E1
 }
+
 
 // 送花 奖赏 礼赞 换币 入口
 .wallets-a {
@@ -115,85 +114,67 @@ body {
   background: #CF261D;
 }
 
+// ======================== 电脑主页样式 ====================//
 
-// ======================== PC 主logo 主页和分类页面 ====================//
+// 电脑主页 logo
 .logo {
-  .img-box, .text-box, .register-box {
-    float: left;
-  }
-
-  .text-box {
-    padding-left: 10px;
-    width: 22%;
-    line-height: 4px;
+  .logo-body {
+    height: 100px;
+    background: black;
 
     a {
       font-size: 14px;
+      line-height: 5px;
     }
   }
 
-  // 鼠标移上-logo主图变大-出现下横线
   .logo-img:hover {
     border-bottom: 10px solid #5F2903;
     transform: scale(1.06);
   }
+}
 
-  .register-box {
-    z-index: 100;
+// 电脑主页注册登录
+.register-box {
+  height: 28px;
 
-    ul {
-      padding-left: 115px;
-    }
+  img:hover {
+    transform: scale(1.3);
+  }
 
-    ul li {
-      display: inline-block;
-      padding-top: 7px;
-      float: left;
-      padding-right: 25px;
-    }
+  .register-dropdown-menu {
+    background: linear-gradient(red, blue);
+    box-shadow: 10px 10px 5px #211F1C;
+    display: none;
+  }
 
-    //主页面顶部 发贴入口定位
-    .top-ten {
-      position: relative;
-      left: -95px;
-      top: 6px
-    }
-
-    // 消息通知定位
-    .top-notice {
-      position: relative;
-      left: -60px;
-      top: -38px
-    }
-
-    // 主页面顶部头像定位
-    .top-avatar {
-      position: relative;
-      left: -15px;
-      top: -90px
-    }
-
-    // 鼠标移上 头像放大 显示下拉菜单
-    .top-avatar img:hover {
-      transform: scale(1.3);
-    }
-
-    .register-dropdown-menu {
-      background: linear-gradient(red, blue);
-      box-shadow: 10px 10px 5px #211F1C;
-      display: none;
-    }
-
-    .top-avatar:hover .register-dropdown-menu {
-      display: block;
-    }
+  .lg-header-avatar:hover .register-dropdown-menu {
+    display: block;
   }
 }
 
-// ======================== PC root 主页书本导航 ====================//
+//主页面顶部 发贴入口定位
+.create-ten {
+  position: relative;
+  left: -70px;
+  top: -10px
+}
 
+// 主页面顶部 消息通知 定位
+.root-note {
+  position: relative;
+  left: -53px;
+  top: -5px
+}
 
-/*// 电脑主页书本导航
+// 主页面顶部头像定位
+.lg-header-avatar {
+  position: relative;
+  left: 0px;
+  top: -55px
+}
+
+// 电脑主页书本导航
 .root-nav {
   .root-nav-l {
     height: 150px;
@@ -330,11 +311,10 @@ body {
       }
     }
   }
-}*/
+}
 
 // ========================= 电脑主页面底部总导航 ======================//
 
-/*
 // 主页和分类页面大盒子
 .big-box {
   height: 100%;
@@ -823,7 +803,7 @@ hr {
 }
 
 // 模态框头部
-.my-modal-header {
+.my-modal-header{
   background-image: linear-gradient(to top, black, #EE82EE);
 }
 
@@ -1008,7 +988,7 @@ hr {
 }
 
 //======================== 注册 登录 ============================//
-!* User register page 验证码*!
+/* User register page 验证码*/
 .register-page {
   img.captcha {
     cursor: pointer;
@@ -1035,6 +1015,5 @@ hr {
   }
 }
 
-*/
 
 
