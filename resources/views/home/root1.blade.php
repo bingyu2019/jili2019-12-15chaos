@@ -14,9 +14,11 @@
         {{-- 引入 vue 组件 公告 --}}
         <notice></notice>
         {{-- 电脑主页轮播图 --}}
-        @include('layouts._lg_carousel')
+        @include('layouts._carousel')
         <br>
       </header>
+
+
       {{-- 电脑主体书本导航块 --}}
       <nav class="root-nav row col-md-12 mt-2">
         <div class="root-nav-l">
@@ -46,6 +48,7 @@
         <br>
 
         {{-- 【分类-最新-最热-帖子-区域】 --}}
+
         {{-- 【人物经历】 --}}
         <article>
           {{-- 清除浮动 --}}

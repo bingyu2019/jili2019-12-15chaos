@@ -8,12 +8,13 @@
       <header>
         {{-- 电脑版 logo 注册登录 --}}
         @include('layouts._header')
+        <div class="clear"></div>
+        <br>
       </header>
-      <div class="clear"></div>
-      <br>
+
       {{-- 分类页面主体导航--}}
       <nav class="root-nav row col-md-12">
-        @include('layouts._lg_category_nav')
+        @include('layouts._nav_category')
         <div class="float-right">
           &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;<img class=" img-fluid" src="/images/category/md-art.png">
@@ -155,7 +156,6 @@
       @include('layouts._lg_footer')
 
     </div>
-
 
 
   </div>

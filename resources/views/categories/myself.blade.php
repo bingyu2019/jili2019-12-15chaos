@@ -18,7 +18,7 @@
 
             {{-- 分类页面主体导航--}}
             <nav class="root-nav row col-md-12">
-                @include('layouts._lg_category_nav')
+                @include('layouts._nav_category')
                 <div class="float-right">
                     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;<img

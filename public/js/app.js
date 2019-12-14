@@ -37273,7 +37273,7 @@ var render = function() {
   return _c(
     "button",
     {
-      staticClass: "btn btn-default btn-xs text-white-50",
+      staticClass: "notice btn btn-default btn-xs text-white-50",
       attrs: { type: "button" },
       on: { mouseover: _vm.Notice }
     },
@@ -49615,8 +49615,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vagrant/Code/jili/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/vagrant/Code/jili/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/vagrant/Code/jili1/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/vagrant/Code/jili1/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

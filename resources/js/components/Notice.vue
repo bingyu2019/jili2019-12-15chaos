@@ -1,10 +1,10 @@
 <template>
-    <button type="button" class="btn btn-default btn-xs text-white-50" @mouseover="Notice">【公告】{{ msg }}</button>
+    <button type="button" class="notice btn btn-default btn-xs text-white-50" @mouseover="Notice">【公告】{{ msg }}</button>
 </template>
 <script>
     export default {
-        data(){
-            return{
+        data() {
+            return {
                 msg: '本站部份图片选自网络，如有侵权，请到【灵魂服务】留言署名或删除！！！'
             }
         },

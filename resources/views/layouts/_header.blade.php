@@ -1,5 +1,5 @@
 {{-- 电脑版顶部登录注册 --}}
-<div class="logo d-none d-sm-block mb-4">
+<div class="logo d-none d-sm-block">
   <div class="pt-3">
     <div class="img-box" style="width: 55%;">
       <a class="float-right" href="{{ route('root') }}"><img
@@ -59,8 +59,6 @@
     </div>
   </div>
 </div>
-{{-- 清除浮动 --}}
-<div class="clear"></div>
 
 @section('script')
   <script>
