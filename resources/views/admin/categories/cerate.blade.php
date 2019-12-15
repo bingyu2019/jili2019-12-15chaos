@@ -13,10 +13,10 @@
 
       <div class="card-body">
 
-        <form action="" method="POST"
+        <form action="{{route('admin.categories.store') }}" method="POST"
               accept-charset="UTF-8"
               enctype="multipart/form-data">
-
+          @csrf
           @include('shared._error')
 
           <div class="form-group">

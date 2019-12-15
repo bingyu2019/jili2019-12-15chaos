@@ -4,39 +4,39 @@
 // 首页
 Route::get('/', 'HomeController@root')->name('root');
 // 人物经历
-Route::get('/categories/experience','CategoriesController@experience')->name('experience');
+Route::get('/categories/experience', 'CategoriesController@experience')->name('experience');
 // 个人宣传
-Route::get('/categories/myself','CategoriesController@myself')->name('myself');
+Route::get('/categories/myself', 'CategoriesController@myself')->name('myself');
 // 灵魂艺术
-Route::get('/categories/art','CategoriesController@art')->name('art');
+Route::get('/categories/art', 'CategoriesController@art')->name('art');
 // 灵魂学院
-Route::get('/categories/college','CategoriesController@college')->name('college');
+Route::get('/categories/college', 'CategoriesController@college')->name('college');
 // 灵魂礼赞
-Route::get('/categories/gift','CategoriesController@gift')->name('gift');
+Route::get('/categories/gift', 'CategoriesController@gift')->name('gift');
 // 灵魂展览馆
-Route::get('/categories/show','CategoriesController@show')->name('show');
+Route::get('/categories/show', 'CategoriesController@show')->name('show');
 // 灵魂共享
-Route::get('/categories/share','CategoriesController@share')->name('share');
+Route::get('/categories/share', 'CategoriesController@share')->name('share');
 // 灵魂极乐
-Route::get('/categories/heaven','CategoriesController@heaven')->name('heaven');
+Route::get('/categories/heaven', 'CategoriesController@heaven')->name('heaven');
 // 灵魂服务
-Route::get('/categories/serve','CategoriesController@serve')->name('serve');
+Route::get('/categories/serve', 'CategoriesController@serve')->name('serve');
 
 //============================ 前台用户路由 ==============================//
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 
 //============================ 前台帖子路由 ==============================//
-Route::get('/topics/show','TopicsController@show')->name('topics.show');
-Route::get('/topics/create_and_edit','TopicsController@create')->name('topics.create');
+Route::get('/topics/show', 'TopicsController@show')->name('topics.show');
+Route::get('/topics/create_and_edit', 'TopicsController@create')->name('topics.create');
 // 新建帖子页面，上传图片
 Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
 
 //============================ 前台消息通知路由 =========================//
-Route::get('/notifications/list','NotificationsController@list')->name('notifications');
-Route::get('/notifications/_create_letter','NotificationsController@createLetter')->name('createLetter');
+Route::get('/notifications/list', 'NotificationsController@list')->name('notifications');
+Route::get('/notifications/_create_letter', 'NotificationsController@createLetter')->name('createLetter');
 
 //========================= 前台用户-我的钱袋 ======================//
-Route::get('/wallets/list','WalletsController@list')->name('wallets.list');
+Route::get('/wallets/list', 'WalletsController@list')->name('wallets.list');
 
 
 //========================= 认证用户邮箱注册登录系统 ======================//
@@ -83,10 +83,15 @@ Route::get('/admin/permissions/create', 'Admin\PermissionsController@create')->n
 Route::get('/admin/permissions/edit', 'Admin\PermissionsController@edit')->name('admin.permissions.edit');
 
 //后台分类管理
-Route::get('/admin/categories/index', 'Admin\CategoriesController@index')->name('admin.categories.index');
-Route::get('/admin/categories/create', 'Admin\CategoriesController@create')->name('admin.categories.create');
-Route::get('/admin/categories/edit', 'Admin\CategoriesController@edit')->name('admin.categories.edit');
-
+//Route::get('/admin/categories/index', 'Admin\CategoriesController@index')->name('admin.categories.index');
+//Route::get('/admin/categories/create', 'Admin\CategoriesController@create')->name('admin.categories.create');
+//Route::get('/admin/categories/edit', 'Admin\CategoriesController@edit')->name('admin.categories.edit');
+Route::group(
+    ['prefix' => 'admin.', 'namespace' => 'Admin', 'as' => 'admin.'],
+    function () {
+        Route::resource('categories', 'CategoriesController');
+    }
+);
 //后台帖子管理
 Route::get('/admin/topics/index', 'Admin\TopicsController@index')->name('admin.topics.index');
 Route::get('/admin/topics/create', 'Admin\TopicsController@create')->name('admin.topics.create');
@@ -100,46 +105,64 @@ Route::get('/admin/replies/index', 'Admin\RepliesController@index')->name('admin
 Route::get('/admin/replies/edit', 'Admin\RepliesController@edit')->name('admin.replies.edit');
 
 //后台用户私信、提醒、系统公告
-Route::get('/admin/notifications/letter','Admin\NotificationsController@letter')->name('admin.letter');
-Route::get('/admin/notifications/remind','Admin\NotificationsController@remind')->name('admin.remind');
-Route::get('/admin/notifications/system','Admin\NotificationsController@system')->name('notifications.system');
-Route::get('/admin/notifications/create','Admin\NotificationsController@create')->name('notifications.create');
-Route::get('/admin/notifications/edit','Admin\NotificationsController@edit')->name('notifications.edit');
-Route::get('/admin/notifications/report','Admin\NotificationsController@report')->name('admin.report');
-Route::get('/admin/notifications/edit_report','Admin\NotificationsController@editReport')->name('admin.editReport');
+Route::get('/admin/notifications/letter', 'Admin\NotificationsController@letter')->name('admin.letter');
+Route::get('/admin/notifications/remind', 'Admin\NotificationsController@remind')->name('admin.remind');
+Route::get('/admin/notifications/system', 'Admin\NotificationsController@system')->name('notifications.system');
+Route::get('/admin/notifications/create', 'Admin\NotificationsController@create')->name('notifications.create');
+Route::get('/admin/notifications/edit', 'Admin\NotificationsController@edit')->name('notifications.edit');
+Route::get('/admin/notifications/report', 'Admin\NotificationsController@report')->name('admin.report');
+Route::get('/admin/notifications/edit_report', 'Admin\NotificationsController@editReport')->name('admin.editReport');
 
 //后台财务管理
 Route::get('/admin/finances/followers', 'Admin\FinancesController@followers')->name('admin.finances.followers');
 Route::get('/admin/finances/rewards', 'Admin\FinancesController@rewards')->name('admin.finances.rewards');
 Route::get('/admin/finances/gifts', 'Admin\FinancesController@gifts')->name('admin.finances.gifts');
 Route::get('/admin/finances/experience', 'Admin\FinancesController@experience')->name('admin.finances.experience');
-Route::get('/admin/finances/experience_edit', 'Admin\FinancesController@experienceEdit')->name('admin.finances.experienceEdit');
+Route::get('/admin/finances/experience_edit', 'Admin\FinancesController@experienceEdit')->name(
+    'admin.finances.experienceEdit'
+);
 Route::get('/admin/finances/show', 'Admin\FinancesController@show')->name('admin.finances.show');
 Route::get('/admin/finances/show_edit', 'Admin\FinancesController@showEdit')->name('admin.finances.showEdit');
 // 用户收益统计与发放
-Route::get('admin/finance/transactions/users_profits','Admin\TransactionsController@usersProfits')->name('admin.usersProfits');
-Route::get('admin/finance/transactions/users_profits_edit','Admin\TransactionsController@usersProfitsEdit')->name('admin.usersProfitsEdit');
+Route::get('admin/finance/transactions/users_profits', 'Admin\TransactionsController@usersProfits')->name(
+    'admin.usersProfits'
+);
+Route::get('admin/finance/transactions/users_profits_edit', 'Admin\TransactionsController@usersProfitsEdit')->name(
+    'admin.usersProfitsEdit'
+);
 // 后台用户兑币
-Route::get('admin/finance/transactions/coins','Admin\TransactionsController@coins')->name('admin.coins');
-Route::get('admin/finance/transactions/coins_create','Admin\TransactionsController@coinsCreate')->name('admin.coinsCreate');
-Route::get('admin/finance/transactions/coins_edit','Admin\TransactionsController@coinsEdit')->name('admin.coinsEdit');
+Route::get('admin/finance/transactions/coins', 'Admin\TransactionsController@coins')->name('admin.coins');
+Route::get('admin/finance/transactions/coins_create', 'Admin\TransactionsController@coinsCreate')->name(
+    'admin.coinsCreate'
+);
+Route::get('admin/finance/transactions/coins_edit', 'Admin\TransactionsController@coinsEdit')->name('admin.coinsEdit');
 // 系统收入统计
-Route::get('admin/finance/transactions/list','Admin\TransactionsController@list')->name('admin.finance.list');
-Route::get('admin/finance/transactions/list_create','Admin\TransactionsController@listCreate')->name('admin.finance.listCreate');
-Route::get('admin/finance/transactions/list_edit','Admin\TransactionsController@listEdit')->name('admin.finance.listEdit');
+Route::get('admin/finance/transactions/list', 'Admin\TransactionsController@list')->name('admin.finance.list');
+Route::get('admin/finance/transactions/list_create', 'Admin\TransactionsController@listCreate')->name(
+    'admin.finance.listCreate'
+);
+Route::get('admin/finance/transactions/list_edit', 'Admin\TransactionsController@listEdit')->name(
+    'admin.finance.listEdit'
+);
 // 系统支出记录
-Route::get('admin/finance/transactions/payments','Admin\TransactionsController@payments')->name('admin.finance.payments');
-Route::get('admin/finance/transactions/payments_create','Admin\TransactionsController@paymentsCreate')->name('admin.finance.paymentsCreate');
-Route::get('admin/finance/transactions/payments_edit','Admin\TransactionsController@paymentsEdit')->name('admin.finance.paymentsEdit');
+Route::get('admin/finance/transactions/payments', 'Admin\TransactionsController@payments')->name(
+    'admin.finance.payments'
+);
+Route::get('admin/finance/transactions/payments_create', 'Admin\TransactionsController@paymentsCreate')->name(
+    'admin.finance.paymentsCreate'
+);
+Route::get('admin/finance/transactions/payments_edit', 'Admin\TransactionsController@paymentsEdit')->name(
+    'admin.finance.paymentsEdit'
+);
 
 // 后台系统管理
-Route::get('/admin/system/setting_edit','Admin\SystemController@settingEdit')->name('system.setting');
-Route::get('admin/system/statistics','Admin\SystemController@statistics')->name('system.statistics');
+Route::get('/admin/system/setting_edit', 'Admin\SystemController@settingEdit')->name('system.setting');
+Route::get('admin/system/statistics', 'Admin\SystemController@statistics')->name('system.statistics');
 // 系统日志页面
-Route::get('/admin/system/log','Admin\SystemController@log')->name('system.log');
+Route::get('/admin/system/log', 'Admin\SystemController@log')->name('system.log');
 //后台工作交接
-Route::get('/admin/system/message','Admin\SystemController@message')->name('system.message');
-Route::get('/admin/system/message_create','Admin\SystemController@messageCreate')->name('system.messageCreate');
+Route::get('/admin/system/message', 'Admin\SystemController@message')->name('system.message');
+Route::get('/admin/system/message_create', 'Admin\SystemController@messageCreate')->name('system.messageCreate');
 
 
 

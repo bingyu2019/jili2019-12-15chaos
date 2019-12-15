@@ -78,7 +78,7 @@
         <th><h5 class="ml-5">分类管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
         <td><a href="{{ route('admin.categories.index') }}" class="ml-5">所有分类</a></td>
         <td><a href="{{ route('admin.categories.create') }}" class="ml-5">新增分类</a></td>
-        <td><a href="{{ route('admin.categories.edit') }}" class="ml-5">编辑分类</a></td>
+{{--        <td><a href="{{ route('admin.categories.edit') }}" class="ml-5">编辑分类</a></td>--}}
       </tr>
       <tr>
         <th><h5 class="ml-5">财务管理&nbsp;&nbsp;&nbsp; ➛ </h5></th>
