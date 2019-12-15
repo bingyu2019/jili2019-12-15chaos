@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('title',Auth::user()->name.'编辑帖子')
 @section('content')
-  @include('admin.layouts._header')
   <div style="background: #F0F0F0;white:100%;">
     <div class="card mx-auto col-md-8">
       <div class="card-header mt-2">

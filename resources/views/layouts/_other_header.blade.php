@@ -55,7 +55,7 @@
                 🔴 帖子页面
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{{ route('system.statistics') }}">
+              <a class="dropdown-item" href="{{ route('admin.index') }}">
                 🔴 管理后台
               </a>
               <div class="dropdown-divider"></div>

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('title','管理帖子')
 @section('content')
-  @include('admin.layouts._header')
 
 
   <div class="card col-md-12 pt-1">

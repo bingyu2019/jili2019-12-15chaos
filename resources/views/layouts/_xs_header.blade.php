@@ -72,7 +72,7 @@
               </a>
               <div class="dropdown-menu mx-auto login" aria-labelledby="navbarDropdown"
                    style="border-radius: 5px; width: 70%;overflow:scroll; height:100px;">
-                <a class="dropdown-item text-center text-light" href="{{ route('system.statistics') }}">🔴 管理后台</a>
+                <a class="dropdown-item text-center text-light" href="{{ route('admin.index') }}">🔴 管理后台</a>
 
                 <a class="dropdown-item text-center text-light" href="{{ route('users.show', Auth::id()) }}">🔵 个人中心</a>
 

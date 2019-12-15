@@ -1,5 +1,5 @@
  {{-- 电脑版主页 logo --}}
-  <div class="logo d-none d-sm-block">
+  <div class="logo big-box mx-auto d-none d-sm-block">
     <div class="img-box" value="" style="width: 55%;"><a class="" href="{{ route('root') }}"><img class="logo-img img-fluid float-right ml-5 mt-3" src="/images/logo/logo.jpg" alt="灵魂深触-经历网"></a>
     </div>
     <div class="text-box pl-2 relative">
@@ -8,7 +8,7 @@
       <a class="logo-text" href="{{ route('heaven') }}"><p>让离去的人从此不再孤单！</p></a>
     </div>
     {{-- 电脑注册登录---}}
-    <div class="register-box pt-1" style="width: 21%;">
+    <div class="register-box pt-1">
       <br>
       <ul class="row">
         @guest
@@ -37,7 +37,7 @@
               {{ Auth::user()->name }}
             </a>
             <div class="dropdown-menu register-dropdown-menu" aria-labelledby="navbarDropdown">
-              <a href="{{ route('system.statistics') }}" class="dropdown-item">
+              <a href="{{ route('admin.index') }}" class="dropdown-item">
                 <h5>🔴 管理后台</h5>
               </a>
               <div class="dropdown-divider"></div>

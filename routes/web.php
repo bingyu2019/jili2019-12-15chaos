@@ -62,13 +62,15 @@ Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->na
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
 // ================================ 后台管理 ================================//
+//后台主页
+Route::get('/admin/index', 'Admin\AdminController@index')->name('admin.index');
 //后台用户管理
 Route::get('/admin/users/index', 'Admin\UsersController@index')->name('admin.users.index');
 Route::get('/admin/users/create', 'Admin\UsersController@create')->name('admin.users.create');
 Route::get('/admin/users/edit', 'Admin\UsersController@edit')->name('admin.users.edit');
 
 //后台管理员管理
-Route::get('/admin/admin/index', 'Admin\AdminController@index')->name('admin.admin.index');
+Route::get('/admin/admin/admin', 'Admin\AdminController@admin')->name('admin');
 Route::get('/admin/admin/create', 'Admin\AdminController@create')->name('admin.admin.create');
 Route::get('/admin/admin/edit', 'Admin\AdminController@edit')->name('admin.admin.edit');
 
@@ -157,7 +159,6 @@ Route::get('admin/finance/transactions/payments_edit', 'Admin\TransactionsContro
 
 // 后台系统管理
 Route::get('/admin/system/setting_edit', 'Admin\SystemController@settingEdit')->name('system.setting');
-Route::get('admin/system/statistics', 'Admin\SystemController@statistics')->name('system.statistics');
 // 系统日志页面
 Route::get('/admin/system/log', 'Admin\SystemController@log')->name('system.log');
 //后台工作交接

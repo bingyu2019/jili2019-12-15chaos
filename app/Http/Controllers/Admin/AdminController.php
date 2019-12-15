@@ -9,9 +9,9 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function index()
+    public function index(User $user)
     {
-        return view('admin.admin.index');
+        return view('admin.index',['user' => $user]);
     }
 
     public function create(User $user)
@@ -19,6 +19,10 @@ class AdminController extends Controller
         return view('admin.admin.create',['user' => $user]);
     }
 
+    public function admin()
+    {
+        return view('admin.admin.admin');
+    }
 
     public function store(Request $request)
     {
