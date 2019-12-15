@@ -20,7 +20,7 @@
 
 
 {{-- PC 顶部导航 --}}
-    @include('layouts._lg_other_header')
+    @include('layouts._other_header')
 {{-- 手机 显示横线 --}}
     <hr class="d-block d-sm-none" style="background: #AF6001;">
 

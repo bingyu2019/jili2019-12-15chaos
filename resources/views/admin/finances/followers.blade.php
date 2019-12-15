@@ -1,19 +1,19 @@
 @extends('layouts.app')
-@section('title','点赞列表')
+@section('title','送花列表')
 @section('content')
   @include('admin.layouts._header')
 
 
   <div class="card col-md-12 pt-1">
     <div class="card-header" style="border-radius: 5px; border: solid 3px #E7E6ED;border-bottom: none;">
-      <h3 class="text-center pb-4 pt-2">💿点 赞 列 表💿</h3>
+      <h3 class="text-center pb-4 pt-2">🌺赠 花 列 表🌺</h3>
       <a href="" class="btn btn-success float-right mr-5" role="button" aria-pressed="true" style="width: 130px;">刷新</a>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="点赞日期" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="送花日期" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
-        <input class="form-control mr-sm-2" type="search" placeholder="点赞用户" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="送花用户" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">筛选</button>
       </form>
       <form class="form-inline my-2 my-lg-0 float-right mr-5">
@@ -55,12 +55,12 @@
               </label>
             </div>
           </th>
-          <th scope="col">💿ID</th>
-          <th scope="col">💿点赞用户</th>
-          <th scope="col">💿点赞内容</th>
-          <th scope="col">💿点赞金额</th>
-          <th scope="col" style="width: 160px;">💿点赞日期</th>
-          <th scope="col">💿受赞用户</th>
+          <th scope="col">ID</th>
+          <th scope="col">赠花用户</th>
+          <th scope="col">内容</th>
+          <th scope="col">金额</th>
+          <th scope="col" style="width: 160px;">日期</th>
+          <th scope="col">获花用户</th>
         </tr>
         </thead>
         <tbody>
@@ -74,7 +74,7 @@
           <td>1</td>
           <td>Bing</td>
           <td>百年孤独</td>
-          <td>💿 0.1元</td>
+          <td>0.1元</td>
           <td>2019-12-05 12:12:12</td>
           <td>鲁迅二世</td>
         </tr>

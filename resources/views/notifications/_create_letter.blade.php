@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', $user->name .'发送私信')
 @section('content')
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
   @include('layouts._xs_header')
   <div class="xs-hindd-block d-sm-none"><br><br><br></div>
 

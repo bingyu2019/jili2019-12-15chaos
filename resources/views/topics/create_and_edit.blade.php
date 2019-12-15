@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title','发布新帖')
 @section('content')
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
   @include('layouts._xs_header')
   <div class="xs-hindd-block d-sm-none"><br><br><br></div>
   <div class="header-color mx-auto mb-0 d-none d-sm-block" style="height: 80px;width: 81.2%;"></div>

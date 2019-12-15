@@ -5,7 +5,7 @@
   @include('layouts._xs_header')
   <div class="d-block d-sm-none"><br><br><br></div>
   {{-- 电脑-顶部总导航 --}}
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
   @include('shared._messages')
 
   {{-- 设计全页个人中心 --}}

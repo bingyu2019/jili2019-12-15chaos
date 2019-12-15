@@ -9,7 +9,7 @@
 
             <header>
                 {{-- 电脑版 logo 注册登录 --}}
-                @include('layouts._lg_header')
+                @include('layouts._header')
 
                 {{-- 清除浮动 --}}
                 <div class="clear"></div>
@@ -18,9 +18,9 @@
             </header>
 
             {{-- 分类页面主体导航--}}
-            <nav class="root-nav row col-md-12">
-                @include('layouts._lg_category_nav')
-                <div class="float-right">
+          <nav class="root-nav">
+            @include('layouts._category_nav')
+            <div class="float-left">
                     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;<img
                         class=" img-fluid" src="/images/category/md-serve.png">
@@ -30,7 +30,7 @@
             <section>
                 {{-- 搜索框 --}}
                 <div>
-                    @include('layouts._lg_search')
+                    @include('layouts._search')
                 </div>
 
                 {{-- 分类主体内容区域 --}}
@@ -145,7 +145,7 @@
 
         </div>
 
-        @include('layouts._lg_footer')
+        @include('layouts._footer')
 
     </div>
 

@@ -1,6 +1,6 @@
 {{-- 电脑主体书本导航块 --}}
-<div class="root-nav-l mb-2">
-    <ul class="row">
+<div class="nav-l mb-2">
+    <ul>
         <li><a href="{{ route('root') }}"><br>首<br>页</a></li>
         <li><a href="{{ route('experience') }}"><br>人<br>物<br>经<br>历</a></li>
         <li><a href="{{ route('myself') }}"><br>个<br>人<br>宣<br>传</a></li>

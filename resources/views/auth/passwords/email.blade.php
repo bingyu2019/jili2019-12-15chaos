@@ -10,7 +10,7 @@
 
 
 {{-- PC 顶部导航 --}}
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
 
   <div class="container mt-5">
     <div class="row justify-content-center">

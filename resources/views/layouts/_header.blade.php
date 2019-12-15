@@ -1,42 +1,37 @@
-{{-- 电脑版顶部登录注册 --}}
-<div class="d-none d-sm-block">
-  {{-- 电脑版主页 logo --}}
+ {{-- 电脑版主页 logo --}}
   <div class="logo d-none d-sm-block">
-    <div class="logo-body col-md-4 float-left"></div>
-    <div class="logo-container col-md-3 float-left" value=""><a class="" href="{{ route('root') }}"><img
-          class="logo-img img-fluid float-right ml-5 mt-3" src="/images/logo/logo.jpg" alt="灵魂深触-经历网"></a>
+    <div class="img-box" value="" style="width: 55%;"><a class="" href="{{ route('root') }}"><img class="logo-img img-fluid float-right ml-5 mt-3" src="/images/logo/logo.jpg" alt="灵魂深触-经历网"></a>
     </div>
-    <div class="logo-body col-md-3  float-left mt-2 pl-1 relative">
-      <br>
+    <div class="text-box pl-2 relative">
       <a class="logo-text" href="{{ route('experience') }}"><p>让每一个人都能够在网络上搜索到自己！</p></a>
       <a class="logo-text" href="{{ route('art') }}"><p>让有才华的您得到更多的奖赏！</p></a>
       <a class="logo-text" href="{{ route('heaven') }}"><p>让离去的人从此不再孤单！</p></a>
     </div>
     {{-- 电脑注册登录---}}
-    <div class="register-box text-center">
+    <div class="register-box pt-1" style="width: 21%;">
       <br>
       <ul class="row">
         @guest
           {{-- 登录 --}}
-          <li class="mr-3"><a href="{{ route('login') }}"><h5>登录</h5></a></li>
+          <li><a href="{{ route('login') }}"><h5>登录</h5></a></li>
           {{-- 注册 --}}
           <li><a href="{{ route('register') }}"><h5>注册</h5></a></li>
         @else
           {{-- 头像 --}}
-          <a href="{{ route('topics.create') }}" class="create-ten"><h3>+</h3></a>
+          <a href="{{ route('topics.create') }}" class="top-ten"><h3>+</h3></a>
           <li class="nav-item notification-badge root-note">
             <h3><a
-                class="float-left nav-link badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white"
+                class="top-notice nav-link badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white"
                 href="{{ route('notifications') }}">1
                 {{--                            {{ Auth::user()->notification_count }}--}}
               </a></h3>
           </li>
-          <li class="nav-item dropdown lg-header-avatar">
+          <li class="nav-item dropdown lg-header-avatar top-avatar">
             <a class="nav-link dropdown-toggle" href="{{ route('users.show', Auth::id()) }}" id="navbarDropdown"
                role="button"
                data-toggle="dropdown"
                aria-haspopup="true" aria-expanded="false">
-              <img class="emergence-avatar" src="{{ Auth::user()->avatar }}"
+              <img class="emergence-avatar " src="{{ Auth::user()->avatar }}"
                    width="40px" height="40px" alt="头像"
                    style="border-radius: 50%;">
               {{ Auth::user()->name }}
@@ -66,7 +61,6 @@
       </ul>
     </div>
   </div>
-</div>
 
 @section('script')
   <script>
@@ -92,3 +86,4 @@
     });
   </script>
 @endsection
+

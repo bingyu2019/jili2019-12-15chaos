@@ -2,7 +2,7 @@
 
 @section('content')
 
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
 
     <div class="container text-white-50">
         <div class="row justify-content-center">

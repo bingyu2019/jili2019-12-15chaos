@@ -4,7 +4,7 @@
   {{--===========================  电脑版 ==================================--}}
   @include('layouts._xs_header')
   {{-- 电脑-顶部总导航 --}}
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
   {{-- 电脑-左则-内容区域 --}}
   <div class="col-md-3 col-xs-12 float-left">
     {{-- 左则：头像-简介-社交信息 --}}

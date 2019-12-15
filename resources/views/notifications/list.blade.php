@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', $user->name .'消息通知')
 @section('content')
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
   @include('layouts._xs_header')
   <div class="d-block d-sm-none"><br><br><br></div>
   <header>

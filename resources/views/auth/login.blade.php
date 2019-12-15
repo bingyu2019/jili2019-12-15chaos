@@ -19,7 +19,7 @@
 
 <div>
 
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
 
   <hr class="d-block d-sm-none" style="background: #AF6001;">
 

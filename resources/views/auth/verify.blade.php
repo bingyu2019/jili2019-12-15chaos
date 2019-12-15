@@ -10,7 +10,7 @@
   </div>
 
   {{-- PC 顶部导航 --}}
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
 
   <br>
 

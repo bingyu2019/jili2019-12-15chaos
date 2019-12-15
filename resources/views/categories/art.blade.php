@@ -7,14 +7,14 @@
     <div class="big-box mx-auto">
       <header>
         {{-- 电脑版 logo 注册登录 --}}
-        @include('layouts._lg_header')
+        @include('layouts._header')
       </header>
       <div class="clear"></div>
       <br>
       {{-- 分类页面主体导航--}}
-      <nav class="root-nav row col-md-12">
-        @include('layouts._lg_category_nav')
-        <div class="float-right">
+      <nav class="root-nav">
+        @include('layouts._category_nav')
+        <div class="float-left">
           &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;<img class=" img-fluid" src="/images/category/md-art.png">
         </div>
@@ -24,7 +24,7 @@
 
         {{-- 搜索框 --}}
         <div>
-          @include('layouts._lg_search')
+          @include('layouts._search')
         </div>
 
         {{-- 分类主体内容区域 --}}
@@ -112,6 +112,42 @@
                   <td style="width: 130px">222222</td>
                   <td style="width: 120px">333333</td>
                 </tr>
+                <tr class="text-center">
+                  <td scope="row"><a href=""><img src="/images/avatar/face100px.jpg"
+                                                  class="img-thumbnail "
+                                                  alt="Cinque Terre"
+                                                  style="width: 60px;"></a></td>
+                  <td style="width: 360px;"><a href="">了不起的比尔盖茨了不起的比尔盖茨了不起的比尔盖茨</a></td>
+                  <td style="width: 150px">Bing</td>
+                  <td style="width: 150px">2019-11-12</td>
+                  <td style="width: 130px">333</td>
+                  <td style="width: 130px">222222</td>
+                  <td style="width: 120px">333333</td>
+                </tr>
+                <tr class="text-center">
+                  <td scope="row"><a href=""><img src="/images/avatar/face100px.jpg"
+                                                  class="img-thumbnail "
+                                                  alt="Cinque Terre"
+                                                  style="width: 60px;"></a></td>
+                  <td style="width: 360px;"><a href="">了不起的比尔盖茨了不起的比尔盖茨了不起的比尔盖茨</a></td>
+                  <td style="width: 150px">Bing</td>
+                  <td style="width: 150px">2019-11-12</td>
+                  <td style="width: 130px">333</td>
+                  <td style="width: 130px">222222</td>
+                  <td style="width: 120px">333333</td>
+                </tr>
+                <tr class="text-center">
+                  <td scope="row"><a href=""><img src="/images/avatar/face100px.jpg"
+                                                  class="img-thumbnail "
+                                                  alt="Cinque Terre"
+                                                  style="width: 60px;"></a></td>
+                  <td style="width: 360px;"><a href="">了不起的比尔盖茨了不起的比尔盖茨了不起的比尔盖茨</a></td>
+                  <td style="width: 150px">Bing</td>
+                  <td style="width: 150px">2019-11-12</td>
+                  <td style="width: 130px">333</td>
+                  <td style="width: 130px">222222</td>
+                  <td style="width: 120px">333333</td>
+                </tr>
 
 
                 </tbody>
@@ -152,7 +188,7 @@
         </div>
       </footer>
 
-      @include('layouts._lg_footer')
+      @include('layouts._footer')
 
     </div>
 

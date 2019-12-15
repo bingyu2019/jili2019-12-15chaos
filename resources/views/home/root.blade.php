@@ -6,7 +6,7 @@
     <div class="big-box mx-auto">
       <header>
         {{-- 电脑版 logo 注册登录 --}}
-        @include('layouts._lg_header')
+        @include('layouts._header')
         {{-- 清除浮动 --}}
         <div class="clear"></div>
         {{-- 消息提醒视图 --}}
@@ -14,13 +14,13 @@
         {{-- 引入 vue 组件 公告 --}}
         <notice></notice>
         {{-- 电脑主页轮播图 --}}
-        @include('layouts._lg_carousel')
+        @include('layouts._carousel')
         <br>
       </header>
       {{-- 电脑主体书本导航块 --}}
-      <nav class="root-nav row col-md-12 mt-2">
-        <div class="root-nav-l">
-          <ul class="row">
+      <nav class="root-nav mt-2">
+        <div class="nav-l">
+          <ul>
             <li><a href="{{ route('root') }}"><br>首<br>页</a></li>
             <li><a href="{{ route('experience') }}"><br>人<br>物<br>经<br>历</a></li>
             <li><a href="{{ route('myself') }}"><br>个<br>人<br>宣<br>传</a></li>
@@ -33,15 +33,15 @@
             <li><a href="{{ route('serve') }}"><br>灵<br>魂<br>服<br>务</a></li>
           </ul>
         </div>
-        <div class="root-nav-r">
-          <img class="img-fluid" src="/images/root/md-nav-m.jpg">
-          <img class="root-nav-r-b" src="/images/root/md-nav-r.jpg">
+        <div class="nav-r pr-2">
+          <img class="img-fluid img-l" src="/images/root/md-nav-m.jpg">
+          <img class="img-r pr-2" src="/images/root/md-nav-r.jpg">
         </div>
       </nav>
 
       <section>
         {{-- 电脑主页搜索框 --}}
-        @include('layouts._lg_search')
+        @include('layouts._search')
 
         <br>
 
@@ -508,7 +508,7 @@
 
     </div>
 
-    @include('layouts._lg_footer')
+    @include('layouts._footer')
 
   </div>
 

@@ -2,7 +2,7 @@
 @section('title','编辑资料')
 @section('content')
   @include('layouts._xs_header')
-  @include('layouts._lg_other_header')
+  @include('layouts._other_header')
 
   <div class="d-block d-sm-none"><br><br><br></div>
   <div class="header-color mx-auto mb-0 d-none d-sm-block" style="height: 80px;width: 64.5%;"></div>
