@@ -73,8 +73,9 @@
           <td>2019-12-05 12:12:12</td>
           <td>Bing</td>
           <td>正常</td>
-          <td><a href="{{ route('admin.categories.edit') }}" class="btn btn-success btn-sm">编辑</a> <a href=""
-                                                                                             class="btn btn-danger btn-sm">删除</a>
+          <td>
+{{--            <a href="{{ route('admin.categories.edit') }}" class="btn btn-success btn-sm">编辑</a>--}}
+            <a href="" class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>
 
