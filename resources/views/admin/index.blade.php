@@ -3,6 +3,7 @@
 @section('content')
   @include('admin.layouts._header')
   <div class="float-left navbar-dark bg-dark" style="width: 15%;height: 590px;">
+{{--    <a class="text-light" href="{{ route('admin.index') }}"><h4>灵魂深触-经历网</h4></a>--}}
 
     <div id="accordion" class="mx-auto" style="width: 50%;" >
 

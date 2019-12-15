@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('title','灵魂深触-经历网')
 @section('content')
-<<<<<<< HEAD
   {{--==================== 主页-电脑版=========================--}}
   <div class="d-none d-sm-block">
     <div class="big-box mx-auto">
@@ -18,10 +17,12 @@
         @include('layouts._carousel')
         <br>
       </header>
+
+
       {{-- 电脑主体书本导航块 --}}
-      <nav class="root-nav mt-2">
-        <div class="nav-l">
-          <ul>
+      <nav class="root-nav row col-md-12 mt-2">
+        <div class="root-nav-l">
+          <ul class="row">
             <li><a href="{{ route('root') }}"><br>首<br>页</a></li>
             <li><a href="{{ route('experience') }}"><br>人<br>物<br>经<br>历</a></li>
             <li><a href="{{ route('myself') }}"><br>个<br>人<br>宣<br>传</a></li>
@@ -34,19 +35,20 @@
             <li><a href="{{ route('serve') }}"><br>灵<br>魂<br>服<br>务</a></li>
           </ul>
         </div>
-        <div class="nav-r pr-2">
-          <img class="img-fluid img-l" src="/images/root/md-nav-m.jpg">
-          <img class="img-r pr-2" src="/images/root/md-nav-r.jpg">
+        <div class="root-nav-r">
+          <img class="img-fluid" src="/images/root/md-nav-m.jpg">
+          <img class="root-nav-r-b" src="/images/root/md-nav-r.jpg">
         </div>
       </nav>
 
       <section>
         {{-- 电脑主页搜索框 --}}
-        @include('layouts._search')
+        @include('layouts._lg_search')
 
         <br>
 
         {{-- 【分类-最新-最热-帖子-区域】 --}}
+
         {{-- 【人物经历】 --}}
         <article>
           {{-- 清除浮动 --}}
@@ -98,438 +100,420 @@
                   <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
                 </div>
               </div>
-=======
-  <header>
-    {{-- 电脑版 logo 注册登录 --}}
-    @include('layouts._header')
-    {{-- 消息提醒视图 --}}
-    @include('shared._messages')
-    {{-- 引入 vue 组件 公告 --}}
-    <notice></notice>
-    {{-- 电脑主页轮播图 --}}
-    @include('layouts._carousel')
-    <br>
-  </header>
-  {{--书本导航--}}
-  <nav class="root-nav mt-3">
-    <div class="nav-l bg-danger">
-      <ul>
-        <li><a href="{{ route('root') }}"><br>首<br>页</a></li>
-        <li><a href="{{ route('experience') }}"><br>人<br>物<br>经<br>历</a></li>
-        <li><a href="{{ route('myself') }}"><br>个<br>人<br>宣<br>传</a></li>
-        <li><a href="{{route('art')}}"><br>灵<br>魂<br>艺<br>术</a></li>
-        <li><a href="{{ route('college') }}"><br>灵<br>魂<br>学<br>院</a></li>
-        <li><a href="{{ route('share') }}"><br>灵<br>魂<br>共<br>享</a></li>
-        <li><a href="{{ route('gift') }}"><br>灵<br>魂<br>礼<br>赞</a></li>
-        <li><a href="{{ route('show') }}"><br>灵<br>魂<br>展<br>览<br>馆</a></li>
-        <li><a href="{{ route('heaven') }}"><br>灵<br>魂<br>极<br>乐</a></li>
-        <li><a href="{{ route('serve') }}"><br>灵<br>魂<br>服<br>务</a></li>
-      </ul>
+            </div>
+          </div>
+        </article>
+
+
+        {{-- 【个人宣传】 --}}
+        <article>
+          {{-- 清除浮动 --}}
+          <div class="clear"></div>
+          <div class="root-category mt-5">
+            <div>
+              <div class="content-l">
+                <h4 class="title-l text-center"><a href="{{ route('myself') }}">【个人宣传】</a></h4>
+                <div class="text-l">
+                  <a href=""><img class="pl-2 pt-2" src="/images/root/md-myself.png"
+                                  alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-m">
+                <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
+                    href=" {{ route('myself') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
+                </h4>
+                <div class="text-m">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-r">
+                <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
+                <div class="text-r">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        {{-- 【灵魂艺术】 --}}
+        <article>
+          {{-- 清除浮动 --}}
+          <div class="clear"></div>
+          <div class="root-category mt-5">
+            <div>
+              <div class="content-l">
+                <h4 class="title-l text-center"><a href="{{ route('art') }}">【灵魂艺术】</a></h4>
+                <div class="text-l">
+                  <a href=""><img class="pl-2 pt-2" src="/images/root/md-art.png"
+                                  alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-m">
+                <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
+                    href="{{ route('art') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
+                </h4>
+                <div class="text-m">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-r">
+                <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
+                <div class="text-r">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        {{-- 【灵魂学院】 --}}
+        <article>
+          {{-- 清除浮动 --}}
+          <div class="clear"></div>
+          <div class="root-category mt-5">
+            <div>
+              <div class="content-l">
+                <h4 class="title-l text-center"><a href="{{ route('college') }}">【灵魂学院】</a></h4>
+                <div class="text-l">
+                  <a href=""><img class="pl-2 pt-2" src="/images/root/md-college.png"
+                                  alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-m">
+                <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
+                    href="{{ route('college') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
+                </h4>
+                <div class="text-m">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-r">
+                <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
+                <div class="text-r">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        {{-- 【灵魂共享】 --}}
+        <article>
+          {{-- 清除浮动 --}}
+          <div class="clear"></div>
+          <div class="root-category mt-5">
+            <div>
+              <div class="content-l">
+                <h4 class="title-l text-center"><a href="{{ route('share') }}">【灵魂共享】</a></h4>
+                <div class="text-l">
+                  <a href=""><img class="pl-2 pt-2" src="/images/root/md-share.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-m">
+                <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
+                    href="{{ route('share') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
+                </h4>
+                <div class="text-m">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-r">
+                <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
+                <div class="text-r">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        {{-- 【灵魂礼赞】 --}}
+        <article>
+          {{-- 清除浮动 --}}
+          <div class="clear"></div>
+          <div class="root-category mt-5">
+            <div>
+              <div class="content-l">
+                <h4 class="title-l text-center"><a href="{{ route('gift') }}">【灵魂礼赞】</a></h4>
+                <div class="text-l">
+                  <a href=""><img class="pl-2 pt-2" src="/images/root/md-gift.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-m">
+                <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
+                    href="{{ route('gift') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
+                </h4>
+                <div class="text-m">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-r">
+                <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
+                <div class="text-r">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        {{-- 【灵魂展览馆】 --}}
+        <article>
+          {{-- 清除浮动 --}}
+          <div class="clear"></div>
+          <div class="root-category mt-5">
+            <div>
+              <div class="content-l">
+                <h4 class="title-l text-center"><a href="{{ route('show') }}">【灵魂展览馆】</a></h4>
+                <div class="text-l">
+                  <a href=""><img class="pl-2 pt-2" src="/images/root/md-show.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-m">
+                <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
+                    href="{{ route('show') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
+                </h4>
+                <div class="text-m">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-r">
+                <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
+                <div class="text-r">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        {{-- 【灵魂极乐】 --}}
+        <article>
+          {{-- 清除浮动 --}}
+          <div class="clear"></div>
+          <div class="root-category mt-5">
+            <div>
+              <div class="content-l">
+                <h4 class="title-l text-center"><a href="{{ route('heaven') }}">【灵魂极乐】</a></h4>
+                <div class="text-l">
+                  <a href=""><img class="pl-2 pt-2" src="/images/root/md-heaven.jpg"
+                                  alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-m">
+                <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;网葬</a><a
+                    href=" {{ route('heaven') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
+                </h4>
+                <div class="text-m">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="content-r">
+                <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;追悼</a></h4>
+                <div class="text-r">
+                  <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                  <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        {{-- 清除浮动 --}}
+        <div class="clear"></div>
+
+        <br>
+      </section>
+
+      <footer>
+
+        {{-- 电脑主页底部总导航 --}}
+        <footer class="root-footer-nav mt-5">
+          <ul>
+            <li>
+              <div class="dot-root"></div>
+              <a href="{{ route('root') }}">首页</a></li>
+            <li><a href="{{ route('experience') }}">人物经历</a></li>
+            <li><a href="{{ route('myself') }}">个人宣传</a></li>
+            <li><a href="{{ route('art') }}">灵魂艺术</a></li>
+            <li><a href="{{ route('college') }}">灵魂学院</a></li>
+            <li><a href="{{ route('share') }}">灵魂共享</a></li>
+            <li><a href="{{ route('gift') }}">灵魂礼赞</a></li>
+            <li><a href="{{ route('show') }}">灵魂展览馆</a></li>
+            <li><a href="{{ route('heaven') }}">灵魂极乐</a></li>
+            <li><a href="{{ route('serve') }}">灵魂服务</a></li>
+          </ul>
+        </footer>
+
+
+      </footer>
+
     </div>
-    <div class="nav-r">
-      <img class="img-l img-fluid pl-4" src="/images/root/md-nav-m.jpg">
-      <img class="img-r pr-3" src="/images/root/md-nav-r.jpg">
-    </div>
-  </nav>
 
-
-  {{-- PC 搜索框 --}}
-  @include('layouts._lg_search')
-  <div>
-    {{-- 【人物经历】 --}}
-    <article>
-      {{-- 【人物经历】 --}}
-      <div class="root-category mt-5">
-        <div>
-          <div class="content-l">
-            <h4 class="title-l text-center"><a href="{{ route('experience') }}">【人物经历】</a>
-            </h4>
-            <div class="text-l">
-              <a href=""><img class="pl-2 pt-2" src="/images/root/md-experience.jpg"
-                              alt=""></a>
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-m">
-            <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
-                href="{{ route('experience') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
-            </h4>
-            <div class="text-m">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-r">
-            <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
-            <div class="text-r">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    {{-- 【灵魂艺术】 --}}
-    <article>
-      {{-- 清除浮动 --}}
-      <div class="clear"></div>
-      <div class="root-category mt-5">
-        <div>
-          <div class="content-l">
-            <h4 class="title-l text-center"><a href="{{ route('art') }}">【灵魂艺术】</a></h4>
-            <div class="text-l">
-              <a href=""><img class="pl-2 pt-2" src="/images/root/md-art.png"
-                              alt=""></a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-m">
-            <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
-                href="{{ route('art') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
-            </h4>
-            <div class="text-m">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-r">
-            <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
-            <div class="text-r">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    {{-- 【灵魂学院】 --}}
-    <article>
-      {{-- 清除浮动 --}}
-      <div class="clear"></div>
-      <div class="root-category mt-5">
-        <div>
-          <div class="content-l">
-            <h4 class="title-l text-center"><a href="{{ route('college') }}">【灵魂学院】</a></h4>
-            <div class="text-l">
-              <a href=""><img class="pl-2 pt-2" src="/images/root/md-college.png"
-                              alt=""></a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-m">
-            <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
-                href="{{ route('college') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
-            </h4>
-            <div class="text-m">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-r">
-            <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
-            <div class="text-r">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    {{-- 【灵魂共享】 --}}
-    <article>
-      {{-- 清除浮动 --}}
-      <div class="clear"></div>
-      <div class="root-category mt-5">
-        <div>
-          <div class="content-l">
-            <h4 class="title-l text-center"><a href="{{ route('share') }}">【灵魂共享】</a></h4>
-            <div class="text-l">
-              <a href=""><img class="pl-2 pt-2" src="/images/root/md-share.png" alt=""></a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-m">
-            <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
-                href="{{ route('share') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
-            </h4>
-            <div class="text-m">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-r">
-            <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
-            <div class="text-r">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    {{-- 【灵魂礼赞】 --}}
-    <article>
-      {{-- 清除浮动 --}}
-      <div class="clear"></div>
-      <div class="root-category mt-5">
-        <div>
-          <div class="content-l">
-            <h4 class="title-l text-center"><a href="{{ route('gift') }}">【灵魂礼赞】</a></h4>
-            <div class="text-l">
-              <a href=""><img class="pl-2 pt-2" src="/images/root/md-gift.jpg" alt=""></a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-m">
-            <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
-                href="{{ route('gift') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
-            </h4>
-            <div class="text-m">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-r">
-            <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
-            <div class="text-r">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    {{-- 【灵魂展览馆】 --}}
-    <article>
-      {{-- 清除浮动 --}}
-      <div class="clear"></div>
-      <div class="root-category mt-5">
-        <div>
-          <div class="content-l">
-            <h4 class="title-l text-center"><a href="{{ route('show') }}">【灵魂展览馆】</a></h4>
-            <div class="text-l">
-              <a href=""><img class="pl-2 pt-2" src="/images/root/md-show.jpg" alt=""></a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-m">
-            <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最新</a><a
-                href="{{ route('show') }} ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
-            </h4>
-            <div class="text-m">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-r">
-            <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;最热</a></h4>
-            <div class="text-r">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    {{-- 【灵魂极乐】 --}}
-    <article>
-      {{-- 清除浮动 --}}
-      <div class="clear"></div>
-      <div class="root-category mt-5">
-        <div>
-          <div class="content-l">
-            <h4 class="title-l text-center"><a href="{{ route('heaven') }}">【灵魂极乐】</a></h4>
-            <div class="text-l">
-              <a href=""><img class="pl-2 pt-2" src="/images/root/md-heaven.jpg"
-                              alt=""></a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-m">
-            <h4 class="title-m"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;网葬</a><a
-                href=" {{ route('heaven') }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多➤➤➤</a>
-            </h4>
-            <div class="text-m">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="content-r">
-            <h4 class="title-r"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;追悼</a></h4>
-            <div class="text-r">
-              <div class="t pt-3 pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-              <div class="pl-5"><a href="">⚫长征五号遥三运载火箭运抵海南文昌</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    {{-- 清除浮动 --}}
-    <div class="clear"></div>
-    <br>
-  </div>
-
-<<<<<<< HEAD
-    @include('layouts._footer')
-
-  </div>
-=======
-  {{-- PC 底部总导航 --}}
-  <nav class="root-footer-nav mt-5">
-    <ul>
-      <li>
-        <div class="dot-root"></div>
-        <a href="{{ route('root') }}">首页</a></li>
-      <li><a href="{{ route('experience') }}">人物经历</a></li>
-      <li><a href="{{ route('myself') }}">个人宣传</a></li>
-      <li><a href="{{ route('art') }}">灵魂艺术</a></li>
-      <li><a href="{{ route('college') }}">灵魂学院</a></li>
-      <li><a href="{{ route('share') }}">灵魂共享</a></li>
-      <li><a href="{{ route('gift') }}">灵魂礼赞</a></li>
-      <li><a href="{{ route('show') }}">灵魂展览馆</a></li>
-      <li><a href="{{ route('heaven') }}">灵魂极乐</a></li>
-      <li><a href="{{ route('serve') }}">灵魂服务</a></li>
-    </ul>
-  </nav>
-
-  <footer>
     @include('layouts._lg_footer')
-  </footer>
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
+
+  </div>
 
 
   {{--================== 手机版主页- 仅手机可见 ======================= --}}
@@ -571,8 +555,7 @@
       <div class="mx-auto xs-root-category-box">
 
         {{-- 手机主页开头诗 --}}
-        <article
-          class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto text-center shadow-lg p-3 mb-5 rounded">
+        <article class="root-background-poetry -poetry -poetry -poetry -poetry  mx-auto text-center shadow-lg p-3 mb-5 rounded">
           <h4><strong>我的心灵和我的一切</strong></h4>
           <small>作者：卡蒙斯【葡萄牙】 / &nbsp;翻译：肖佳平</small><br>
           <hr style="background: #000;">
@@ -1136,10 +1119,10 @@
 @stop
 @section('script')
   <script>
-    // 轮播图控件
-    $('.carousel').carousel({
-      interval: 1000
-    });
+      // 轮播图控件
+      $('.carousel').carousel({
+          interval: 1800
+      });
 
   </script>
 @endsection

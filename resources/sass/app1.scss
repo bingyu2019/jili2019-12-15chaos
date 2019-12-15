@@ -62,238 +62,131 @@ body {
     color: #cccccc;
     font-size: 14px;
   }
+}
+
+.header-color {
+  border-radius: 5px;
+  background: linear-gradient(to top, #000, #7C3A08, #EB9A02);
+}
+
+.three-color {
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #eb880c, #7C3A08, #EB9A02);
+}
 
 
-  .header-color {
-    border-radius: 5px;
-    background: linear-gradient(to top, #000, #7C3A08, #EB9A02);
-  }
+.font-hover {
+  color: black;
 
-  .three-color {
-    border-radius: 5px;
-    background: linear-gradient(to bottom, #eb880c, #7C3A08, #EB9A02);
-  }
+}
+
+.font-hover:hover {
+  color: white;
+}
+
+// 白字，阴影，鼠标移上变灰
+.hover-ccc {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+// p 标签字体
+.sixteen {
+  font-size: 16px;
+}
+
+.black-border {
+  border: solid 2px black;
+}
+
+.modal-body {
+  background: #FFE4E1
+}
 
 
-  .font-hover {
-    color: black;
+// 送花 奖赏 礼赞 换币 入口
+.wallets-a {
+  border: solid 1px #CF261D;
+}
 
-  }
-
-  .font-hover:hover {
-    color: white;
-  }
-
-  // 白字，阴影，鼠标移上变灰
-  .hover-ccc {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-  }
-
-  // p 标签字体
-  .sixteen {
-    font-size: 16px;
-  }
-
-  // 底部黑边
-  .black-border {
-    border: solid 2px black;
-  }
-
-  // 模态框主体颜色
-  .modal-body {
-    background: #FFE4E1
-  }
-
-  // 送花 奖赏 礼赞 换币 入口
-  .wallets-a {
-    border: solid 1px #CF261D;
-  }
-
-<<<<<<< HEAD
 .wallets-a:hover {
   color: white;
   background: #CF261D;
 }
-// 清除浮动
-.clear {
-  height: 0;
-  font-size: 0;
-  clear: both;
-}
 
-// ======================== PC 顶部主 logo 区域 ====================//
+// ======================== 电脑主页样式 ====================//
+
+// 电脑主页 logo
 .logo {
-  height: 110px;
-=======
-  .wallets-a:hover {
-    color: white;
-    background: #CF261D;
-  }
-
-  // 清除浮动
-  .clear {
-    height: 0;
-    font-size: 0;
-    clear: both;
-  }
-
-}
-
-// ======================== PC 主logo 主页和分类页面 ====================//
-.logo {
-  height: 100px;
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
-
-  .img-box, .text-box, .register-box {
-    float: left;
-  }
-
-  .text-box {
-<<<<<<< HEAD
-    padding-top: 35px;
-=======
-    padding-left: 10px;
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
-    width: 22%;
-    line-height: 4px;
+  .logo-body {
+    height: 100px;
+    background: black;
 
     a {
       font-size: 14px;
+      line-height: 5px;
     }
   }
 
-  // 鼠标移上-logo主图变大-出现下横线
   .logo-img:hover {
     border-bottom: 10px solid #5F2903;
     transform: scale(1.06);
   }
+}
 
-  .register-box {
-    height: 100px;
-<<<<<<< HEAD
-    width: 23%;
-=======
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
+// 电脑主页注册登录
+.register-box {
+  height: 28px;
 
-    ul {
-      padding-left: 115px;
-    }
+  img:hover {
+    transform: scale(1.3);
+  }
+
+  .register-dropdown-menu {
+    background: linear-gradient(red, blue);
+    box-shadow: 10px 10px 5px #211F1C;
+    display: none;
+  }
+
+  .lg-header-avatar:hover .register-dropdown-menu {
+    display: block;
+  }
+}
+
+//主页面顶部 发贴入口定位
+.create-ten {
+  position: relative;
+  left: -70px;
+  top: -10px
+}
+
+// 主页面顶部 消息通知 定位
+.root-note {
+  position: relative;
+  left: -53px;
+  top: -5px
+}
+
+// 主页面顶部头像定位
+.lg-header-avatar {
+  position: relative;
+  left: 0px;
+  top: -55px
+}
+
+// 电脑主页书本导航
+.root-nav {
+  .root-nav-l {
+    height: 150px;
+    line-height: 150px;
+    margin-left: 40px;
 
     ul li {
       display: inline-block;
-      padding-top: 7px;
-      float: left;
-      padding-right: 25px;
-    }
-
-    //主页面顶部 发贴入口定位
-    .top-ten {
-      position: relative;
-<<<<<<< HEAD
-      left: -75px;
-      top: -6px;
-=======
-      left: -95px;
-      top: 6px
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
-    }
-
-    // 消息通知定位
-    .top-notice {
-      position: relative;
-<<<<<<< HEAD
-      left: -50px;
-      top: -12px;
-    }
-
-    // 主页面顶部头像定位
-    .top-avatar {
-      position: relative;
-      right: -10px;
-      top: -65px;
-    }
-
-    // 鼠标移上 头像放大 显示下拉菜单
-    .top-avatar img:hover {
-      transform: scale(1.3);
-    }
-
-    .register-dropdown-menu {
-      background: linear-gradient(red, blue);
-      box-shadow: 10px 10px 5px #211F1C;
-      display: none;
-    }
-
-    .top-avatar:hover .register-dropdown-menu {
-      display: block;
-    }
-  }
-}
-
-// ======================== PC root 主页轮播图 ====================//
-.root-carousel {
-  height: 260px;
-}
-=======
-      left: -60px;
-      top: -38px
-    }
-
-    // 主页面顶部头像定位
-    .top-avatar {
-      position: relative;
-      left: -15px;
-      top: -90px
-    }
-
-    // 鼠标移上 头像放大 显示下拉菜单
-    .top-avatar img:hover {
-      transform: scale(1.3);
-    }
-
-    .register-dropdown-menu {
-      background: linear-gradient(red, blue);
-      box-shadow: 10px 10px 5px #211F1C;
-      display: none;
-    }
-
-    .top-avatar:hover .register-dropdown-menu {
-      display: block;
-    }
-  }
-}
-
-// ======================== PC root 主页轮播图 ====================//
-.root-carousel {
-  height: 260px;
-}
-
-
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
-// ======================== PC root 主页书本导航 ====================//
-.root-nav {
-  width: 100%;
-  height: 150px;
-
-  .nav-l {
-    width: 50%;
-
-    ul {
-<<<<<<< HEAD
-      padding-left: 60px;
-=======
-      padding-left: 70px;
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
-    }
-
-    ul li {
-      float: left;
-      display: inline;
       width: 50px;
       height: 140px;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 7px;
       line-height: 22px;
       background: linear-gradient(to left, #000000, #A25900);
 
@@ -302,46 +195,23 @@ body {
         background: linear-gradient(to left, #000000, #E79702);
       }
     }
-
-<<<<<<< HEAD
-  }
-  .nav-r {
-    width: 50%;
-    float: right;
   }
 
   // 电脑主页导航右则图片
-  .img-l{
-    position: relative;
-    right: 35px;
-  }
-  .img-l:hover {
-    transform: scale(1.5);
-  }
-  .img-r{
-    position: relative;
-    right: 20px;
-  }
-=======
-    .nav-r {
-      width: 50%;
+  .root-nav-r {
+    margin-left: 60px;
+
+    img:hover {
+      transform: scale(1.5);
     }
 
-  }
-
-  // 电脑主页导航右则图片
-  .img-l:hover {
-    transform: scale(1.5);
-  }
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
-
-  .img-r:hover {
-    transform: scale(1.3);
+    .root-nav-r-b:hover {
+      transform: scale(1.3);
+    }
   }
 }
 
-
-// ======================== PC root 搜索框 ====================//
+// 电脑主页搜索框
 .search-box {
   margin-top: 50px;
 
@@ -359,12 +229,14 @@ body {
   }
 }
 
-<<<<<<< HEAD
-// ========================= PC root 主页 ======================//
-=======
+// 清除浮动
+.clear {
+  height: 0;
+  font-size: 0;
+  clear: both;
+}
 
 // 电脑主页 root
->>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 .root-page {
   margin: 0;
   padding: 0;
@@ -372,6 +244,12 @@ body {
   font-size: 18px;
   font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
 
+  // 电脑轮播图
+  .root-carousel {
+    height: 260px;
+  }
+
+  // 电脑主页各分类最新最热帖子展示区
   // 【所有分类共用样式】
   .root-category {
     a {
@@ -437,9 +315,9 @@ body {
 
 // ========================= 电脑主页面底部总导航 ======================//
 
-/*
 // 主页和分类页面大盒子
 .big-box {
+  height: 100%;
   width: 1263px;
 }
 
@@ -925,7 +803,7 @@ hr {
 }
 
 // 模态框头部
-.my-modal-header {
+.my-modal-header{
   background-image: linear-gradient(to top, black, #EE82EE);
 }
 
@@ -1110,7 +988,7 @@ hr {
 }
 
 //======================== 注册 登录 ============================//
-!* User register page 验证码*!
+/* User register page 验证码*/
 .register-page {
   img.captcha {
     cursor: pointer;
@@ -1137,6 +1015,5 @@ hr {
   }
 }
 
-*/
 
 

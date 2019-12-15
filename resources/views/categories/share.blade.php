@@ -18,9 +18,16 @@
             </header>
 
             {{-- 分类页面主体导航--}}
+<<<<<<< HEAD
           <nav class="root-nav">
             @include('layouts._category_nav')
             <div class="float-left">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+=======
+            <nav class="root-nav row col-md-12">
+                @include('layouts._nav_category')
+                <div class="float-right">
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
                     &nbsp;&nbsp;&nbsp;<img
                         class=" img-fluid" src="/images/category/md-share.png">
                 </div>

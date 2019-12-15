@@ -74,7 +74,11 @@
           <td>Bing</td>
           <td>正常</td>
           <td>
+<<<<<<< HEAD
 {{--            <a href="{{ route('admin.categories.edit') }}" class="btn btn-success btn-sm">编辑</a> --}}
+=======
+{{--            <a href="{{ route('admin.categories.edit') }}" class="btn btn-success btn-sm">编辑</a>--}}
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
             <a href="" class="btn btn-danger btn-sm">删除</a>
           </td>
         </tr>

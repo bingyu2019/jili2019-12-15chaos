@@ -2,6 +2,7 @@
 @section('title','灵魂学院')
 
 @section('content')
+<<<<<<< HEAD
   {{-- =================== 灵魂学院-电脑版 =====================--}}
   <div class="d-none d-sm-block">
     <div class="big-box mx-auto">
@@ -21,6 +22,149 @@
           &nbsp;&nbsp;&nbsp;<img class="img-fluid pl-5" src="/images/category/md-college.png">
         </div>
       </nav>
+=======
+    {{-- =================== 灵魂学院-电脑版 =====================--}}
+    <div class="d-none d-sm-block">
+        <div class="big-box mx-auto">
+            <header>
+                {{-- 电脑版 logo 注册登录 --}}
+                @include('layouts._header')
+
+                {{-- 清除浮动 --}}
+                <div class="clear"></div>
+                <br>
+            </header>
+
+            {{-- 分类页面主体导航--}}
+            <nav class="root-nav row col-md-12">
+                @include('layouts._nav_category')
+                <div class="float-right">
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;<img
+                        class=" img-fluid" src="/images/category/md-college.png">
+                </div>
+            </nav>
+
+            <section>
+                {{-- 搜索框 --}}
+                <div>
+                    @include('layouts._lg_search')
+                </div>
+
+                {{-- 分类主体内容区域 --}}
+                <div>
+                    {{-- 分类标题 --}}
+                    <div class="experience-title container mt-4 col-sm-11">
+                        <h3 class="text-white text-center pt-2">灵 &nbsp;&nbsp;魂&nbsp;&nbsp; 学&nbsp; &nbsp;院</h3>
+                    </div>
+                    {{-- 分类二级类别 --}}
+                    <div class="subclass container">
+                        <div>
+                            <ul class=" text-center pt-5 col-sm-11 ml-5">
+                                <li class="float-left text-white pl-4">│ <a href=""> &nbsp;好人好事 &nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">&nbsp;礼仪礼节&nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">&nbsp;文明生活&nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">&nbsp; 名言格言 &nbsp</a>│</li>
+
+                                <li class="float-left text-white"><a href="">&nbsp; 感人短片 &nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">&nbsp;思想哲学 &nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">&nbsp;小故事大道理 &nbsp;</a>│</li>
+                                <li class="float-left text-white"><a href="">那些我们犯过的错 &nbsp;</a>│</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    {{-- 排序--}}
+                    <div class="order container navbar navbar-expand-lg col-sm-11"
+                         style="background-image:url('/images/background/order.png');">
+                        <table>
+                            <tr>
+                                <td class="pt-3"><h5><b>查看顺序 ➤➤</b></h5></td>
+                                <td class="pl-4" style="width: 100px;">▆<a href="">&nbsp; 最新</a> ▆</td>
+                                <td style="width: 60px;"><a href="">活跃</a> &nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">评论</a> &nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">点赞</a> &nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">礼赞</a> &nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">阅读</a> &nbsp;▆</td>
+                                <td style="width: 60px;"><a href="">收藏</a> &nbsp;▆</td>
+                                <td style="width: 510px;" class="pt-2"><a href=""> @include('layouts._pen')</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    {{-- 清除浮动 --}}
+                    <div class="clear"></div>
+
+                    {{-- 内容区域-表格 --}}
+                    <div>
+                        <div class="order-title container col-sm-11" style="border-top: solid 5px black;">
+                            <table class="table category-table-center">
+                                <thead>
+                                <tr class="text-center">
+                                    <th scope="col">头像</th>
+                                    <th scope="col">标题</th>
+                                    <th scope="col">发布者</th>
+                                    <th scope="col">日期</th>
+                                    <th scope="col">评论</th>
+                                    <th scope="col">点赞</th>
+                                    <th scope="col">阅读</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr class="text-center">
+                                    <td scope="row"><a href=""><img src="/images/avatar/face100px.jpg"
+                                                                    class="img-thumbnail "
+                                                                    alt="Cinque Terre"
+                                                                    style="width: 60px;"></a></td>
+                                    <td style="width: 360px;"><a href="">了不起的比尔盖茨了不起的比尔盖茨了不起的比尔盖茨</a></td>
+                                    <td style="width: 150px">Bing</td>
+                                    <td style="width: 150px">2019-11-12</td>
+                                    <td style="width: 130px">333</td>
+                                    <td style="width: 130px">222222</td>
+                                    <td style="width: 120px">333333</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <div class="order container navbar navbar-expand-lg col-sm-11"
+                             style="background-image:url('/images/background/order.png');">
+                        </div>
+                    </div>
+
+                    {{-- 清除浮动 --}}
+                    <div class="clear"></div>
+
+
+                </div>
+
+                <br><br>
+
+            </section>
+
+            <footer>
+                {{-- 电脑底部总导航 --}}
+                <div class="root-footer-nav">
+                    <ul>
+                        <a href="{{ route('root') }}">首页</a></li>
+                        <li><a href="{{ route('experience') }}">人物经历</a></li>
+                        <li><a href="{{ route('myself') }}">个人宣传</a></li>
+                        <li><a href="{{ route('art') }}">灵魂艺术</a></li>
+                        <li>
+                            <div class="dot-college"></div>
+                            <a href="{{ route('college') }}">灵魂学院</a></li>
+                        <li><a href="{{ route('share') }}">灵魂共享</a></li>
+                        <li><a href="{{ route('gift') }}">灵魂礼赞</a></li>
+                        <li><a href="{{ route('show') }}">灵魂展览馆</a></li>
+                        <li><a href="{{ route('heaven') }}">灵魂极乐</a></li>
+                        <li><a href="{{ route('serve') }}">灵魂服务</a></li>
+                    </ul>
+                </div>
+            </footer>
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 
       <section>
         {{-- 搜索框 --}}

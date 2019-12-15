@@ -11865,60 +11865,68 @@ body .grade-box {
   font-size: 14px;
 }
 
-.header-color {
+body .header-color {
   border-radius: 5px;
   background: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(#7C3A08), to(#EB9A02));
   background: linear-gradient(to top, #000, #7C3A08, #EB9A02);
 }
 
-.three-color {
+body .three-color {
   border-radius: 5px;
   background: -webkit-gradient(linear, left top, left bottom, from(#eb880c), color-stop(#7C3A08), to(#EB9A02));
   background: linear-gradient(to bottom, #eb880c, #7C3A08, #EB9A02);
 }
 
-.font-hover {
+body .font-hover {
   color: black;
 }
 
-.font-hover:hover {
+body .font-hover:hover {
   color: white;
 }
 
-.hover-ccc {
+body .hover-ccc {
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.sixteen {
+body .sixteen {
   font-size: 16px;
 }
 
-.black-border {
+body .black-border {
   border: solid 2px black;
 }
 
-.modal-body {
+body .modal-body {
   background: #FFE4E1;
 }
 
-.wallets-a {
+body .wallets-a {
   border: solid 1px #CF261D;
 }
 
-.wallets-a:hover {
+body .wallets-a:hover {
   color: white;
   background: #CF261D;
 }
 
+<<<<<<< HEAD
 .clear {
+=======
+body .clear {
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
   height: 0;
   font-size: 0;
   clear: both;
 }
 
 .logo {
+<<<<<<< HEAD
   height: 110px;
+=======
+  height: 100px;
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 }
 
 .logo .img-box,
@@ -11928,7 +11936,11 @@ body .grade-box {
 }
 
 .logo .text-box {
+<<<<<<< HEAD
   padding-top: 35px;
+=======
+  padding-left: 10px;
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
   width: 22%;
   line-height: 4px;
 }
@@ -11945,7 +11957,10 @@ body .grade-box {
 
 .logo .register-box {
   height: 100px;
+<<<<<<< HEAD
   width: 23%;
+=======
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 }
 
 .logo .register-box ul {
@@ -11961,20 +11976,35 @@ body .grade-box {
 
 .logo .register-box .top-ten {
   position: relative;
+<<<<<<< HEAD
   left: -75px;
   top: -6px;
+=======
+  left: -95px;
+  top: 6px;
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 }
 
 .logo .register-box .top-notice {
   position: relative;
+<<<<<<< HEAD
   left: -50px;
   top: -12px;
+=======
+  left: -60px;
+  top: -38px;
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 }
 
 .logo .register-box .top-avatar {
   position: relative;
+<<<<<<< HEAD
   right: -10px;
   top: -65px;
+=======
+  left: -15px;
+  top: -90px;
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 }
 
 .logo .register-box .top-avatar img:hover {
@@ -12007,7 +12037,11 @@ body .grade-box {
 }
 
 .root-nav .nav-l ul {
+<<<<<<< HEAD
   padding-left: 60px;
+=======
+  padding-left: 70px;
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 }
 
 .root-nav .nav-l ul li {
@@ -12029,6 +12063,7 @@ body .grade-box {
   background: linear-gradient(to left, #000000, #E79702);
 }
 
+<<<<<<< HEAD
 .root-nav .nav-r {
   width: 50%;
   float: right;
@@ -12037,6 +12072,10 @@ body .grade-box {
 .root-nav .img-l {
   position: relative;
   right: 35px;
+=======
+.root-nav .nav-l .nav-r {
+  width: 50%;
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 }
 
 .root-nav .img-l:hover {
@@ -12044,11 +12083,14 @@ body .grade-box {
           transform: scale(1.5);
 }
 
+<<<<<<< HEAD
 .root-nav .img-r {
   position: relative;
   right: 20px;
 }
 
+=======
+>>>>>>> 442a44c6a47968f692b67a6ff60c63ef6c68f327
 .root-nav .img-r:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
@@ -12077,10 +12119,6 @@ body .grade-box {
   background: black;
   font-size: 18px;
   font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
-}
-
-.root-page .root-carousel {
-  height: 260px;
 }
 
 .root-page .root-category a {
@@ -12162,38 +12200,42 @@ body .grade-box {
   text-shadow: 0 0 3px black;
 }
 
+/*
+// 主页和分类页面大盒子
 .big-box {
   width: 1263px;
 }
 
+// 电脑主页底部【总导航】
 .root-footer-nav {
   width: 1100px;
   height: 20px;
   margin: auto;
+
+  ul {
+    float: left;
+  }
+
+  ul li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    background: #000000;
+  }
+
+  ul li a {
+    font-size: 18px;
+  }
+
+  ul li a:hover {
+    color: #fff;
+    border-bottom: 6px solid #D07F0C;
+  }
 }
 
-.root-footer-nav ul {
-  float: left;
-}
-
-.root-footer-nav ul li {
-  display: inline-block;
-  width: 100px;
-  text-align: center;
-  height: 20px;
-  line-height: 20px;
-  background: #000000;
-}
-
-.root-footer-nav ul li a {
-  font-size: 18px;
-}
-
-.root-footer-nav ul li a:hover {
-  color: #fff;
-  border-bottom: 6px solid #D07F0C;
-}
-
+// 电脑【主页】底部总导航红圆点
 .dot-root {
   width: 9px;
   height: 9px;
@@ -12202,14 +12244,8 @@ body .grade-box {
   margin: 0 23px 0 auto;
 }
 
-.dot-experience,
-.dot-myself,
-.dot-art,
-.dot-share,
-.dot-gift,
-.dot-heaven,
-.dot-serve,
-.dot-college {
+// 电脑各分类底部总导航红圆点
+.dot-experience, .dot-myself, .dot-art, .dot-share, .dot-gift, .dot-heaven, .dot-serve, .dot-college {
   width: 9px;
   height: 9px;
   border-radius: 4.5px;
@@ -12217,6 +12253,7 @@ body .grade-box {
   margin: 0 6px 0 auto;
 }
 
+// 电脑【灵魂展览馆】底部总导航红圆点
 .dot-show {
   width: 9px;
   height: 9px;
@@ -12225,125 +12262,127 @@ body .grade-box {
   margin: 0 -3px 0 auto;
 }
 
+// ===================== 电脑主页面底部【灵魂服务-备案号】区域 ===================//
+
+//电脑主页底部【灵魂服务】
 .serve {
   height: 350px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#622E0D), to(#5F2C0D));
   background: linear-gradient(to top, #622E0D, #5F2C0D);
   margin: 0 auto;
+
+  .serve_in {
+    height: 300px;
+    margin-top: 1px;
+    float: left;
+    border: 10px solid #000;
+  }
+
+  // 左则文字【灵魂服务】
+  .serve_in_l {
+    height: 260px;
+    width: 50px;
+    float: left;
+    padding-left: 40px;
+    margin-top: -25px;
+
+    a {
+      color: #ccc;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+  }
+
+  // 电脑中间站长后台技术总监图片区域
+  .serve_in_m {
+    height: 260px;
+    float: left;
+
+    ul {
+      list-style-type: none;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      float: left;
+      margin-left: 25px;
+    }
+
+    ul li {
+      float: left;
+      width: 250px;
+      height: 250px;
+      display: inline;
+    }
+
+    ul span {
+      margin-left: 25px;
+      margin-top: 5px;
+      display: block;
+      float: left;
+    }
+
+    ul a {
+      color: #000;
+      font-size: 16.5px;
+    }
+
+    ul a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  // 电脑右则书签导航
+  .serve_in_r {
+    height: 260px;
+    width: 480px;
+    line-height: 220px;
+    margin-top: 24px;
+    float: left;
+
+    ul {
+      float: left;
+    }
+
+    ul li {
+      background: linear-gradient(to left, #000000, #A25900);
+      float: left;
+      width: 520px;
+      text-align: center;
+      cursor: pointer;
+      writing-mode: lr-tb;
+      padding-bottom: 5px;
+    }
+
+    ul li:hover {
+      transform: scale(1.3);
+    }
+
+    ul li a:hover {
+      color: #fff;
+    }
+
+    ul li {
+      display: inline-block;
+      width: 60px;
+      height: 194px;
+      margin-top: 7px;
+      line-height: 28px;
+    }
+
+    ul li:hover {
+      background: linear-gradient(to left, #000000, #E79702);
+    }
+  }
+
 }
 
-.serve .serve_in {
-  height: 300px;
-  margin-top: 1px;
-  float: left;
-  border: 10px solid #000;
-}
-
-.serve .serve_in_l {
-  height: 260px;
-  width: 50px;
-  float: left;
-  padding-left: 40px;
-  margin-top: -25px;
-}
-
-.serve .serve_in_l a {
-  color: #ccc;
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.serve .serve_in_l a:hover {
-  color: #fff;
-}
-
-.serve .serve_in_m {
-  height: 260px;
-  float: left;
-}
-
-.serve .serve_in_m ul {
-  list-style-type: none;
-}
-
-.serve .serve_in_m img {
-  width: 200px;
-  height: 200px;
-  float: left;
-  margin-left: 25px;
-}
-
-.serve .serve_in_m ul li {
-  float: left;
-  width: 250px;
-  height: 250px;
-  display: inline;
-}
-
-.serve .serve_in_m ul span {
-  margin-left: 25px;
-  margin-top: 5px;
-  display: block;
-  float: left;
-}
-
-.serve .serve_in_m ul a {
-  color: #000;
-  font-size: 16.5px;
-}
-
-.serve .serve_in_m ul a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-.serve .serve_in_r {
-  height: 260px;
-  width: 480px;
-  line-height: 220px;
-  margin-top: 24px;
-  float: left;
-}
-
-.serve .serve_in_r ul {
-  float: left;
-}
-
-.serve .serve_in_r ul li {
-  background: -webkit-gradient(linear, right top, left top, from(#000000), to(#A25900));
-  background: linear-gradient(to left, #000000, #A25900);
-  float: left;
-  width: 520px;
-  text-align: center;
-  cursor: pointer;
-  -webkit-writing-mode: lr-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: lr-tb;
-  padding-bottom: 5px;
-}
-
-.serve .serve_in_r ul li:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
-.serve .serve_in_r ul li a:hover {
-  color: #fff;
-}
-
-.serve .serve_in_r ul li {
-  display: inline-block;
-  width: 60px;
-  height: 194px;
-  margin-top: 7px;
-  line-height: 28px;
-}
-
-.serve .serve_in_r ul li:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#000000), to(#E79702));
-  background: linear-gradient(to left, #000000, #E79702);
-}
-
+// 电脑主页最底部【备案号区】
 .root-bottom {
   width: 99%;
   height: 200px;
@@ -12356,105 +12395,121 @@ hr {
   background-color: white;
 }
 
-.category-experience-page tr,
-.category-experience-page th,
-.category-experience-page td {
-  vertical-align: middle;
-  text-align: center;
+// =========================== 电脑【各分类】页面样式========================//
+// 分类主标题
+.category-experience-page {
+  tr, th, td {
+    vertical-align: middle;
+    text-align: center;
+  }
+
 }
 
 .experience-title {
   height: 50px;
   line-height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#AF6001), to(black));
   background: linear-gradient(#AF6001, black);
 }
 
+// 子分类下排序查看
 .order {
   height: 45px;
   color: black;
+
+  a {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-top: 2px;
+  }
 }
 
-.order a {
-  font-size: 16px;
-  font-weight: bold;
-  color: black;
-  margin-top: 2px;
-}
-
+// 分类表头
 .order-title {
   font-size: 20px;
   font-weight: bold;
-  background: -webkit-gradient(linear, right top, left top, from(#FAD1A5), to(#E5A55D));
   background: linear-gradient(to left, #FAD1A5, #E5A55D);
   border-bottom: solid 5px black;
   border-top: solid 5px black;
 }
 
-.category-table-center .text-center th {
-  border-bottom: solid 2px black;
+// 分类帖子内容-表格
+.category-table-center {
+  .text-center th {
+    border-bottom: solid 2px black;
+  }
+
+  td {
+    font-weight: normal;
+    color: black;
+    border-bottom: solid 1px black;
+
+    a {
+      color: black;
+    }
+  }
+
+  th, td, tr {
+    vertical-align: middle;
+    text-align: center;
+  }
+
 }
 
-.category-table-center td {
-  font-weight: normal;
-  color: black;
-  border-bottom: solid 1px black;
-}
-
-.category-table-center td a {
-  color: black;
-}
-
-.category-table-center th,
-.category-table-center td,
-.category-table-center tr {
-  vertical-align: middle;
-  text-align: center;
-}
-
+// 子分类名称区域
 .subclass {
   height: 100px;
   line-height: 22px;
   background: black;
 }
 
+// 【个人宣传】标题下的分类名称
 .myself-subclass {
   text-align: center;
+
+  ul {
+    padding-left: 28%;
+
+    li a {
+      font-size: 20px;
+    }
+  }
 }
 
-.myself-subclass ul {
-  padding-left: 28%;
+// 【灵魂艺术】标题下的分类名称
+.atr-subclass {
+  ul {
+    padding-left: 26%;
+
+    li a {
+      font-size: 17px;
+    }
+  }
 }
 
-.myself-subclass ul li a {
-  font-size: 20px;
+// 【灵魂服务】标题下的分类名称
+.serve-subclass {
+  ul {
+    padding-left: 18%;
+
+    li a {
+      font-size: 18px;
+    }
+  }
 }
 
-.atr-subclass ul {
-  padding-left: 26%;
-}
-
-.atr-subclass ul li a {
-  font-size: 17px;
-}
-
-.serve-subclass ul {
-  padding-left: 18%;
-}
-
-.serve-subclass ul li a {
-  font-size: 18px;
-}
-
+// 灵魂学院子分类名称区域
 .college-subclass {
   padding-left: 9%;
 }
 
+// 灵魂共享子分类名称区域
 .share-subclass {
   padding-left: 22%;
   font-size: 17px;
 }
 
+// 灵魂礼赞子分类名称区域
 .gift-subclass {
   padding-left: 18%;
 }
@@ -12465,47 +12520,71 @@ hr {
   left: 150px;
 }
 
+// 灵魂展览馆子分类名称区域
 .show-subclass {
   margin-left: 4%;
 }
 
+// 发布帖子入口 【笔图片】
 .pen:hover {
   color: white;
 }
 
-.lg-other-header span {
-  color: #FF6600;
-  border-radius: 50%;
+
+//===================== 电脑版 其它页面顶部导航 =============================//
+// 个人中心顶部导航
+.lg-other-header {
+  span {
+    color: #FF6600;
+    border-radius: 50%;
+  }
 }
 
-.lg-other-header .lg-other-header-menu {
-  display: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
-  background: linear-gradient(red, blue);
-  box-shadow: 10px 10px 5px #211F1C;
+// 头像
+.lg-other-header {
+  .lg-other-header-menu {
+    display: none;
+    background: linear-gradient(red, blue);
+    box-shadow: 10px 10px 5px #211F1C;
+  }
+
+  img:hover {
+    transform: scale(1.3);
+  }
+
+  // 鼠标移上头像，显示菜单
+  .img-dropdown-menu:hover .lg-other-header-menu {
+    display: block;
+  }
 }
 
-.lg-other-header img:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
+// ==================== PC 登录 注册 页面 ================================//
 
-.lg-other-header .img-dropdown-menu:hover .lg-other-header-menu {
-  display: block;
-}
-
-.login,
-.register,
-.topic-create,
-.user-edit {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#A25900), to(#000000));
+.login, .register, .topic-create, .user-edit {
   background: linear-gradient(to bottom, #000000, #A25900, #000000);
 }
 
+//====================== 电脑版 create_and_edit  ===============================//
 .simditor-body img {
   max-width: 100%;
 }
 
+// 显示帖子页面，未做逻辑
+//.topics-show-page {
+//
+//  .card {
+//    padding: 15px;
+//
+//    h1 {
+//      margin: 0.4em auto 0.6em;
+//      font-size: 28px;
+//      line-height: 38px;
+//    }
+//  }
+
+//====================== 电脑版 topic-show  ===============================//
+
+// topic show 左则广告文章推荐栏文字
 .topic-show-left {
   line-height: 26px;
   padding-left: 10px;
@@ -12513,74 +12592,81 @@ hr {
   width: 19em;
   overflow: hidden;
   text-overflow: clip;
+
+  a {
+    font-size: 16px;
+  }
+
+  a:hover {
+    text-shadow: 2px 2px 4px #000000;
+  }
 }
 
-.topic-show-left a {
-  font-size: 16px;
-}
-
-.topic-show-left a:hover {
-  text-shadow: 2px 2px 4px #000000;
-}
-
+// 社交统计信息 关注-粉丝-帖子总数
 .stats {
   overflow: auto;
   margin-top: 0;
   padding: 0;
+
+  a {
+    float: left;
+    padding: 0 10px;
+    text-align: center;
+    width: 33%;
+    border-left: 1px solid #eee;
+    color: #ffffff;
+
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #ccc;
+    }
+  }
+
+  strong {
+    display: block;
+    font-size: 1.1em;
+    color: black;
+  }
 }
 
-.stats a {
-  float: left;
-  padding: 0 10px;
-  text-align: center;
-  width: 33%;
-  border-left: 1px solid #eee;
-  color: #ffffff;
-}
-
-.stats a:first-child {
-  padding-left: 0;
-  border: 0;
-}
-
-.stats a:hover {
-  text-decoration: none;
-  color: #ccc;
-}
-
-.stats strong {
-  display: block;
-  font-size: 1.1em;
-  color: black;
-}
-
+//文章详情页面 各统计数字颜色
 .topic-show-total a {
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.lg_topics_recommendation p {
-  font-size: 14px;
-  text-align: left;
-  margin-left: 10px;
-  margin-right: 10px;
+// 文章详情页面 帖子推荐
+.lg_topics_recommendation {
+  p {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
-.lg_topics_recommendation a:hover {
-  text-decoration: underline;
-}
-
+// 点赞打赏礼赞容器
 .followers-container {
   background: #E5A55D;
   width: 100%;
   height: 68px;
   overflow: hidden;
+
+  small {
+    font-size: 18px;
+  }
 }
 
-.followers-container small {
-  font-size: 18px;
-}
-
+// 回复框
 .reply-container {
   border: solid 1px white;
   width: 95%;
@@ -12588,42 +12674,56 @@ hr {
   border-radius: 5px;
 }
 
-.reply-list td {
-  border-right: solid 1px white;
-  text-shadow: 5px 5px 8px #656B79;
+// 回复列表
+.reply-list {
+  td {
+    border-right: solid 1px white;
+    text-shadow: 5px 5px 8px #656B79;
+  }
 }
 
+// 文章详情页-举报确定按钮
 .report {
   margin-right: 38px;
 }
 
+// 模态框头部
 .my-modal-header {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(#EE82EE));
   background-image: linear-gradient(to top, black, #EE82EE);
 }
 
-.users-edit-page label {
-  font-size: 18px;
+//====================== PC users-edit  ===============================//
+.users-edit-page {
+  label {
+    font-size: 18px;
+  }
 }
 
-.users-show-page .p {
-  border-bottom: solid 1px black;
-}
+//====================== PC users-show  ===============================//
+.users-show-page {
+  .p {
+    border-bottom: solid 1px black;
+  }
 
-.users-show-page .change-title a {
-  color: black;
-  font-size: 18px;
-}
 
-.users-show-page .total h4 {
-  float: left;
-  text-shadow: 2px 2px 4px #000000;
-}
+  .change-title {
+    a {
+      color: black;
+      font-size: 18px;
+    }
+  }
 
-.users-show-page .total h4 small {
-  font-size: 16px;
-  color: white;
-  background: transparent;
+  .total h4 {
+    float: left;
+    text-shadow: 2px 2px 4px #000000;
+
+    small {
+      font-size: 16px;
+      color: white;
+      background: transparent;
+
+    }
+  }
 }
 
 .list {
@@ -12653,6 +12753,7 @@ hr {
   text-decoration: underline;
 }
 
+//==================== PC 前台私信、提醒、公告 notifications  ===============//
 #send-letter:hover {
   background: white;
   text-shadow: 2px 2px 4px #000000;
@@ -12662,96 +12763,127 @@ hr {
   font-size: 1.5em;
 }
 
+//======================= 手机版主页 =================================//
+
+// 手机主页和分类顶部导航
 .xs-nav-category li {
   display: block;
   border-bottom: solid 1px #584021;
 }
 
-.root-background-poetry,
-.category-background {
+// 手机主页和分类背景颜色
+.root-background-poetry, .category-background {
   width: 99%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#D3791C), color-stop(#FAEDE0), to(#D3791C));
   background-image: linear-gradient(to right, #D3791C, #FAEDE0, #D3791C);
 }
 
+
+// 手机分类盒子
 .xs-root-category-box {
   width: 100%;
 }
 
-.xs-category-title h4 {
-  font-weight: bold;
-  font-size: 24px;
+// 手机主页分类标题
+.xs-category-title {
+  h4 {
+    font-weight: bold;
+    font-size: 24px;
+  }
 }
 
+// 手机主页分类最新十篇链接字体
 .xs-category-title a {
   color: #000;
 }
 
-.xs-category-content a {
-  font-size: 16px;
+// 手机主页各分类最新十篇链接 a 标签
+.xs-category-content {
+  a {
+    font-size: 16px;
+
+  }
 }
 
+// 手机主页分类内容前十链接
 .xs-category-up {
   white-space: nowrap;
   width: 18em;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  div {
+    border-bottom: solid 1px #000;
+  }
 }
 
-.xs-category-up div {
-  border-bottom: solid 1px #000;
+
+//====================== 手机分类 =========================================//
+.category-content-xs {
+  a {
+    color: white;
+    background-color: #98520D;
+  }
 }
 
-.category-content-xs a {
-  color: white;
-  background-color: #98520D;
+
+//====================== 手机 users.show =============================//
+// 顶部总导航
+.user-show-nav {
+  li {
+    width: 9.5%;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  li a:hover {
+    color: #fff;
+    border-bottom: 6px solid #D07F0C;
+  }
 }
 
-.user-show-nav li {
-  width: 9.5%;
-  height: 50px;
-  line-height: 50px;
+.user-info {
+  h5, p, button {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
 }
 
-.user-show-nav li a:hover {
-  color: #fff;
-  border-bottom: 6px solid #D07F0C;
+.users-show-page {
+  p {
+    font-size: 16px;
+  }
 }
 
-.user-info h5,
-.user-info p,
-.user-info button {
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.users-show-page p {
-  font-size: 16px;
-}
-
+//=======================手机 topics.show ========================//
+// 手机左则帖子推荐栏
 .xs_topics_recommendation {
   white-space: nowrap;
   width: 28em;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  h4 {
+    margin: 10px auto;
+    color: black;
+    text-align: center;
+    border-bottom: solid 1px #1b1e21;
+    padding-right: 5px;
+  }
 }
 
-.xs_topics_recommendation h4 {
-  margin: 10px auto;
-  color: black;
-  text-align: center;
-  border-bottom: solid 1px #1b1e21;
-  padding-right: 5px;
+//======================== 注册 登录 ============================//
+!* User register page 验证码*!
+.register-page {
+  img.captcha {
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 3px;
+  }
 }
 
-/* User register page 验证码*/
-
-.register-page img.captcha {
-  cursor: pointer;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  padding: 3px;
-}
+//========================== 后台管理 ===========================//
 
 .admin-info {
   display: none;
@@ -12761,9 +12893,12 @@ hr {
   display: block;
 }
 
-.admin-all-index th,
-.admin-all-index td {
-  vertical-align: middle;
-  text-align: center;
+.admin-all-index {
+  th, td {
+    vertical-align: middle;
+    text-align: center;
+  }
 }
+
+*/
 
